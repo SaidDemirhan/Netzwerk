@@ -57,5 +57,39 @@ bilgisayar dili binär sistemdir ve 1 ve 0 lardan olusur.
 akim var akim yok manasina gelir (fiberoptik te ise isik var isik yok)
 
 101= (1*2^0)+(0*2^1)+(1*2^2)= 5(onluk sistemde karsiligi)
+17 8 4 2 1
+1  0 0 0 1 (17 sayisinin ikilik sistemdeki karsiligi)
+
+SUBNET MASK (alt ag maskesi)
+
+Bilgisayarlarinin hangi agda oldugunu anlamasini saglar.
+ipconfig ile görebiliriz.
+255.255.255.0 (10 luk sayi sisteminde) 4 bölömden olusur ve her bir bölüm 8 bit ten olusur. toplam 32 bit
+bu 8 bitlik bölümlere OKTET denir. 
+4 birimlik oktet IP ve subnet yapisini olusturur.
+ 
+icinde bulunulan agi bulma:
+bilgisayarin privat ip i ile  subnetmask i ikilik sistemde endleyerek (cakistirarak) ag adrsini buluruz.
+
+ip        : 192.168.1.5
+subnetmask: 255.255.255.0
+
+11000000 . 10101000 . 00000001 . 00000101
+11111111 . 11111111 . 11111111 . 00000000
+_________________________________________
+11000000 . 10101000 . 00000001 . 00000000
+
+192      . 168      . 1        .  0     (agimiz)
+
+Eger agimizin kapasitesini ögrenmek istersek:
+subnet mask in sonunda ne kadar 0 varsa o kadar kullanilabilir IP adresi vardir. (ikilik sistem)
+yani 8 adet varsa 2^8 kadar (256) bu örnektekinde kullanilabilir.
+
+192.168.1.0 dan baslayip 192.168.1.255 e kadar toplamda 256 IP adresin olabilir,
+her zaman -2 cihaz baglanabilir 
+cünkü agdaki ilk id(192.168.1.0) network ün id sidir, (benim agimi tanimlayan makina)
+agdaki son ip ise(192.168.1.255) broadcast yayin adresindir (aga yeni bir cihaz baglanmak istediginde 
+öncelikle IP lazimdir, (Ip dagitan otomatik sisteme DHPC denir.-evlerdeki modem)
+
 
 
