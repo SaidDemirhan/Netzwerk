@@ -2,7 +2,7 @@ Mac adresi degismez (tc no gibi)
 6 bloktan olusur
 
 Ip adresi degisir(modemi ac kapa degissin)
-cmd ye ipconfig yazarak ip adresimizi görebiliriz.
+cmd ye ipconfig yazarak ip adresimizi görebiliriz. (ipconfig /all ayrintili olan kod)
 internette bagalanirken yani dis dünyaya görünen(public) Ip adresimiz ile kendi agimizdaki ip adresimiz farklidir.
 dis dünyaya WAN diyoruz
 ic dünyaya LAN diyoruz (Local area network)
@@ -30,5 +30,32 @@ Subnet mask
 Default Gateway
 DNS 
 olmasi gerekir.
+
+Gateway
+internet cikarken ilk ugrayacagimiz kapidir.
+default gateway modemin IP sidir ve adres cubuguna yazarsak bizi modeme götürür.
+büyük isletmelerde birden cok modem olabilir ve istedigimiz kisiye/cihaza gateway ayarlamasi yaparak istedigimiz modemden
+gecerek internete cikmasini saglayabiliriz.
+
+DNS (domain naming systems)
+
+tüm internet sitelerinin kendine ait statik bir ip adresi vardir(degismez)
+biz o sitenin ip adresini adres cubuguna yazarsak direkt o adrese girmis oluruz.
+Ayni cep telefonumuzdaki telefon rehberimiz gibi numara var ve biz ona bir isim atamisiz.
+iste dns her sitenin karsisinda hangi numara var onu akilda tutuyor. 
+
+bilgisayara el ile 2 adet dns adresi kaydedebiliriz, eger birinde bulamazsa digerine gider ona sorar ve internet erisimi
+saglanmis olur. (site yasaklanma vs) 8.8.8.8 ve 8.8.4.4
+
+SUBNETTING
+
+8 bit : 1 byte
+1024 byte: 1 kb
+1024 mb: 1 gb
+
+bilgisayar dili binär sistemdir ve 1 ve 0 lardan olusur.
+akim var akim yok manasina gelir (fiberoptik te ise isik var isik yok)
+
+101= (1*2^0)+(0*2^1)+(1*2^2)= 5(onluk sistemde karsiligi)
 
 
