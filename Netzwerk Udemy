@@ -2,6 +2,31 @@ Mac adresi degismez (tc no gibi)
 6 bloktan olusur
 
 Ip adresi degisir(modemi ac kapa degissin)
+cmd ye ipconfig yazarak ip adresimizi görebiliriz.
+internette bagalanirken yani dis dünyaya görünen(public) Ip adresimiz ile kendi agimizdaki ip adresimiz farklidir.
+dis dünyaya WAN diyoruz
+ic dünyaya LAN diyoruz (Local area network)
+
+Public IP siniflari (WAN icin)
+A class : 1.0.0.0- 126.255.255.255
+          127.0.0.0 - 127.255.255.255 (testler icin ayrilmis)
+B class : 128.0.0.0- 191.255.255.255
+C class : 192.0.0.0 - 223.255.255.255 
+D Class : 224.0.0.0 - 239.255.255.255 (Multicast hostlar icin)
+E Class : 240.0.0.0 - 255.255.255.255(arastirmalar icin)
+
+Privat IP siniflari
+A class : 10.0.0.0- 10.255.255.255
+B class : 172.16.0.0- 172.31.255.255
+C class : 192.168.0.0 - 192.168.255.255 
+(agda kullanilan bilgisayar saayisina göre belirlenir.)
 
 Internete girebilmek icin; 
 Network karti + Mac adresi
+IP adresi
+Subnet mask
+Default Gateway
+DNS 
+olmasi gerekir.
+
+
