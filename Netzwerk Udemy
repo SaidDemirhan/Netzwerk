@@ -89,7 +89,22 @@ yani 8 adet varsa 2^8 kadar (256) bu örnektekinde kullanilabilir.
 her zaman -2 cihaz baglanabilir 
 cünkü agdaki ilk id(192.168.1.0) network ün id sidir, (benim agimi tanimlayan makina)
 agdaki son ip ise(192.168.1.255) broadcast yayin adresindir (aga yeni bir cihaz baglanmak istediginde 
-öncelikle IP lazimdir, (Ip dagitan otomatik sisteme DHPC denir.-evlerdeki modem)
+öncelikle IP lazimdir, (Ip dagitan otomatik sisteme DHPC denir.-evlerdeki modem) Ben IP ariyorum diye Broadcast 
+kanalindan herkese ilan eder ve Dhcp görevi kimdeyse o da hemen bos bir IP adresini ayarlayi yine broadcast üzerinden 
+cümle aleme duyurur. bu sekilde yeni IP adresi atanmais olur.)
+
+Subnetting siniflari
+
+a class : 255.0.0.0
+b class : 255.255.0.0
+c class : 255.255.255.0 (default)
+
+eger biz subnet mask imizdan 2 adet ag cikarmak istersek devreye SUBNETTING giriyor
+eger subnetmask i 255.255.255.128 olarak ayarlarsak;
+192.168.1.0 ile 192.168.1.127 bir agda,
+192.168.1.128 ile 192.168.1.255 diger agda olmus olur. (ag arasi iletisim olmaz)
+kisa yazim olarak 192.168.1.5/25 (2 lik sistemdea ne kadar 1 varsa o arkaya yazilabiliyor.
+
 
 
 
