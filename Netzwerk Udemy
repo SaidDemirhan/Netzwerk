@@ -15,11 +15,13 @@ C class : 192.0.0.0 - 223.255.255.255
 D Class : 224.0.0.0 - 239.255.255.255 (Multicast hostlar icin)
 E Class : 240.0.0.0 - 255.255.255.255(arastirmalar icin)
 
-Privat IP siniflari
+Privat IP siniflari (LAN icin)
 A class : 10.0.0.0- 10.255.255.255
 B class : 172.16.0.0- 172.31.255.255
 C class : 192.168.0.0 - 192.168.255.255 
 (agda kullanilan bilgisayar saayisina göre belirlenir.)
+
+privat ip i public ip ceviren sisteme NAT (network adress translation) denir.
 
 Internete girebilmek icin; 
 Network karti + Mac adresi
