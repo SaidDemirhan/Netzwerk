@@ -23,6 +23,8 @@ C class : 192.168.0.0 - 192.168.255.255
 
 privat ip i public ip ceviren sisteme NAT (network adress translation) denir.
 
+NOT: Hicbir IP adresinin sonu 0 veya 255 ile bitemez.
+
 Internete girebilmek icin; 
 Network karti + Mac adresi
 IP adresi
