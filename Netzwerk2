@@ -44,3 +44,9 @@ DHCP: bir ic agdaki cihazlara IP dagitan modemdeki sistemdir.
     cihaz kendi kendine IP atamis demektir. buna APIPA denir.
 
 Default GATEWAY: modemdeki ic ayak olan cihazlarin internete cikabilmeleri icin modemin IP adresidir.
+
+Bir bilgisayayara IP adresi manuel olarak vereceksek;
+      alt ag maskesini (SUBNETMASK) vermek zorundayiz.
+      SUBNETMASK: bir bilgisayar kendisine verilen IP nin NETWORK ID sini belirleyebilmek icin SUBNETMASK a ihtiyac duyar.
+      
+
