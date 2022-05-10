@@ -1,3 +1,43 @@
-NOT: Hicbir IP adresinin sonu 0 veya 255 ile bitemez.
+IP Adresleri
 
-iki bilgisayar birbirriyle iletisim kurabilmesi icin
+NOT: Hicbir IP adresinin sonu 0 veya 255 ile bitemez.
+0 olan Network u ifade edr, 255 olan broadcast kanalini ifade eder.
+
+Public IP siniflari (WAN icin) - dis ayak
+A class : 1.0.0.0- 126.255.255.255
+   Loopback:127.0.0.0 - 127.255.255.255 ethernet kartlarini test etmek icin(hat güzergahini kontrol etmek icin)
+B class : 128.0.0.0- 191.255.255.255
+C class : 192.0.0.0 - 223.255.255.255 
+D Class : 224.0.0.0 - 239.255.255.255 (Multicast hostlar icin)
+E Class : 240.0.0.0 - 255.255.255.255(arastirmalar icin)
+
+Privat IP siniflari (LAN icin) -ic ayak
+A class : 10.0.0.0- 10.255.255.255
+B class : 172.16.0.0- 172.31.255.255
+C class : 192.168.0.0 - 192.168.255.255 
+(agda kullanilan bilgisayar saayisina göre belirlenir.)
+
+NOT: IP 4 oktet ten olusmaktadir.
+
+Bilgi: iki bilgisayar birbirriyle iletisim kurabilmesi icin Ayni sinifta olmak zorundadir.
+
+
+Network ID ve Host ID
+
+Class A: ilk oktet ayni olmali
+Class B: ilk iki oktet ayni olmali
+Class C: ilk üc oktet ayni olmali   192.168.1.76 ve 192.168.1.72
+
+NOT: sabit olan ID ler Network ID olur degisken olanlar ise Host ID(bilgisayarlari temsil eden kismi) olur.
+
+Bilgi: Bir A class bir agin network Id si 10.0.0.0 olurken host ID si 10.255.255.255 tir.
+
+Iki farkli IP adresimiz vardir:
+  1 Internete acilirken servis saglayicimizin verdi IP adresimiz
+  2 Kendi agimizdaki IP adresimiz.
+  #Kendi agimizdaki cihazlar internete cikarken NAT(Network Adress Translation) ile tek IP e cevrilir.
+  
+DHCP: bir ic agdaki cihazlara IP dagitan modemdeki sistemdir.
+    Bu yüzden cihaz acilir acilmaz internete baglanir.
+
+Default GATEWAY: modemdeki ic ayak olan cihazlarin internete cikabilmeleri icin modemin IP adresidir.
