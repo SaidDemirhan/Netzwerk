@@ -39,5 +39,8 @@ Iki farkli IP adresimiz vardir:
   
 DHCP: bir ic agdaki cihazlara IP dagitan modemdeki sistemdir.
     Bu yüzden cihaz acilir acilmaz internete baglanir.
+    
+    Eger bilgisayarin IP adresi 169. ile basliyorsa ortamda herhangi bir DHCP servisi bulamamis ve 
+    cihaz kendi kendine IP atamis demektir. buna APIPA denir.
 
 Default GATEWAY: modemdeki ic ayak olan cihazlarin internete cikabilmeleri icin modemin IP adresidir.
