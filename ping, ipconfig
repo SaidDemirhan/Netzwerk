@@ -3,6 +3,9 @@ iki bilgisayarin birbirine baglanabilmesi icin ayni agda olmalari lazim;
 cmd ekranina ipconfig yazarak bilgisayarin ip adres bilgileri görülebilir.
 ipconfig /all yazarak ayrintili görünebilir.
 
+ipconfig /release: eger herhangi bir nedenle ipadresini cmd den degistirmek istersek yazip ip siz kaliriz.
+ipconfig /renew: ip adresiz kaldiktan sonra yeniden ip adresi talep etme komutudur. (IP ayarlari otomatikte olmali!)
+
 PING GÖNDERME
 ping 192.168.1.100 yazarak baglanmak istedigimiz agimizdaki bilgisayara ulasabiliriz.
 ping -t 192.168.1.100 yazarsak sonsuza kadar ping gönderir.
