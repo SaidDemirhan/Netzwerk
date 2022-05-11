@@ -1,0 +1,11 @@
+CIDR; Ip adresinin sonunda olan / isaretli sayidir.
+IP adresinin subnetmask ini ifade eder.
+
+yani;
+IP:          192.168.1.100\24
+Subnetzmask: 11111111.11111111.11111111.00000000
+              255.  255.  255.  0
+              
+              soldan saga 24 adet 1 oldugunu ifade eder.
+              
+   genel olarak 8, 16, 24 olur eger degil ise agda bir oynama yapilmistir.
