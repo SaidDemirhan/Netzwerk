@@ -3,7 +3,7 @@ Ayni yerel agda iken;
 -Bilgisayarim  menüüsne sag tiklayip örellikler menusunden uzak masaüstü baglantisii aktif hale getiriyoruz.
 -bilgisayarlarin birbirini görüp görmedigini kontrol ediyoruz.
 -uzak masaustu baglantisini aciyoruz. (remotedesktop verbindung)
-      veya ctrl R ye basip cikan yere mstsc yaziyoruz
+      veya windows tusu+ R ye basip cikan yere mstsc yaziyoruz
       
 -baglanmak istedigimiz bilgisayarin IP sini yaziyoruz. 10.150.35.173 gibi
 hangi bilgisayara baglaniyorsak o bilgisayardaki bir kullanici ile oturum acmamiz gerekiyor
@@ -30,3 +30,16 @@ ULASABILMEK ICIN CIHAZ MUTLAKA ACIK OLMALI!!!
 
 
 teamviewer programini indirip de yapilabilir.
+
+Eger bir klosörü paylasmak istersek:
+klosör- özellikler- paylasim - gelismis paylasim- bu klosörü paylas- paylasim izinleri- everyone -uygula tamam
+
+ulasabilmek icin:
+windows tusu+r basiyoruz
+acilan ekrana \\192.168.1.101 seklinde yazip enter  a basiyoruz
+
+eger yeni bir kullanici ismiyle girmesini istiyorsak
+bilgisayar simgesi-sagtik-yönet-yerel kullanicilar ve gruplar-kullanicilar
+saga tikla-yeni kullanici -ad ve parolagir -olustur
+
+
