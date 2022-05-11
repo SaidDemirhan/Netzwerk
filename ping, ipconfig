@@ -1,0 +1,16 @@
+iki bilgisayarin birbirine baglanabilmesi icin ayni agda olmalari lazim;
+
+cmd ekranina ipconfig yazarak bilgisayarin ip adres bilgileri görülebilir.
+ipconfig /all yazarak ayrintili görünebilir.
+
+PING GÖNDERME
+ping 192.168.1.100 yazarak baglanmak istedigimiz agimizdaki bilgisayara ulasabiliriz.
+ping -t 192.168.1.100 yazarsak sonsuza kadar ping gönderir.
+cikakbilmek icin CTRL C ye basmak gerekir.
+
+Baglanma problemleri:
+-bilgisayar kapalidir
+-ethernet kablosu cikmistir
+-IP adresi degismistir
+-windows defender firewall daki genel ayarlardan(Eingehende Regeln) yanki istegi 
+(Kernnetzwerkdiagnose-ICMP-Echoanforderung) aktif degildir. 4 adet yanki istegini aktif hale getir.
