@@ -34,6 +34,10 @@ teamviewer programini indirip de yapilabilir.
 Eger bir klosörü paylasmak istersek:
 klosör- özellikler- paylasim - gelismis paylasim- bu klosörü paylas- paylasim izinleri- everyone -uygula tamam
 
+ama bu sadece klosörü görebilmesini saglar. icine erisebilmek icin;
+güvenlik-grup ya da kullanici adlari -düzenle- kullaniciyi ekle- izinleri ayarla- uygula tamam
+      normalde kullanicini o dosyayi kendi bilgisayarina alabilmesi icin LISTELEME ve OKUMA iznini vermek yeterlidir.
+
 ulasabilmek icin:
 windows tusu+r basiyoruz
 acilan ekrana \\192.168.1.101 seklinde yazip enter  a basiyoruz
