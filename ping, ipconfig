@@ -12,5 +12,16 @@ Baglanma problemleri:
 -bilgisayar kapalidir
 -ethernet kablosu cikmistir
 -IP adresi degismistir
--windows defender firewall daki genel ayarlardan(Eingehende Regeln) yanki istegi 
+-Istek zamanasimina ugradi uyarisi geliyorsa:
+windows defender firewall daki genel ayarlardan(Eingehende Regeln) yanki istegi 
 (Kernnetzwerkdiagnose-ICMP-Echoanforderung) aktif degildir. 4 adet yanki istegini aktif hale getir.
+-ipconfig den herhangi bir bilgi gelmiyorsa ethernet kartini bilgisayar görmüyor demektir. aktif hale getiriyoruz.
+-ethernet karti ip alamadigi icin tanimlanamayyan ag uyarisi verir. 169 olmus yani APIPA olmus. 
+  eger 169 u görmüssek IP adresini manuel vermemiz gerekir.
+-her seye ragmen olmamissa ethernet karti testi yapilabilir. 127.0.0.1 adresine Ping atariz. 
+  kendi ethernet kartimiza ping atmis oluyoruz. cevap gelirse problem yoktur.
+  
+  Sanal adaptörler kendi bilgisayarimizla iletisim halinde olsun istersek bridge moda almaliyiz ve 
+  ip ayarini otomattik yapabiliriz.
+  
+  Eger host only adaptorde ise sadece sanaldan sanala ulasilabilir.
