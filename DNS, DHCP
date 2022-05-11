@@ -1,0 +1,12 @@
+DNS (Domain Name System)
+
+sitelerin IP adreslerini yaziya ceviren sistemdir. 
+wird auch als "Telefonbuch des Internets" bezeichnet.
+
+Bu görevi evlerimizde modemimiz yapar ve eger biz manuel dns girmek istesek;
+Modem in IP adresini girmeliyiz.
+
+DHCP  (Dynamic Host Configuration Protocol)
+
+talep eden cihazlara IP reserve edip atayan protokoldur.
+
