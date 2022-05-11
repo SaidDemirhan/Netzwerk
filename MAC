@@ -1,0 +1,13 @@
+MAC adresleri
+
+cihazlarin IP adresi kimlikleridir. Kimlik bilgilerine ulasmak icin kullanilir.
+Ethernet karinda bulunur ve harf/rakamlardan olusur. degismez.
+48 bitlik bir adrestir (IP 32 bitlik idi)
+IP arac plakasi(degisebilir), MAC sasi numarasi fabrika cikisindan yok olana dek ayni kalir.
+
+cmd den ipconfig /all yazarak MAC adreesine ulasabiliriz. 
+fiziksel adress olarak yazar, 6 blok seklinde 12 haneden olusur. hexadecimal olarak yazilir.
+24-77-03-AA-4F-BC seklinde örneklenebilir. cihazda (ethernet veya wifi kartinda yazar)
+
+eger ulasilmasin istiyorsaniz ya cihizin mac numarali parcasi imha edilmeli ya da 
+wireless ethernet cihazi alinabilir.
