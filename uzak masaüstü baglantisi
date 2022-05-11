@@ -1,0 +1,32 @@
+Ayni yerel agda iken;
+
+-Bilgisayarim  menüüsne sag tiklayip örellikler menusunden uzak masaüstü baglantisii aktif hale getiriyoruz.
+-bilgisayarlarin birbirini görüp görmedigini kontrol ediyoruz.
+-uzak masaustu baglantisini aciyoruz. (remotedesktop verbindung)
+      veya ctrl R ye basip cikan yere mstsc yaziyoruz
+      
+-baglanmak istedigimiz bilgisayarin IP sini yaziyoruz. 10.150.35.173 gibi
+hangi bilgisayara baglaniyorsak o bilgisayardaki bir kullanici ile oturum acmamiz gerekiyor
+iki bilgisayar ayni anda acik olamiyor.
+
+Eger Bilgisayarda sifre yoksa windows güvenlik duvarindan dolayi uzak masaüstü baglantisi KURULAMIYOR.
+
+
+Eger ev disindan evdeki bilgisayariniza ulasmak isterseniz:
+
+-Evimizin Public IP adresini ögrenmeliyz. 
+sabit bir IP alamamissaniz IP her gün deegisebilir.
+evdeki modemimizdeki 3389 numarali porta bu talep gelir ve modem gelen talebi yönlendirmelidir.
+-MODEM de PORT YÖNLENDIRME yapilmalidir ki hangi cahaza ulasmaniza izin verilmisse ona erisilebilsin.
+
+Modem e port yönlendirme secenigini bulduktan sonra bir kural ekliyoruz.
+isim önemli degil ama protokol kismini TCP yapalim
+public ve privat port araligindaki tüm kutucuklara 3389 yazalim
+Local IP adresine hangi bilgisayara disaridan bir talep gelirse gitmesi isterseniz o cihazin ip ini yaz.
+Herhangi bir talep gelse veya sadece belli bir ip ile gelse de kabul etmeyi secebiliyoruz.(any/spesfic)
+Onaylayip degisiklikleri kaydediyoruz. 
+
+ULASABILMEK ICIN CIHAZ MUTLAKA ACIK OLMALI!!!
+
+
+teamviewer programini indirip de yapilabilir.
