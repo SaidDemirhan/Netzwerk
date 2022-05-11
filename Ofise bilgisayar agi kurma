@@ -1,0 +1,8 @@
+modem ve bilgisayar yeterli
+eger kablo ile baglanmasi gerekirse cat 5(100MBit/sn) veya cat 6(1Gbit/sn) kablolari ile baglanir. 
+
+BILGI: bit denilince verinin hizi, bayt denilince verinin büyüklügü akla gelmeli.
+
+SWITCH: Eger modemimizdeki portlar kablo baglantilari icin yetersizse aliriz.
+hangi portta hangi cihaz var bilir (Akillidir)
+HUB da ayni isi görebilir ama kücüktür ve eskidir, akilsizdir, yavastir
