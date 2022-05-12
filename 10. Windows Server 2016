@@ -1,0 +1,45 @@
+Öncelikle Oracle virtual Box programini kuruyoruz.
+
+ISO dosyasi icin google windows evaluation center yaziyoruz 
+
+altta Windows Server secenegine tikliyoruz.
+
+hepsini görüntüle diyelim ve windows center 2016 yi secelim ISO dosyasini indirelim
+
+yeni-
+Name: Windows_Server_2016
+Type: Microsoft Windows
+Version: windows 2016 (64-bit)
+    Eger 64 bit cikmiyorsa bilgisayarin bios undan sanallastirma(virtualisierung) secenegini acmaniz gerekir.
+    Intel(R) Virtualization Technology [Enabled]    olmali
+Memory size: 4000 MB
+File size: 50.00 GB (hafiza)
+
+Baslatalim, makinemizin bos oldugu uyarisini alacagiz ISO dosyamizi ekleyelim
+    ISO dosyasini eklemenin ikinci yolu:
+    Kurdugun server a gelip saga tikla -storage- Empty-cd simgesi- Diski sec-ok
+    
+Baslat diyerek yüklemeyi baslatabiliriz.
+
+Sistem kurulumu icin WS 2016 Datacenter Evaluation (Desktop Experience) versiyonu secilmeli
+    Deskstop yoksa kodlarla halledilecek sürümdür.
+    Datacenter ise cpok büyük isletmelere lazimdir.
+    
+kurulum bittikten sonra yeniden acilacak  ve bizden Administor olarak sifre girmemizi isteyecek
+  sifre 8 karekterden olusmali +büyük harf+kücük harf+rakam +simge olmali
+  
+Ekran acildiktan sonra girebilmek icin:
+    Sag ctrl +delete tusuna basariz
+    
+Server Manager ekrani karsimiza cikacak 
+
+DIKKAT: KURULUMDAN SONRA DISKI SANAL MAKINEMIZDEN KALDIRMAYI UNUTMAYALIM
+        yoksa her defasinda yeniden kurmaya calisacaktir. 
+        
+Eger bilgisayar ekranini tam ekran yap denildiginde büyümüyorsa:
+    aygitlar- misafir eklentileri CD kalibini yerlestir e tikla- sanal cd miz takildi.
+    Bilgisayarim kismindan sanal cd yi calistir.
+    bu sayede hem cözünürlügümüz ayarlanmis oldu hem de sürükle birak özelligi gelmis oldu. 
+    
+    
+ 
