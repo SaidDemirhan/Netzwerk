@@ -12,3 +12,8 @@ default gateway:192.168.0.1(modemin ip adresi)
 dns manuel yap
 192.168.0.100 (domaini kontrol eden makine olacagi icin kendi ip i olmali
 8.8.8.8 (google in dns server i)
+
+ayarlari yaptiktan sonra ping alabilmesi icin:
+server manager- local server- windows firewall-gelismis ayarlar-gelen kurallar-ipv4 echo istegi - aktif 
+
+
