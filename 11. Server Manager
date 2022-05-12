@@ -1,0 +1,14 @@
+WS 2016 sanal server imizda baslata tikladigimizda SERVER MANAGER i acabiliriz.
+
+Bilgisayar ismini degistirme:
+Local Server-Computer name- change-ok. restrart olacaktir
+
+IP adresi atamasi yapma: !!! SERVERLARDA IP HER ZAMAN STATIK KALMALI
+local server- ethernet -ethernet-(detail da bak) özellikler-IP v 4 -cift tikla-manuel yap
+ip: 192.168.0.100 (asil bilgisayar ile ayni agda olmali)
+subnetmask:tab
+default gateway:192.168.0.1(modemin ip adresi)
+
+dns manuel yap
+192.168.0.100 (domaini kontrol eden makine olacagi icin kendi ip i olmali
+8.8.8.8 (google in dns server i)
