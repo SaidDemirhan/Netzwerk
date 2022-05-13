@@ -30,3 +30,27 @@ yükleme islemi gerceklestikten sonra ünlem isaretine tikla
     install
         Bilgisayar yeniden baslayacak
         domain ismi olmus karsimiza cikan administrator (Demirhan\Administrator)
+
+        bilgisayar yeniden basladiktan sonra karsimiza iki kullanici cikacak
+        diger kullanici diyerek oturumumuzu acalim
+            Demirhan\administrator +sifre seklinde giriyoruz (slash isaretine dikkat)
+             
+Server manager acildiginda degisiklikler;
+    AD DS :Active Directory DNS Server
+    DNS
+    File and Storage Services
+    Local Server
+    All Servers Dashbpard imizda olmali
+    
+Local Server daki degisiklikler;
+    Workgroup kismi artik domain imiz olmus.
+        Normal bilgisayarda bilgisayarim simgesine saga tiklayip
+        özellikler kismina bakarsak Workgroup kisminda eger WORKGROUP yaziyorsa
+        herhangi bir domain e bagli degildir.
+        
+        Eger bilgisayari Workgroup tan domain e almak istersek;
+        Ayarlari degistir- degistir-member of- domain- domain ismi.
+        
+        
+        
+    
