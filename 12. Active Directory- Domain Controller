@@ -1,0 +1,45 @@
+Aslinda sadece bir DATABASE dir.(veritabani)
+
+Organizasyonumuzdaki tüm kullanicilarimiz ve bilgisayarlarimiz bulunur.
+
+tek bir yerden tüm islemleri yapabiliriz.
+
+###############################################
+Eger bir windows server isletim sistemi kurdugunuzda ve o sisteme aktive Directory rolunu yüklediginizde 
+sistem otomatik olarak domain controller olur. 
+
+Active Directory rolu Client isletim sistemine KURULAMAZ.
+    Cünkü sistem mutlaka server bir isletim sistemi olmalidir.
+    
+Bir organizasyonda ihtiyaca göre cok sayida DOMAIN CONTROLLER lar olabilir    
+
+Active Directory mantiksal yapisi:
+    Forerst
+        Organizasyondaki her sey (Domainler kaynaklar vs her sey)
+    Domain
+        isimlendirirken arcelik.com gibi demirhan.local gibi isimler alirlar 
+        Sekil olarak ücgen ile ifade edilirler görsellerde,
+    Organizational Unit
+        Domain klosörleridir. icine istedigin bilgisayar veya kullanicilari koyulabilir.
+        mesela duvarkagidi degisikligi, bu kurali uygularsaniz OU icindeki tüm bilgisayarlar ayni ekran resmi olmus olur.
+    Child
+        Ana domain e bagli ek domainlerdir.
+        Abc sirketinin farkli sehirlerdeki domainleridir. 
+        abc.com Root domain ise  izmir.abc.com child olur
+        isim hiyerarsisi cok önemlidir. yoksa child domainleri ayiramayiz.        
+    Tree
+        Bir sirketin yeni bir sirket satin aldiginda mevcut forest in icine kurmak isterseniz 
+        isimler farkli olsa bile olabilir.
+        
+        
+ Fiziksel yapi
+    Sites
+        Domain Controller i barindiran lokasyonlarin ismidir. Ankara Ofisi Izmir ofisi gibi
+        Site larin icinde mutlaka Active Directory olamk zorunda 
+    Domain Controllers
+        Active Directory (rolu) database i ve servisleri olan serverlardir. 
+    WAN Link
+        Site leri birbine baglayan karasal hatlardir. ADSL VPN MPLS olabilir(kullanilan altyapiya göre degisir.
+        
+         
+    
