@@ -1,0 +1,32 @@
+Eger Birden fazla Server varsa:
+Server Manager- All SERVERS kismindan ilgili server a baglanabiliriz.
+
+ROL EKLEME
+Server Manager- Manage-Add role and Features
+    ilk eklenecek rol server i Domain Controller seviyesine yükseltecek rol olmalidir.
+
+Server i DOMAIN CONTROLLER yapma:
+    Rol ekleme butonuna bas
+    Cikan uyarida sifre güclü mü IP statik mi Update ler alindi mi diye soruyor.
+    next- Remote olarak kurulum YAPMIYORUZ.
+    next- ilgili server i sec
+    next- Active Directory Certificate Services
+        Extra özellikleri yükleme uyarisi ile özellikleri ekle
+    next- DNS rolu uyarisi
+    next-restart secenegini tikle -Install
+    
+yükleme islemi gerceklestikten sonra ünlem isaretine tikla
+    Domain controller e ihtiyacimiz oldugu uyarisi var
+    Altindaki Active Directory yap beni yazisina tikliyoruz.
+    add a new forest deyip ismi verip ilk domain imizi kuruyoruz.
+        Global katalog sunucusu ve DNS server hizmet her zaman olmakm zorunda
+        Sadece bilgilerin görülmesi icin kuruluyorsa read onli mod olabilir. ilkinde pasiftir
+        kurtarmak icin sifre olusturulur.
+    next- gelen uyari mesji hata degil standart uyari
+    next- NetBIOS (15 karakter gösterebilir.
+    next- data, Log , yasaklar nerde tutulacaksa(dokunma)
+    next- rewiew
+    next- öngereksinimler basarili
+    install
+        Bilgisayar yeniden baslayacak
+        domain ismi olmus karsimiza cikan administrator (Demirhan\Administrator)
