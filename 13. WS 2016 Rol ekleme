@@ -34,6 +34,7 @@ yükleme islemi gerceklestikten sonra ünlem isaretine tikla
         bilgisayar yeniden basladiktan sonra karsimiza iki kullanici cikacak
         diger kullanici diyerek oturumumuzu acalim
             Demirhan\administrator +sifre seklinde giriyoruz (slash isaretine dikkat)
+            ya da administrator@demirhan.com diyerek de girebiliriz.
              
 Server manager acildiginda degisiklikler;
     AD DS :Active Directory DNS Server
