@@ -50,8 +50,16 @@ Local Server daki degisiklikler;
         
         Eger bilgisayari Workgroup tan domain e almak istersek;
         Ayarlari degistir- degistir-member of- domain- domain ismi.
+            Domain e katmadan yapilmasi gereken diger ayarlar sonra yazilacak.
+            
+Bilgi: Eger domain bir aginiz varsa istediginiz aginizdaki bir bilgisayardan kendi oturumunuzu acabilirsiniz.
+        Ama WORKGROUP ta sizin adiniza o bilgisayarda bir kisi olusturulmus olmali ki acabilesiniz.
         
-Artik kolayca server imiza girebiliriz,        
+KULLANILMAYAN BIR SERVISI IPTAL ETMEK  icin:
+    tools-Services-standart-kaldirmak istedigin servisi bulup sec- extended kisminda ayrintilar görünür.
+    servis e cift tikla-start up type-DISABLE
+    yenile tusuna basarak o servisin kaldirildigini göreceksiniz.
+
         
         
     
