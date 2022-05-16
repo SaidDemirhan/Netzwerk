@@ -22,3 +22,16 @@ Eger bir kullanicinin sifresi sifirlanmak istenirse;
 kullanici nin üzerinde saga tikla ve password reset yeterlidir.
  
     
+Bilgisayardaki kullanicilari görebilmek icin;
+
+baslat ta saga tikla-bilgisayar yönetimi-yerel kullanicilar ve gruplar
+ile ulasilabilir.
+
+Eger yerel bir bilgisayarda bir kullanici eklenmek istenirse mutlaka administator 
+olarak giris yapilmasi gerekmektedir.
+
+Domain e eklenmis yerel bir bilgisayara giris yapilirken lokal kullanicisi bile olsa 
+belli bir düzene göre sifre girmelidir.
+  bilgisayarin adi \Ayse
+      eger bilgisayarin adi bilinmiyor ise;
+      .\Ayse yazilarak hemen altta bilgisayarin adi yazacaktir.
