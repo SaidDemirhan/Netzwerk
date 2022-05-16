@@ -1,0 +1,20 @@
+AD yi actiktan sonra domainimiz icinde Kullaniciyi nerede olusturmak istiyorsak 
+saga tiklayip- new- User
+
+  Örnegin yeni bir elemani tanimliyorsunuz...
+    Gercek ad soyad girmek ilerisi icin karisikliklari önleyecektir.
+    
+    User logon name kismina sirketin belirledigi bir formatta girmeliyiz.
+        ahmet yüksel =ayuksel@demirhan.com gibi
+next- pasword 
+    eger kullanici bizim belirledigimiz sifreyle giris yaptiktan sonra degistirsin istiyorsak ilk secenegi
+    degistrmesin diyorsak 2. kutucugu
+    kullanicinin sifre süresinin hicbir zaman bitmesini istemiyor isek 3. kutucugu
+    Hesabi devredisi birakmak icin de 4. kutucugu isaretliyoruz.
+olustur deyip tamamliyoruz.
+
+Kullanicinin özellikllerini görmek icin:
+
+Kullanicinin üzerinde saga tikla-özellikler
+ 
+    
