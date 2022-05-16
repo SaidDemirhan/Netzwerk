@@ -1,0 +1,17 @@
+Domainimizdeki bircok kullanici ve bilgisayyari kolayca yönetebilmek icin ayri ayri klosörlerde tutabiliriz.
+
+Domainimiz-new Organizational Unit- isim ver(ANNKARA)
+    yanlislikla silinmesini istemezsen mutlaka altindaki kutucuga tik koy
+    
+    Silebilmek icin:
+      Yanlis olusturulan veya silinmesi gereken bir klosörü
+      View-Advanced Features-silmek istenilen klosore saga tikla-properties-object- tik isaretini kaldir-apply-ok
+      yeniden ad görünümünü normal hale alabiliriz.
+      
+    
+Klosör icinde ayni sekilde klosör olusturulabilir(ankara-muhasabe)
+
+Sürükle birak yöntemiyle istedigin gibi yapilandirabilirsin.
+
+Eger bir birimin sorumlusu yapmak istedigimiz biri varsa hangi birimde istiyorsak o klosöre saga tiklayip 
+Delegate control  diyerek atayabiliriz.
