@@ -1,0 +1,32 @@
+AD acildiktan sonra computers klosörünün altinda olmali
+
+IP ADRESI AYARI: 
+  server daki cmd den ipconfig ile ip adresini ögreniyoruz.
+  win10 makinemizde baslat-ayarlar-ag ve internet- bagdastirici seceneklerini degistir-
+  ethernet kartina saga tikla-özellikler-IPV4 e cift tikla-
+  manuel IP gir gir-subnet i tab ile olustur- defaul gateway gir(192.168.0.1)
+  DNS IP lerini de gir (server in IP si)
+  
+  server a ping atalim, cevap geliyosa sorun yok.
+  
+  
+  JOIN islemi icin:
+  
+  Bilgisayar-saga tikla-özellikler-bilgisayar adi,etki alani ve calismagrubu ayarlari-
+  ayarlari degistir-(tekrar) degistir-bilgisayar adini degistir(sonrasinda bi kapanip acilsin)
+  üyelik-etki alani- domain ismini gir-ok
+  parola soran ekran gelmisse dogru yoldasin.
+    Kullanici adi domain administrator olmali
+        Extra:AD de olusturulan ve oturum acma islemi gercelestiren bir kullanici da 
+              10 bilgisayarakadar bilgisayarlari join edebilir.
+        
+  Sifre girildikten sonra demirhan.com etki alanina hosgeldiniz uyarisi gelir.-ok   
+  Bilgisayar hemen ardindan yeniden baslatma talep edecektir. 
+  
+  bilgisayarimiz yeniden baslayacaktir.
+  
+   eklenip eklenmedigini kontrol icin:
+   server manager-tools-AD User und Computers-demirhan.com-computers 
+   eklenen bilgisayarin ismi karsimizdadir
+   
+   Domain kullanicilar ile yerel kullanicilar arasindaki fark:
