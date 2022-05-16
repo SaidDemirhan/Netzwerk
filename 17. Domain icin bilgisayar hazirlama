@@ -15,7 +15,7 @@ windows 7 iso dosyasi indirmek icin:
   
 Virtualbox ta yeni bilgisayarlar olustur:
   isim ver(WIN10) (eger export moda gecmediysen oraya gec farkli bi ekran cikmissa)
-  2 gb memory size
+  4 gb memory size
   create
   (file location D ye kurulabilir)
   file size 32 gb
@@ -31,6 +31,16 @@ Virtualbox ta yeni bilgisayarlar olustur:
   acilsin tamamdir.
   
   Domaine katmak icin yapilmasi gereken win 10 ayarlari:
+  
+  intrrnete girebilmek icin
+  settings-network-bridged Adapter-ok
+  
+  iso datei sanal cd room dan cikartmamiz lazim
+  settings-storage-iso dosyasini sec- sagdaki cd simgesine bas-diski uzaklastir
+  
+  
+  Artik win 10 u calistirabiliriz.
+  sag ctrl + del tusuyla aciyoruz.
   
   
   
