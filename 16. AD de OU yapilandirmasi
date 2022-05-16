@@ -15,3 +15,33 @@ Sürükle birak yöntemiyle istedigin gibi yapilandirabilirsin.
 
 Eger bir birimin sorumlusu yapmak istedigimiz biri varsa hangi birimde istiyorsak o klosöre saga tiklayip 
 Delegate control  diyerek atayabiliriz.
+
+Eger bir grubun icinde ki kisilerden bazilarina özel bir grup olusturulacaksa:
+    Klosörün icindeyken sag tikla -new -group- grup adi-ok
+        grup tipndeki Distribution e posta dagitimi icin kulllanilir
+        Grup scopu ise erisimim alanini belirler. dokunmadan gecilebilir.
+        
+    Olusturdugumuz gruba üye eklemek icin:
+        Grubun üzerine saga tikla-members-add- kisa da olsa kullanici adini yaz- check name- isaretle-ok
+        
+        Eger topluca ekleme yapilacaksa:
+            add-advanced-locations- belirle-ok-find now- shift tusu ile sec -ok-add-apply
+            
+            Eklenip eklenmedigini member den görebilirsin.
+            
+       BILGI: bir grubu da gruba üye yapabilirsin.
+                arama kismina grup ismi yazilirsa altini cizer ve ok denirse o grubu istenilen gruba ekler.
+            
+            
+AD kurdugumuzda bircok hazir grup da olusturuluyor
+builtin ve users klosöründe bunlari görebiliriz.
+Bu gruplar daha önce tanimlanmis görevlere sahiptir.
+
+ÖNEMLI: Herhangi bir kullaniciya bir yetki eklemek istersek otomatik olusturulmus gruplardaki bir gruba gelip
+        o gruba istenilen kisiyi üye yapiyorsun.
+        
+        Hangi grubun ne is yaptigini DESCRIPTION bölümünde okuyabilirsin
+
+
+            
+
