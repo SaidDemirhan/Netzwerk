@@ -1,1 +1,2 @@
-
+yerel kullanicilar sadece tanimlanan bilgisayardaki bilgilere erisebilirken (WORKGROUP)
+domain kullanicilar tüm forest teki bilgilere eger izinleri varsa erisim saglayabilirler
