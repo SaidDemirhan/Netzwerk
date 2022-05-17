@@ -1,2 +1,6 @@
 yerel kullanicilar sadece tanimlanan bilgisayardaki bilgilere erisebilirken (WORKGROUP)
 domain kullanicilar tüm forest teki bilgilere eger izinleri varsa erisim saglayabilirler
+
+oturum actigimiz bilgisayarda sinirli sayida(10 adet) administrator atayabiliriz.
+windows tusu-bilgisayar yönetimi-yerel kullanicilar ve gruplar-gruplar-administrator sag tikla-ekle 
+adi yaz(kisa)- adlari denetle-bizden domain sifremizi isteyecek- kisiyi sec-ok-ok.
