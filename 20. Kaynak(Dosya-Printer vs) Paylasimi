@@ -42,7 +42,16 @@ Domain kullanicisinin paylasilan kaynagi görebilmesi:
           execute=yazma degistirme
           modify=silme izni
           full control= (verilmemesi gereken bir izin) baska kullanicilari da erisim icin ekleyebilir. her sey yapabilir.
-  
+          
+   #####################################################################################################
+   
+   Inheritance:
+   
+   Verilen izinler klosorumuzun altindaki tüm klosörlere de etki eder.
+   eger böyle bir durumun olmasini istemiyorsak;
+    
+      klosöre saga tikla- properties-security-advanced-DISABLE INHERITANCE- convert-ok
+      everyone- istemedigin tik i kaldir-apply-ok
   ######################################################################################################
   
   sadece bir dosya paylastirilamaz. Mutlaka bir klosör icerisinde olmasi gerekir.
@@ -101,5 +110,29 @@ iki tür izin vardir:
     \\192.168.0.200\dosyaAdi$  
     yazmamiz yeterli
     
+    #########################################################################################################
     
+    Baskasinin bilgisayarinda gizlice dolasma
+    
+    bu islemi yapabilmek icin Domain admin olmalisiniz.
+    paylasilan belgelerde ADMIN$, C$ dosyalari vardi. eger biz windows tusu+R ile run i calistirip
+    \\IP adresi\C$ yazarsak ip adresine sahip olan bilgisayarin c sine giresinz.
+    
+    eger bir kez paylasim yapilmissa ulasilabilir aksi halde ULASILAMAZ! 
+    
+    #########################################################################################################
+    
+    bizden izinsiz ADMIN lerin bilgisayarimizda dolasilmasi istenmiyorsa:
+    
+    baslat sag tik la-bilgisayar yönetimi- palasilan klasörler- paylasimlar- C$ in üzerine sag tikla- paylasimi durdur
+      Her baslatmamizda bu islemi yapmaliyiz.
+      
+    ##########################################################################################################
+    
+    bilgisayarimizda birinin oldugundan süpheleniyorsak:
+    
+    baslat sag tik la-bilgisayar yönetimi- palasilan klasörler- paylasimlar- istemci baglantilari
+    eger 0 ise kimse yoktur!
+    
+    ##########################################################################################################
     
