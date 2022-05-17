@@ -1,0 +1,74 @@
+Domain Controller Domain in kalbidir,
+O yüzden DC ye herkesin erismesi uygun olmaz.
+Bir server odasinda turulur ve uzaktan baglanilir, fiziksel olarak bile yaklasilmasi istenmez.
+
+Kaynak paylasimi icin bir File Server olusturabiliriz, bu win10 bir makine de olabilir.
+Genis kapasiteli ve hizli hard diskleri olmasi siddetle önerilir.
+Domaine üye bir makine olmasi sarttir, yoksa Domaindekiler erisemez.
+
+file server olarak kullanacagimiz makinenin IP ayarlarini diger makinelere yaptigimiz gibi yapalim
+
+bilgisayari Domain e ekleyelim
+  bu bilgisayar-properties- commputer name.. -ayarlari degistir-degistir-domain sikkini isaretle-demirhan.com-ok
+  sifre ister gir- bilgisayar yeniden baslatilacak 
+  
+Domain kullanici adiyla hesabi acalim  administrator@demirhan.com
+
+ilk paylasimi yapalim:
+  Paylasim icin bir klosör olusturalim
+  klosöre saga tikla- properties-sharing-Advanced Sharing- Share this Folder secenegini isartle-
+    Eger klosörün adinin farkli sekilde görülmesi isteniyorsa Share name degistirilebilir.
+    Ayni anda paylasimin kac kisi tarafindan görülebilecegi limiti de ayarlanabilir.
+    Yorum da yazilabilir.
+  permission kismindan  everyone icin Full Control secenegini tikla-ok-ok
+  
+  #######################################################################################################
+Domain kullanicisinin paylasilan kaynagi görebilmesi:
+  Windows tusu+R basarak run penceresi acilir.
+  Dosya sunucusunun IP adresi 2  ters slash la birlikte girilir
+    \\192.168.0.200 -ok
+  Karsimizda paylasilan klosörü görüyoruz.  
+  
+  UPPS! klosörü gördük ama icini görmeiyoruz
+  
+  yeni ayar/yetki lazim
+  
+  ####################################################################################################### 
+  
+  paylasilan dosyanin icerige erisebilmek icin;
+  
+      klosöre saga tikla- properties-security-edit-add-location a aranacak domain i gir-
+      kullanici ve veya grubu gir- check names-alti cizili olarak geldi- tikla- izinleri ayarla
+          execute=yazma degistirme
+          modify=silme izni
+          full control= (verilmemesi gereken bir izin) baska kullanicilari da erisim icin ekleyebilir. her sey yapabilir.
+  
+  ######################################################################################################
+  
+  sadece bir dosya paylastirilamaz. Mutlaka bir klosör icerisinde olmasi gerekir.
+  
+  ######################################################################################################
+  
+  Hangi dosyalarin paylasima acik oldugunu görmek icin:
+  
+  windows tusuna sag tikla-computer manengement-shared folders-Shares
+      burda extra dosyalar vardir ve arkasinda dolar($) isareti vardir.
+      bunlar gizlice paylastirilan belgeler anlamina gelir.
+      
+      sessions seceneginde ise:
+      o an hangi kullanicilarin o dosyaya bagli oldugu görünür.
+      
+      ###################################################################################################
+      
+ Izinlerin cakisma durumlari:
+      Bir kisinin birden fazla gruba dahil olmasiyla o gruplara verilin izinlerin farkliligi izin cakismasina sebep olur.
+      
+      Bu durumda en yüksek izin ne ise onu sahiplenir ve ona göre yetkilerini kullanir.
+      en yüksek yasak ne ise onu da sahiplenir.
+      
+ Eger bir kisi iki veya daha fazla grupta ise o kisinin izinlerini görme:
+      Palasilan klosor sag tikla-properties-security-advenced-effective Acces-select user-ismi gir-check name-
+      alti cizildi-ok- 
+      Include group membership secenegi-add items- hangi gruplardaysa o gruplari yaz- check names-ok-view effective Access
+      butun izinleri görmüs olduk
+      
