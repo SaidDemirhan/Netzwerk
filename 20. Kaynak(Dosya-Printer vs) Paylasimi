@@ -72,3 +72,34 @@ Domain kullanicisinin paylasilan kaynagi görebilmesi:
       Include group membership secenegi-add items- hangi gruplardaysa o gruplari yaz- check names-ok-view effective Access
       butun izinleri görmüs olduk
       
+############################################################################################################
+iki tür izin vardir:
+  Share Permission (Dosya)        #burda full ver
+    Full control
+    Chance
+    Read
+  NTFS Permission (Security)      #burda kisitla
+    Full Control
+    Modify
+    Read&execute
+    Write
+    Read
+    
+    En az izne sahip olan kazanacaktir.
+    #########################################################################################################
+    
+    Bir paylasimi gizli hale getirme:
+    
+    klosörü paylasima aciyoruz.
+    
+      Eger paylasim isminin sonuna $ isareti koyarsan gizli bir dosya paylasilmis olur. (sifreler$)
+    
+    Gizli haldeki dosyayi bulma:
+    
+    Dolar isareti gizli dosyalari ifade eder. 
+    windows tusu+R ile Run i acip 
+    \\192.168.0.200\dosyaAdi$  
+    yazmamiz yeterli
+    
+    
+    
