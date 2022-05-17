@@ -24,7 +24,9 @@ ilk paylasimi yapalim:
   
   #######################################################################################################
 Domain kullanicisinin paylasilan kaynagi görebilmesi:
+
   Windows tusu+R basarak run penceresi acilir.
+  
   Dosya sunucusunun IP adresi 2  ters slash la birlikte girilir
     \\192.168.0.200 -ok
   Karsimizda paylasilan klosörü görüyoruz.  
@@ -33,6 +35,23 @@ Domain kullanicisinin paylasilan kaynagi görebilmesi:
   
   yeni ayar/yetki lazim
   
+  //////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  bir kullnici bir network sürücüsünü olusturursa eger onu da hard disk (C) gibi kullanabilir.
+  
+  bu bilgisayar-ag sürücüsüne baglan-sürücü harfi(Z)farketmez- klasör- \\192.168.0.200 -gözat- 
+  sürücüyü actiginda ici görünmesi icin klasör sec- otorum acildiginda her zaman baglan a tik koy-ok
+  
+  Artik C vey D gibi bir network sürücümüz oldu.
+      kendimizce isim verebiliriz.
+  
+  
+  OLusturulan ag sürücüsünü iptal etmek icin:
+  
+  network sürücüsüne saga tikla -baglantiyi kes 
+  
+  Daha önceden paylatirilmamis hicbir kaynagi ag sürücüsü olarak kullanamazsiniz!!!
+    
   ####################################################################################################### 
   
   paylasilan dosyanin icerige erisebilmek icin;
