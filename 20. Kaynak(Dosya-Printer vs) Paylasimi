@@ -42,15 +42,21 @@ Domain kullanicisinin paylasilan kaynagi görebilmesi:
   bu bilgisayar-ag sürücüsüne baglan-sürücü harfi(Z)farketmez- klasör- \\192.168.0.200 -gözat- 
   sürücüyü actiginda ici görünmesi icin klasör sec- otorum acildiginda her zaman baglan a tik koy-ok
   
+    ya da Direkt bir dosyaya sag tikla- ag sürücüne baglan diyerek de olusturulabilir.
+  
   Artik C vey D gibi bir network sürücümüz oldu.
       kendimizce isim verebiliriz.
-  
+      hafiza siniri getirmek icin;
+          server manager- file and Storage manager-shares- paylasilan dosyamiz- saga tikla-Confogure Quata- sec- ok
   
   OLusturulan ag sürücüsünü iptal etmek icin:
   
   network sürücüsüne saga tikla -baglantiyi kes 
   
   Daha önceden paylatirilmamis hicbir kaynagi ag sürücüsü olarak kullanamazsiniz!!!
+  
+  
+  
     
   ####################################################################################################### 
   
