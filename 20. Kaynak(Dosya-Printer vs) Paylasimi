@@ -51,7 +51,16 @@ Domain kullanicisinin paylasilan kaynagi görebilmesi:
               eger istedigimiz hafiza seceneklerde yoksa;
               tools-file server Resource manager-quota management-quota templlates- 
               icerikte bos yere saga tikla- create Quota template-... ok
-  
+                hard veya soft kota olabilir
+                
+              Olusturulan quota icin notification atarsak belli bir doluma ulastiginda uyari mesjalari alabiliriz.
+              bu özellige threshold deniyor.
+              File server Resource Manager sag tikla-bilgileri doldur
+              Olusturdugumuz data server satirina tiklayarak  threshold alanini dolduruyoruz %85- 90 100
+              server-add- send to email-subjekt-msj body-ok
+              gidecek mesjadaki köseli parantez icindeki yazilara dokunma!
+              
+              
   OLusturulan ag sürücüsünü iptal etmek icin:
   
   network sürücüsüne saga tikla -baglantiyi kes 
