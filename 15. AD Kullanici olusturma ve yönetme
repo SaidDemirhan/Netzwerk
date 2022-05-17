@@ -41,3 +41,32 @@ Domain kullanicilarina bilgisayara giris yasagi koyma:
   Kisinin üzerine cift tikla-account-logon to.. butonuna bas-the following computers secenegini isaretle-
   girmesine izin verilecek bilgisayar adini yaz-add-ok
   
+Kullanicilarin domain sifrelerini sifirlama:
+  AD de kullaniciyi bul
+  AD ye gir-sag alana gec- saga tikla-find-ismi yaz -ara
+  ismin üzerini sag tika-reset password-ok 
+    Eger kullanici belli sayida(örn 5 kez) yanlis sifre girmisse hesabi kilitlenmis olabilir.
+    Kilidi kaldirmak icin alttaki kilit acma secenegini isaretleyiniz. 
+    
+Sifre sifirlamadan sadece hesabin kilidini acmak istersen:
+  kullaniciya sag tikla-account- Unlock Account secenegini isaretle-apply-ok
+  
+  Bilgi: Sifreyi ne zaman ve hangi hallerde kilitleyeceginin kuralini biz veriyoruz.
+  
+Domain kullanicilarinin oturum acma saatlerini belirleme
+  kullaniciya sag tikla-properties-account-logon haurs-izin ver/yasakla-sec -ok-ok
+
+Gecici calisanlar icin domain de hesap olusturma:
+  Kullaniciya sag tikla- properties- account- Account expires-end of: tarih gir -apply -ok
+  
+bir kullanici hesabini devre disi birakma:
+    Kullaniciya sag tikla- properties- account- Account options- account ist disable-apply-ok
+      Devre disi oldugunda kullanici simgesinin yaninda siya asagi yönlü bor ok isareti bulunur.
+      
+      
+      
+    
+    
+
+  
+  
