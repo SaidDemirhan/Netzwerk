@@ -48,6 +48,9 @@ Domain kullanicisinin paylasilan kaynagi görebilmesi:
       kendimizce isim verebiliriz.
       hafiza siniri getirmek icin;
           server manager- file and Storage manager-shares- paylasilan dosyamiz- saga tikla-Confogure Quata- sec- ok
+              eger istedigimiz hafiza seceneklerde yoksa;
+              tools-file server Resource manager-quota management-quota templlates- 
+              icerikte bos yere saga tikla- create Quota template-... ok
   
   OLusturulan ag sürücüsünü iptal etmek icin:
   
