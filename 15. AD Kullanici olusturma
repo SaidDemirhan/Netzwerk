@@ -35,3 +35,9 @@ belli bir düzene göre sifre girmelidir.
   bilgisayarin adi \Ayse
       eger bilgisayarin adi bilinmiyor ise;
       .\Ayse yazilarak hemen altta bilgisayarin adi yazacaktir.
+
+
+Domain kullanicilarina bilgisayara giris yasagi koyma:
+  Kisinin üzerine cift tikla-account-logon to.. butonuna bas-the following computers secenegini isaretle-
+  girmesine izin verilecek bilgisayar adini yaz-add-ok
+  
