@@ -56,6 +56,19 @@ artik kaynaklari bu acilan pencereden palastirabiliriz.
         kota atayabiliriz.
         istenmeyen dosyalarin girisi engellenebilir. video dosyalari gibi
         
+        Engellemek icin;
+        server manager-tools-file server resounce manager-file screening management
+        file grup ta hazir ayarlar mevcut. engellenecek türler hazir
+        File screen Templates engel icin hazir sablonlar mevcut
+        File screen: bos olan bölüm biz yasaklarimizi burada ayarlayacagiz.
+        iceride bos alanda saga tikla-create file screen-uygulanacak dosyayi sec-yasak türünü sec-create
+        
+        istenildiginde yasak ayni yerden degistirilebilir.
+        istersek kendi grubumuzu olusturup o sekilde yasak uygulayabiliriz. (*.MP3, *.MP4 gibi)
+        eger birisi yasagi asmaya kalkarsa uyari gönder secenegi isaretlenerek bildirilebilir.
+            tool-event viewer  kismindan bu kisiler tespit edilebilir.
+        
+        
     paylasimi kaldirmak icin saga tikla- stop Sharing
     
     
