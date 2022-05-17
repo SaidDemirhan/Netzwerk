@@ -1,0 +1,70 @@
+Servermanager -local server(domain i temsil eder)
+
+all servers da dosya sunucumuz da görülmeli ki üzerinde islem yapilabilsin.
+    tüm diger ilgili serverlari Domain Controller e baglamaliyiz ki hükmedebilelim.
+    
+Sunucuyu eklemek icin:
+  Server Manager- Dashboard-Add other severs to manage- sunucu ismi-find now-
+  sunsuyu sec- üzerinden tut sag tarafa at- ok 
+  
+Artik all servers secenegimizde görünüyor.
+  dosya sunucusunun üzerine saga tiklayarak neler yapabilecegimizi görebiliriz.
+    rol ekleme
+    restrart etme
+    vs.. 
+    
+    ##########################################################################
+    
+Dosya sunucusu olarak olusturdugumuz bilgisayara File Server rolu ekleme:
+    
+  Dosya sunucusu olarak adlandirdigimiz server i sec- add roles und features- role based installation- next
+  dosya sunucusu server listeye girdi - sec -next
+  roles- file and storage Services(1 of 12 installed)- kutucugu ac- file and ISCSI Services- kutucugu ac-
+  File Server- kutucugu sec-
+  File server Resource Manager- kutucugu sec -add features-next
+  next-install- colose 
+  
+  
+Dosya sunucusu olan bilgisayarimizda;
+server manager- File and Storage Services- refresh
+      3 yeni secenek geldi( Shares, iSCSI, Work Folders)
+      
+Shares tikla- smb share Quick-next- server- sürücü- icindeki dosyalar icin browse 
+dosyayi sec-ok-next-next
+izinlerde user larin izinlerini kaldirmaliyiz
+customize permission-users lari sec-disable inheritance- convert..- user lari yine sec - remove
+
+
+yetki vermek istedigimizi ekleyelim
+add select a prinsible- kisi veya grup adi- check names -ok 
+Modify yetkisi ver-
+type:allow
+applies to: This folde,subfolders und files
+next-next-create
+
+artik kaynaklari bu acilan pencereden palastirabiliriz.
+  ##############################################################################################
+  özetle;
+  eger paylasmak istersek;
+    Tasks-new share üzerinden paylasilabilir. 
+        (eskiden masaüstüne bir dosya olusturup oradan paylasirdik -ayni islev)
+        
+        paylasimlarimiza kusbakisi bakabiliyoruz
+        inheritance gibi özellikleri manuel halletmemiz gerekiyor.
+        
+        bu ekranda Paylasilan dosyanin üzerine saga tikla- Open Share deyip icerigi görebilirisin.
+        kota atayabiliriz.
+        istenmeyen dosyalarin girisi engellenebilir. video dosyalari gibi
+        
+    paylasimi kaldirmak icin saga tikla- stop Sharing
+    
+    
+##################################################################################################
+
+UYARI: Eger Network te bir dosyayi silerseniz direkt YOK OLUR. 
+        geri dönüsüm kutusuna gitmez!!!
+  
+  #################################################################################################
+  
+   
+  
