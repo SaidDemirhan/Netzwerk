@@ -1,0 +1,78 @@
+server manager- add roles und features-role based-next-print and dokument server-add features-next-print server tikli olsun
+    Distributed Scan server: taranan belgeleri tek bir yerde toplamak icin
+    Intranet Printig: sirket disindan da yazdirma olsun
+    LPD Service: linux gibi baska isletim sistemleri varsa
+next- install
+
+kurulum gerceklesti
+
+server manager- tools - Print Management-print servers-serverimiz-printers saga tikla- add printer 
+LPT portuna tik koy-next- install a new driver-netxt
+    Gercek yazici ise HAve a Disk diyerek diskinin yerini göster
+    
+    Eger network yazicisiysa;
+        add a TCP/IP  i seceriz
+        type of Decive: tcp/ip device
+        agdan bir IP verilir-next 
+          network yazicisi demek: RC45 portu olan yani swich e baglanabilen bir yazicidir.
+
+(Canon u ekledik biz)-next-printer a isim ver- share this printer tikli olsun-next finish
+
+--------------------------------------------------------
+bilgisayar lara yazisiyi tanitmaliyiz
+
+ilgili bilgisayara git- run a gir(windows tusu+R)- yazicinin bagli oldugu server la bir baglanti kur(\\192.168.0.100 veya server in ismi)
+
+paylasildigi icin karsimizda yaziciyi da gördük
+
+yaziciya saga tikla- baglan
+
+hayirli olsun
+
+###################################################################################################
+----------------------------------------
+tek tek bilgisayarlardan bu islem yapilmak istenmiyorsa;
+
+
+
+
+tools -group policy management-istedigimiz klosöre GPO atayalim
+
+
+tools -print management-deployed Printers- biraz önce olusturulan bos gpo yu buraya secelim browse ile-
+bilgisayarlara mi yoksa kullanicilara mi atamak istersin(kullanici)-apply-ok
+
+hayirli olsun
+
+#########################################################################################################
+guvenlik acigi
+
+bizim belirledigimiz alan disindan yaziciya erisim olmamali
+
+print management -printers-yazicimiz sag tikla-properties-security-
+everyone i sec-remove-sectigimiz kisi veya grubu ekle ve print icin allow ver-apply-ok
+
+
+-----------------------------------------------------------------------
+
+Siyah beyaz cikti almak icin;
+
+print management -printers-yazicimiz sag tikla-properties-general-preferences-paper/Quality-black&white-ok
+
+--------------------------------------------------------------------------
+
+yaziciyi Active Directory ye ekleme
+
+normalde AD de domainimizin üzerine sag tikla- find..-find:printer-find now
+
+print management -printers-yazicimiz sag tikla-properties-sharing-list in the directory tik isaretli olsun-apply -ok
+
+Ekledigimiz tüm yazicilari AD ye eklemeyi unutmayalim.
+
+---------------------------------------------------------------------------
+
+yazicini hangi saatler arasi erisilebilir olacagi ayari:
+
+  properties-advenced
+  
+  Ayni zamanda burada birkac kisiyi (müdür vs) öncelikli yapmak icin priority ayarlanabilir.
