@@ -1,0 +1,53 @@
+Otomatik olarak IP dagitan servisin ismidir
+
+Network ortaminda da IPn otomatik atanmasini saglayabiliriz
+
+Eger bir DHCP server olusturusak IP ayarlarini elle yapmaya gerek kalmiyor
+
+Server Manager-add roles and features-role based-next-DHCP Server-add features-next-(restart i isaretle)install-close
+
+ünleme tikla-complete dhcp configuration-next-close
+
+###############################################################################
+
+yapilandiralim:
+
+server manager-tools- dhcp-server adimizdaki oklari ac-ipv4 saga tikla-new scope..
+  Havuza isim ver(ankara 192.168.0.1-255) next-start ve end degerlerini gir- subnet mask gir-next
+  
+  haric olan IP adreslerini veya IP araliklarini gir-add-next
+        
+        NOT: IP adresleri DHCP tarafindan 8 günlük kiralik sürelerle cihazlara verilir.
+        
+  Dns ayari icin yes-next- Router (default Gateway) icin modem IP girilir(internete cikilacaksa)-next
+  Ana server imizin IP sini gir-ekle-next-aktive etmek icin yes-finish
+  
+      olusturulan SCOPE dosyasinda bir ünlem isareti varsa;
+        Scope un üzerine saga tikla-refresh
+        
+-------------------------------------------------------------------------------------------------
+
+Artik yeni kurdugumu bilgisayarlari hicbir IP ayari yapmadan Domain e dahil edebiliriz.
+
+Bilgisayarim-özellikler-bilgisayar adi etki alani ve.. - ayarlari degistir-degistir-
+üyelik-etki alani :domain adi( demirhan.com)
+
+------------------------------------------------------------------------------------------------- 
+
+Dominimize eklenip eklenmedigini görmek icin:
+
+server manager- tools- Active directory Sites and Services - computers
+
+bilgisayarin otomatik olarak eklendigini görüyoruz.(DHCP sayesinde)
+
+-------------------------------------------------------------------------------------------------
+
+Bazen bilgisayarlar DHCP den IP alamayabilir(APIPA) bu durumda cmd ye
+
+ipconfic /renew
+
+yazarak IP i yenileyelim
+
+  
+  
+  
