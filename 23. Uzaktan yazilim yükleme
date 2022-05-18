@@ -1,0 +1,24 @@
+Group Polici vasitasiyla domain deki bilgisayarlara yazilim yükleyebiliriz.
+
+Dosya uzantisi MSI olmali
+    Su ana kadar hep exe görmüstük.
+    
+örn firefox msi uzantili veriyi bul- paylas-
+
+istenilen dosya icin bir GPO olustur
+User configuration-Plicies- Software settings-software installation
+
+saga gelip bosta saga tikla-new -package- file name icin Network path i gir-open
+
+kurulum dosyasina tikla-
+  üc secenek cikti
+  Eger sadece bu kullanici oturumu actiginda program gecici olarak kurulsun istiyorsak
+  Assigned secenegini sec
+  
+  Publish kismini secersek;
+  baslat-Control panel-Program and Features-Install a programm from the network
+  üzerinden programi kuracaktik
+  
+  10-20 sn icinde kurulum dosyasi gelecektir.
+  kurulum dosyasina saga tikla-properties-deployment-install this application at logan a tik koy-
+  Installation user interface options:basis-ok
