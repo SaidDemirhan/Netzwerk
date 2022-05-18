@@ -2,3 +2,84 @@ yasaklar akla gelmeli
 
 baslat-server manager-tools-group policy mamagement
 domainimiz- demirhan.com
+
+sistem tarafindan iki adet policy miz var;
+  Default domain Controllers Policy
+  Default Domain policy
+  
+  Bunlarin altina bos alana saga tikla-new-isim gir-ok
+      Eger bir starter gpo muz varsa onu da mutlaka extra ayar yapmamak icin isaretleyelim
+  Bu olusturdugumuz yeni policy mizi bir dosyaya baglamaliyiz ki etki etsin
+  
+  Baglamak istedigimiz dosyaya saga tikla- Link an Existing GPO...-GPO yu sec-ok
+      *gpo: Group policy object
+      
+------------------------------------------------------------------------------------
+olusturmak icin ikinci yol
+  klosörün üzerine saga tikla- Create a GPO an this domain, and Link it Here... secenegine tikla-isim ver-ok
+  
+  #####################################################################################
+  yasak atamasi
+  
+  olusturulan GPO ya saga tikla-edit-
+      iki tür yasak var 
+          eger bilgisayarlara atanacaksa Computer configuration
+          kullanicilara atanacaksa User Configuration kisminda calis!
+            NOT: Eger bilgisayarlar sectigimiz klosörun icinde ise bilgisayarlara uygulanan yasak calisir
+                Aksi halde calismaz.
+                
+            ÖNEMLI: Hangi yasagin nerede oldugunu google dan yardim almak sart
+            
+            BILGI: atana bir Policy acik oturumda gecerli olmaz! bir sonraki oturum acilisindan itibaren aktif olur.
+                  Bilgisayara atanmissa bilgisayarin kapanip acilmasi gerekir
+                  Kullaniciya atanmissa kullanicinin cikip yeniden giris yapmasi gerekir.
+            
+            NOT: Eger GPO larin gecikmesini istemiyorsaniz cmd de gpupdate /force yazip enter a basin.
+            
+            Eger alt klosörlerde bir GPO nun uygulanmasi istenmiyorsa;
+              hedef  klosöre sag tikla- Block inheritance tikla
+                bir ünlem isareti dosaya sembolunde belirecektir.
+                
+                BILGI: Eger gpo nun üzerinde sag tik ile Enforced secilirse  kimse o yasagi cigneyemez/bloklayamaz!
+                      gpo da kilit isareti görünür.
+                      
+######################################################################################################
+GPO ÖNCELIKLERI
+  siralama en alttaki klosöre atanan GPO etkili olacak sekildedir
+  SADECE ENFORCED elimisse bu kural islemez.
+  
+  -------------------------------------------------------------------------------------------------------
+  yasaklari görmek icin GPO nun üzerine tiklamak yeterlidir.
+  
+  --------------------------------------------------------------------------------------------------------
+  belirli kullanici veya gruplari yasaklardan muaf yapma
+  
+    ilgili GPO ya tikla- Delegation-advanced-add- kullaniciyi ekle-ok-kullaniciya tikla-Apply group policy-Denny-apply-ok
+    
+    ---------------------------------------------------
+    
+    GPO yu devre disi birakma:
+    
+    ilgili GPO yu tikla-details-GPO Status-al settings disabled-ok
+    
+    ---------------------------------------------------------------- 
+    
+    Eger policy i klosörden kopartmak istersek
+        Klosörün altindaki GPO ya sag tikla ve Link Enabled yazisindaki tik i kaldir.
+        
+    Eger klosörün altindan GPO yu silersek sadece o dosyadan silinmis olur ve aslinda asil GPO listesinde durmaya devam eder.
+    
+    -------------------------------------------------
+    GPO raporu almak icin(ayrintisi nedir seklinde)
+      GPO ya saga tikla- save report-ok
+      
+###################################################################################################################
+
+starter gpo
+
+  sadece Administrative Templates yasaklari atanabilir ve Domain in tamamina uygulanir.
+        
+    --------------------------------------------------------------------    
+                
+                  
+  
