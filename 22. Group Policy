@@ -81,5 +81,9 @@ starter gpo
         
     --------------------------------------------------------------------    
                 
-                  
-  
+ Duvar kagidini degistirememesi icin de bir GPO olusturulabilir
+ ---------------------------------------------------------------
+ 
+ Sifrenin komlex olmamasi icin password policy üzerinden yapabiliriz. (hazir sistem GPO yu olusturmus)
+ 
+ ------------
