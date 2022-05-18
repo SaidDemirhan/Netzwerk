@@ -1,0 +1,14 @@
+Datalari server da tutmaya yarar
+
+Dosya sunucusunda tutulacak klosörü olusturuyoruz ve paylasima aciyoruz
+
+bilgilerini tutmak istedigimiz grubun klosöründe yeni bir gpo olusturuyoruz.
+
+GPO ya saga tikla-edit-User Configuration Policies-Windows settings- Folder redirection- 
+Hangi klosorü yönlendirmek istiyorsak onu sec (desktop)ve saga tikla-properties-setting:basic
+      basic i secersek her kullanici icin ayri klosör olusur
+      advenced ise kullanicilari ayri ayri klosörlere yerlestirir
+root path: Dosya sunucusunda olusturdugumuz klosörün network yolunu gir-
+
+settings- ilk secenek teki tik i kaldir(grant the user exculusive rights to desktop)-apply-ok
+    Amac administrator olarak bu dosyalara erisebilmek
