@@ -46,7 +46,9 @@ Bazen bilgisayarlar DHCP den IP alamayabilir(APIPA) bu durumda cmd ye
 
 ipconfic /renew
 
-yazarak IP i yenileyelim
+yazarak IP i yenileyelim 
+
+sorun giderilecektir..
 
   
   
