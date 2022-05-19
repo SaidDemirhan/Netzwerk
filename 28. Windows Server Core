@@ -1,0 +1,7 @@
+User Interface i olmayan bir serverdir.
+
+sconfig: Server yapilandirmasini acar ve mavi pencereli komut ekranina gecer.
+
+nbtstat -r : silinaen talep ve dogrulamalari gösterir.
+nbtstat -a : calismadi bende
+
