@@ -85,11 +85,12 @@ yani Networkler 32 ser olarak artarak devam eder.
       yukarida yazilan ip bu networke ait (156.23.19.145)
          bu agin ilk host adresi : 156.23.19.129
          bu agin son host adresi : 156.23.19.158
-         bu agin ilk broadcast adresi : 156.23.19.159
+         bu agin broadcast adresi : 156.23.19.159
    156.23.19.160: 6. network id
    ....
    156.23.19.224: sonuncu network id
-
+   
+BILGI: Her agin kendisine ait nework ID ve Broadcast adresi mevcuttur!!!!
 //////////////////////////////////////////////////////////////////////////
 
 Eger host adresi 143.32.16.122/22(CIDR) olsaydi:
@@ -114,6 +115,34 @@ Eger host adresi 143.32.16.122/22(CIDR) olsaydi:
    ....
    143.32.252.0 : son network id
    
+   //////////////////////////////////////////////////////////////////////////
+   
+   Host adresi: 156.23.19.145/26
+
+128 64 32 16 8 4 2 1
+
+11111.11111.11111.11000000
+
+255.255.255.192
+
+ Süper sayi :64
+ 156.23.19.0 :ilk ag
+ 156.23.19.64 : ikinci ag
+ 156.23.19.128 : ücüncü ag
+ 156.23.19.192 :dördüncü ag
+
+   Kac adet ALT AG cikar denirse (subnetwork) 
+         11111.11111.11111.   11000000
+         2 4 =4 adet cikar.
+         
+   Kac adet AG cikar denseydi (subnet) sinifina bakip karar verirdik, yani CIDR numarasinin sadece degisebilen kisimlarinin tamami alinip sayilmali idi.
+      (156.23.19.145) b sinifi bir adrestir. son iki oktetindek birlerin 2^ adedince ag cikabilir.
+         11111.11111.   11111.11000000
+            2 4 8 16 32 64 128 256 512 1024 adet subnet cikar.
+   Her agda da 64-2=62 adet Host vardir.
+   
+   NOT: Eger bu konuda alistirma yapmak istenirse:
+         www.subnettingquestions.com adresi ziyaret edilebilir.
    /////////////////////////////////////////////////////////////////////////////
 
 
