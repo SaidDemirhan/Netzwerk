@@ -135,7 +135,29 @@ NETWORK TE KULLANILAN CIHAZLAR
                     Bilgisayardan aldigi sinyali tetefon hatlarina aktaran bir cihazdir.
                               Analog, dijital ve ADSL modemler mevcuttur.
 #######################################################################################################################################         
-      
+NETWORK'TE KULLANILAN KABLOLAR
+
+UTP(Unschielded Twisted Pair)
+          Birlikte bükülmüs tel ciftlerinden olusan kablodur.
+          Bukmenin amaci veri kaybini engellemektir.
+          Kablo disinda extar bir koruma yok
+
+STP (Schilded Twisted Pair)
+          UTP kablosunun disinda koruyucu bir folyo veya örgüden olusan katmani vardir.
+          Bu katman elektomanyetik olarak zayiflamayi azaltir.
+          
+KOAKSIYEL
+          en icte Bakir tel, sonra yalitim maddesi, sonra örgülü (topraklanmis) dis iletken ve en dista koruyucu plastik kiliftan olusur.
+          
+FIBER OPTIK          
+          verileri bir noktadan digerine elektirik yerine isik sinyalleri kullanarak iletir
+          hizindan dolayi tercih edilir.
+          icten disa dogru:
+                    Fiber cekirdek, cam kaplama, Dis koruma, Kuvvetlendirici elemen, tampon dolgu
+##############################################################################################################################################                    
+
+
+
 Internete girebilmek icin; 
 Network karti + Mac adresi
 IP adresi
