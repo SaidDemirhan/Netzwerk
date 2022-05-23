@@ -1,0 +1,149 @@
+TCP(Transmission Control Protocol)[CONNECTION-ORIENTED], 
+  bir ağ üzerindeki iletişimin nasıl kurulduğu ve sürdürüldüğüyle alakalı olan standarttır ve veri aktarımını sağlamaktadır. 
+  TCP kendi içerisinde iletim kontrol mekanizması vardır. 
+  TCP de data bütünlüğü(data integrity) önemlidir. 
+  iki Bilgisayar arasındaki iletişim paketler halinde yapılır bu işlem saniseler içinde gerçekleşir. 
+  
+  Bir dosya gönderdiğinizde 5MBlık bir dosyayı örnek alalım. 
+  TCP protokolü ile gönderiliyorsa ve bu 5MBlık dosya içerisinden aktarım esnasında 1 paketin bozuk olduğunun ya da
+  iletilmediğinin anlaşıldığı durumda paketi tekrar gönderir.
+
+UDP(User Datagram Protocol)[CONNECTION-LESS], 
+  TCP standartına alternatif bir iletişim protokolüdür ve genellikle internet üzerindeki uygulamalar arasındaki bağlantıda
+  düşük gecikme ve az kayıp oranı için tercih edebilir. 
+  UDP protokol ile 2 Bilgisayarın iletişimde kontrol mekanizması yoktur. 
+  
+  1. Bilgisayar 2. Bilgasayara sürekli data gönderir fakat, 
+  paketin yolda kayboldu mu? paket hedefe ulaştı mı? gibi derdi tasası yoktur diyebiliriz.
+  
+  1.Bilgisayar 2. Bilgisayara sürekli paket gönderir. 
+  UDP protokolü genellikle anlık bağlantılar için yapılır. 
+  örnegin herhangi bir yerden video izlemeniz olarak varsayabilirsiniz. 
+  Ya da internetten canlı olarak dinlediğiniz bir radyo yayını kesilmeler olabilir 
+  bunun anlamı iletişimde bazı paketlerin kaybolmasından dolayıdır. 
+  
+  UDP de hız önemlidir, bu yüzden yayın ve anlık iletinin olduğu yerlerde UDP protokol tercih edilir. 
+
+!!!TCP ve UDP, OSI Model de Transport layerda çalışırlar. 
+İşleri datayı transfer etmektir gerçi protokole iş diyemeyiz. Protokol daha çok belli kurallara göre işlemin yapılmasıdır. 
+Networkle uğraştığımız her anda TCP ve UDP karşımıza çıkacaktır. 
+Network ortamındada bütün protokoller(SMTP,ICMP,FTP vs..) TCP veya UDP protokollerini baz alarak çalışırlar. 
+Protokollerin port numaralarını da bilmek protokolleri bilmek kadar önemlidir.
+
+NOT: Köşeli parantez içerisinde sırası ile OSI modelinde kaçıncı katmanda çalıştığı, 
+     Protocol tipini yani TCP ya da UDP olduğu 
+     Tire işaretinden sonra Port numaraları yazilidir. 
+     
+     Örnek olarak [Presentation Layer-UDP-161/162] → Presentation Layer da çalışıyor UDP 161 ve 162 portlarını kullanıyor
+
+1 → SNMP(Simple Network Management Protocol)[Application Layer-UDP-161/162] : 
+  SNMP kullanılarak ağda bulunan Yönlendirici (Router), Anahtarlayıcı (Switch), Erişim Sunucusu (Access Server), Köprü (Bridge) 
+  ve hatta bilgisayar gibi cihazların sıcaklık, cihaza bağlı kullanıcılar, İnternet bağlantı hızı, cihaz çalışma süresi gibi
+  temel bilgiler elde edilebilir.
+
+2 → NTP(Network Time Protocol)[Application Layer — UDP-123] : 
+  Ağ yapımızda Syslog sunucular varsa bu sunuculara gönderilen logların zaman bilgisi çok önemlidir. 
+  Bunun dışında Router, Switch gibi cihazlarda lokal olarak clock set komutu ile zaman bilgisini ayarlasak da 
+  bir zaman sunucusundan zaman bilgisi almak daha garanti bir yöntemdir. 
+  Zaman sunucular kaynak olarak atom saatlerini veya atom saatlerini içeren GPS’leri baz alırlar.
+
+3 → SIP (Session Initiation Protocol)[Application Layer-UDP-5060/5061] : 
+  iki ya da daha fazla katılımcı arasında bağlantı kuran, oturum başlatan ve gerçek zamanlı protokoller aracılığıyla 
+  veri taşınmasını sağlayan bir ağ protokolüdür. 
+  SIP, ağ üzerinden telefon görüşmeleri başta olmak üzere ses ve görüntü gibi çoklu ortam aktarımında oturum başlatmak için yaygın olarak kullanılır. 
+  
+  Veri aktarımı ise RTP (Real Time Protokol — Gerçek Zamanlı Protokol)aracılığıyla sağlanır. 
+  5060 Portu üzerinden dosyalar Cleartext olarak transfer edilir yani encryptsizdir. 
+  5061 Portu üzerinden ise TLS(Transport Layer Security) kullanarak transfer edilir paketler encryptlenir.
+
+4 → RTSP(Real Time Streaming Protocol)[Application Layer-UDP-554] : 
+  RTSP, internet üzerinden yayın yapan medya sunucularındaki video ve benzeri içeriklerin ( verilerin ) oynatılması sırasındaki
+  bir takım temel eylemlerin uzaktan sunucuya gönderilmesini sağlar ( durdurmak ve oynatmak gibi). 
+  Bu sayede medya sunucusu üzerindeki bir medyaya uzaktan durdurmak veya oynatmak gibi birtakım temel eylemleri bu protokol ile yapabiliriz. 
+  Tabiki bunun için uygun bir player ( oynatıcı ) bulmamız gerekmektedir. 
+  Yani bu protokolü destekleyen oynatıcılar ile rahatlıkla bu özellikleri kullanabilirsiz ( örneğin media player, realplayer gibi ).
+
+  Ancak burada dikkat edilmesi gereken nokta bu protokol ile medya sunucuları üzerindeki verilerin gerçek zamanlı bir yönetimi yaparız, 
+  oysa bu medyaların kendi bilgisayarımıza aktarılması için ayrı bir protokol kullanılır ( Real-time Transport Protocol ).
+
+5 →FTP(File Transfer Protocol)[Application Layer-TCP-20/21] : 
+  Dosya transfer protokolüdür. Bir bilgisayardan diğer bir bilgisayara dosya, klasör, döküman, resim vs.. taşıma işlerinin yapıldığı protokoldür. 
+  Kullanıcı adı ve şifre gerektirir, FTP de sadece Authentication yapılır. 
+  İstemci ve sunucu arasındaki giden paketler şifrelenmez.
+
+6 →TFTP(Trivia Transfer Protocol)[Application Layer-TCP-69] : 
+  FTP ile aynı işlevi görür fakat Encyription (şifreleme) ve Authentication (yetkilendirme) mekanizmalarının olmayışı 
+  TFTP’nin güvenilirliğini azaltmaktadır. FTPye göre TFTP belleğe daha az yük bindirir.
+
+7 →SFTP(Secure File Transfer Protocol)[Application Layer-TCP-22] : 
+  SSH dosya transferi protokolünü kullanarak ya da FTP üzerinden SSL/TLS ile güvenli şekilde 
+  dosya transferi gerçekleştirmeye yardımcı olan güvenli FTP sunucusudur.
+
+8 →LDAP(Lighweight Directory Access Protocol)[Application Layer-TCP/UDP-389] : 
+  Elektronik ortamda belirli türden nesneleri içerisinde bulunduran ve bu nesneler arasında arama yapma imkanı veren yapıdır. 
+  Dizinlere örnek olarak; tutulan kişi listeleri, telefon rehberi, bir ağa dahil olan bilgisayarların listeleri ve
+  bir şirkette çalışan personele dair tutulan kayıtlar verilebilir. 
+  Dizinlerin genel özellikleri incelendiğinde ise, yapısal depolama yaptıkları, bu depolamanın genellikle dağınık olduğu, 
+  içerdiği nesnelerin genellikle birbirlerinden bağımsız oldukları ve hiyerarşik bir düzende sıralandıkları görülecektir.
+
+9 →RDP(Remote Desktop Protocol)[Application Layer-TCP/UDP-3389] : 
+  Bu protokol windows tarafından kullanılır Uzak Masaüstü Bağlantısı sağlar. 
+  Grafik arayüzü kullanılır.
+
+10 →Telnet [Application Layer-TCP-23] : 
+  Telnet ile yapılan bağlantılar güvenli değildir. 
+  Aradaki iletişim şifrelenmez. 
+  RDPnin Terminal versiyonudur.
+
+11 →SMTP(Single Mail Transfer Protocol)[Application Layer-TCP-25] : 
+  SMTP mail serverlar arası kullanılan bir protokoldür. 
+  Mail serverlar aralarında server/client mantığında çalışırlar. 
+  SMTP istemci ile server arasında da kullanılır. 
+  Bunlara ek olarak, mail gönderimi dışında, DCler arasındaki çoğaltma işlemi gibi yerlerde de kullanılır.
+
+12 →IMAP4(Internet Message Access Protocol)[Application Layer-TCP-143] : 
+  IMAP4 client tarafı mail protokolüdür. 
+  Bu protokolde okunan e-mailler kaynaktaki dosyanın bir kopyası bilgisayarınıza aktarılır. 
+  Örnek olarak bilgisayarınızda Outlook yüklü ve bir e-mail aldınız. 
+  Bu maili açtığınız anda emailin bir kopyası bilgisayarınıza saklanacaktır. 
+  Sanal olarak mesajınızı okuyabilirsiniz. Mesajin orjinali server üzerinde saklanır.
+
+13 →POP3(Post Office Protocol)[Application Layer-TCP-110] : 
+  POP3 client tarafı mail protokolüdür. 
+  Burada gerçekleşen işlem IMAP4 e göre biraz farklıdır. 
+  Alınan email mevcut bilgisayarınıza kopyalanır.
+
+    !! NOT !! → SMTP, IMAP4 ve POP3 bağlantılarında TLS/SSL(TransportLayerSecurity/SocketSecurityLayer) kullanılırsa 
+    bu servislerin kullanacağı portlarda değişecektir. Bu önemli bir bilgidir. 
+    Default e-mail servis portlarında data paketleri şifrelenmeden iletişimin diğer ucundan diğer ucuna aktarılır. 
+    TLS/SSL uygulanan e-mail servis portları aşağıdaki gibi olacaktır. Bu tarz bilgilerin bilinmesinde fayda vardır.
+
+       SMTP[TLS/SSL]   → 465
+       IMAP4[TLS/SSL]  → 993
+       POP3[TLS/SSL]   → 995
+
+14 → DNS(Domain Name System)[Application Layer-TCP/UDP-53] : 
+  IP üzerinden haberleşen bilgisayarlara insanların okuyabileceği değerden isimler vererek iletişim daha kolay anlaşılmasına yardımcı olmaktadır. 
+  Buna basit bir örnek olarak Kimlik Numaralarımız ve İsimlerimiz. Her kimlik numarasının bir isime göre bir değeri vardır. 
+  Devlet dairelerinde Kimlik Numaramızı kullanırız ve bu bize özeldir. 
+  Fakat ismimiz bize özel olmayabilir yani bir başka kişide aynı isme sahip olabilir.
+
+15 → DHCP(Dynamic Host Configuration Protocol)[Application Layer-UDP-67/68] : 
+  DHCP mevcut ağımızdaki bilgisayarlara ve cihazlara iletişim için birer IP sağlar veya atar da diyebiliriz. 
+  Bunu normalde manuel olarak da girebiliriz fakat işimizin daha kontrollü ve merkezi olması açısından DHCPnin faydası çok fazladır. 
+  Örnek olarak ağınıza bir makine tahsis ettiğinizi baz alalım. 
+  Bilgisayarınız fiziksel olarak ağa bağlıdır fakat mantıksal(Logical) olarak değildir. 
+  Burada devreye iletişim için TCP/IP devreye giriyor. Ağa yeni katılan bilgisayar bulunduğu ağdaki DHCP Servisini arayisa başlar(broadcast üzerinden). 
+  DHCP Server buna cevap olarak bilgisayara teklifte bulunur. 
+  Daha sonrasında bilgisayar, DHCP Serverdan IP isteğinde bulunur. 
+  DHCP bu isteği kabul ederek mevcut havuzundaki IPden bir IP ayırarak Client bilgisayara iletir. 
+  Bu iletişim içerisinde sadece Bilgayar için IP adresi yoktur. IP Adressi, Gateway(GW) ve DNS için bütün IPlerini gönderir.
+
+16 → HTTP(HyperText Transfer Protocol)[Application Level — TCP — 80] : 
+  İnternet sitelerinin bu protocol üzerinden çalışır. 
+  Örnek olarak www.akbank.com a bir istek gönderdiniz ve daha sonrasında siteden gelen cevap ile sitenin içeriğini görüntülüyorsunuz. 
+  !!! Bu esnadaki bütün iletişim şifrelenmemiştir diyebiliriz.
+
+17 → HTTPS(HyperText Transfer Protocol Secure)[Application — TCP — 443] : 
+  HTTP ile aynı özelliği taşır fakat bu yapıda kendi içerisinde TSL/SSL barındırdığı için 2 taraf arasındaki iletişim güvenlidir.
+
