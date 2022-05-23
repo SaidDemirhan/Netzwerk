@@ -1,6 +1,6 @@
 Mac adresi degismez (tc no gibi)
 6 bloktan olusur
-ilk 3 oktet firmayi son 3 oktet cihazi temsil eder
+ilk 3 oktet firmayi son 3 oktet cihazi temsil eder.
 ------------------------------------------------------
 ARP 
 Adres cözümleme protokoludur.
@@ -32,7 +32,110 @@ NOT: Sadece ayni class taki bilgisayarlar birbiriyle iletisim kurabilir.
 privat ip i public ip ceviren sisteme NAT (network adress translation) denir.
 
 NOT: Hicbir IP adresinin sonu 0 veya 255 ile bitemez.
+-----------------------------------------------------------------------------------
+HAN (Home Area Netwok)
+          evde kurulan ag sistemidir.
+LAN (Local Area Network)
+          Kisa mesafelerde kurulan agdir
+          VLAN: sanal olarak yerel aglara bölünme varsa.
+                    koaly yapilandirma, hata tespiti, güncelleme vs
+          WLAN: Koblolar yerine Wireless üzerinden olusturulur.
+SAN (Storage Area Network)
+          Depolama cihazlari arasinda kurulan agdir
+CAN (Campus Area Network)
+          Egeitim kurumlarinin kullandigi CAT 5-6 kablolariyla kurulan sistemdir.
+MAN (Metropolitan Area Network)          
+          Birden fazla Lan aginin dar cevrede birleserek olusturdugu agdir.
+WAN (Wide Area Network)          
+          Birden fazla Lan aginin genis cevrede birleserek olusturdugu agdir.   (Internet)    
+VPN (Virtual Private Network)
+          Sanal bir IP adresiyle (fiziksel IP adresi yerine)
+GAN (Global Area Network)
+          Devasa alandaki Lan aglarinin bir araya gelmesiyle olusur.
+          Uyduyla veya kablosuz sekilde baglanti saglanir.
+-----------------------------------------------------------------------------------    
+NETWORK TOPOLOJISI:
+     FIZIKSEL:
+          BUS
+                    tek hat var tüm cihazlar ayni hatta bagli
+                    kurmasi ve cihaz baglamasi kolay
+                    kablo tasarrufu
+                    Ana hatta problem varsa baglanti coker
+                    cakisma olabilir.
+          RING
+                    bir halka icinde her cihaz hatta bagli
+                    cakisma olabilir
+                    herhangi bir cihaz baglantisinda sorun varsa baglanti kesilir
+          STAR
+                    bir switch veya hub a bagli olan topolojidir.
+                    kurulum kolaydir bir bilgisayarin bozulmasi baglantiyi engellemez
+                    
+                    Bir switch in diger switchlerle baglanti haliyle de olusturulabilir
+          MESH
+                    Karmasik topolaji de denir
+                    Tüm bilgisayarlar birbirine bagli
+                    güvenli kurulum masrafli
+                    bir hattaki kopukluk baglantiyi engellemez.
+          TREE
+                    genellikle yildiz topolojisindeki aglari birbirine baglamak icin kullanilir. 
+                    bir yapida yasanan sorun diger yapilari etkilemez. 
+                    kablolama coktur.
+     MANTIKSAL:
+          BROADCAST
+                    Sinyal tüm istasyonlara ayni anda iletilir
+          TOKEN PASSING
+                    Token denilen bir sinyal var ve hedefi bulursa ring seklinde geri dönüyor
+                    
+##########################################################################################################################
+NETWORK TE KULLANILAN CIHAZLAR
 
+          HUB
+                    LAN i baglayan en basit cihazdir. 
+                    Tüm cihazlara broadcast i iletir. akilsizdir.
+                    OSI1 de calisir (fiziksel katman)
+          SWITCH
+                    Hub in gelismis halidir ve akillidir. 
+                    gelen broadcast i hedef cihaza iletir.
+                    OSI2" de calisir. (Data link)
+                    paketleri mac adreslerine göre yönlendirdigi icin carpismalari önler.
+          REPEATER
+                    Bozulmus sinyalleri onarir
+                    Sinyali güclendirir.
+                    akilsizdir
+                    OSI! de calisir
+          BRIDGE
+                    Hub lari birbirine baglar. 
+                    Alt aglara bolmek icin kullanilir
+                    STP (cakisma engelleme) bu cihaz ile kullanilan bir protokoldur.
+         ROUTER           
+                    En gelismis cihaz
+                    bütün ag ve ag bölümlerini birbirine baglar.
+                    OSI3 katmanindadir
+                    Internete acilan bir kapidir
+                    Switchleri vs kendisine baglar
+                    
+                    Switch ile Router arasaindaki fark      
+                              Switch; Kavsaktaki araclarin hangisisnin gececcegini belirliyor
+                              Router  ise hangi aracin hangi yöne gidecegini belirtiyor
+         FIREWALL
+                    Özel aglar il einternet arasinda her iki yönde istenmeyen trafigi engeller.
+                    Ag güvenligini saglar
+                    OSI3 ve 7 de calisabilir.
+         ACCESS POINT
+                    Internete erisebilen tüm cihazlari internete baglayan cihaz
+                    Kablolu baglantiyi wifi ye ceviren bir cihaz
+                    Ayni zamanda repeater olarak da islev görür.
+         NETWORK INTERFACE CARD
+                    Bilgisayarin bir aga baglanmasini saglayan donanimdir
+                    OSI1 ve 2 de calisir
+                    MAC ile ortaklasa calisir.
+                    Anakartta veya ayrica bir donanim olabilir.
+         MODEM
+                    Internete veya aga baglanmamizi saglar
+                    Bilgisayardan aldigi sinyali tetefon hatlarina aktaran bir cihazdir.
+                              Analog, dijital ve ADSL modemler mevcuttur.
+#######################################################################################################################################         
+      
 Internete girebilmek icin; 
 Network karti + Mac adresi
 IP adresi
