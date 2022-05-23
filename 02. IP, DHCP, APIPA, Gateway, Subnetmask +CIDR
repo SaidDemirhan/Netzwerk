@@ -45,9 +45,52 @@ DHCP: bir ic agdaki cihazlara IP dagitan modemdeki sistemdir.
 
 Default GATEWAY: modemdeki ic ayak olan cihazlarin internete cikabilmeleri icin modemin IP adresidir.
 
+
+      
+##################################################################################################
+      
+
 Bir bilgisayayara IP adresi manuel olarak vereceksek;
       alt ag maskesini (SUBNETMASK) vermek zorundayiz.
       SUBNETMASK: bir bilgisayar kendisine verilen IP nin NETWORK ID sini belirleyebilmek icin SUBNETMASK a ihtiyac duyar.
       
+Standart Subnetmask 255.255.255.0 seklindedir.
+eger 0 yerine baska bir sayi yazili ise bu subnetmask ALT AGLARA BÖLÜNMÜS anlamina gelir.
+
+Bu durumda SIHIRLI SAYI yi bulmaliyiz.
+
+örn.
+Host adresi: 156.23.19.145/27
+   host adresiniin sonundaki sayiya CIDR degeri diyoruuz
+   CIDR degeri subnet mask tasi 1 lerin soldan saga dogru saayisidir.
+
+128 64 32 16 8 4 2 1
+
+11111.11111.11111.11100000
+
+255.255.255.224
+
+SIHIRLI SAYI: son bir rakaminin Karsilik geldigi sayidir. yani :32
+
+yani Networkler 32 ser olarak artarak devam eder.
+
+   156.23.19.0 : ilk network id
+   156.23.19.1 : kullanilabilir ilk host (ilk networke ait olan)
+   156.23.19.31 : broadcast adresi (ilk networke ait olan)
+         32-2 =30 adet kullanilabilir host adresi mevcut
+   156.23.19.32 :ikinci network id
+   156.23.19.64 :ücüncü network id
+   156.23.19.96 :dördüncü network id
+   156.23.19.128:besinci network id
+      yukarida yazilan ip bu networke ait (156.23.19.145)
+         bu agin ilk host adresi : 156.23.19.129
+         bu agin son host adresi : 156.23.19.158
+         bu agin ilk broadcast adresi : 156.23.19.159
+   156.23.19.160: 6. network id
+   ....
+   156.23.19.224: sonuncu network id
+
+
+
 
 
