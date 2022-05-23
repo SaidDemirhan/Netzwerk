@@ -1,3 +1,189 @@
+1- BAĞLANTI KATMANI PROTOKOLLERİ (ARP)
+
+  Bu katmanda karşımıza bir tane protokol çıkar. 
+  Bu protokol ARP (Address Resolution Protocol) olarak isimlendirilir. 
+  Temel anlamda ARP protokolü IP adresini bildiğimiz bir cihaz için bize MAC adresini vermek üzere çalışır. 
+  Bağlantı katmanında cihazların birbirleriyle iletişim kurması açısından IP-MAC çözümlemesi oldukça büyük önem taşır.
+
+  TCP/IP modelinde 1.katmanda yer alan bu protokol, OSI katmanında 2 ve 3 arasında bir değerde çalışır. 
+  ARP protokolünü çalıştıran cihazlardan biri de Switch’tir.
+
+                                                    
+
+2- İNTERNET KATMANI PROTOKOLLERİ (IPv4-IPv6-ICMP)
+
+  -IPv4
+
+    Birincil internet protokolü olarak kullandığımız bir internet katmanı protokolüdür. 
+    32 bitlik adresler içerir. Görmeye alışık olduğumuz 192.168.3.1 yapısı bu protokolde kullanılan bir gösterimdir. 
+    Noktalı decimal bir gösterimi vardır.
+
+    IP protokolleri etiketlendikleri adreslerle noktadan noktaya bilgi taşırlar. 
+    İnternet katmanındaki harekete bakılacak olursa bu bilgi taşıma işi sürekli devam eder. 
+    Bu katmanda çalışan cihaz olarak Router’ı söyleyebiliriz.
+
+  -IPv6
+
+    Büyüyen internet dünyasını göz önüne alarak IPv4 adreslerin tükenebileceği durumuna karşılık oluşturulmuş ikincil bir internet protokolüdür. 
+    128 bitlik adres uzayı kullanılır ve uzun gösterimlerinden dolayı hexadecimal gösterim tercih edilir. 
+    Ayrıca belirli kurallar çerçevesinde kısaltmalara da izin verilmiştir.
+
+  -ICMP (Internet Control Message Protocol)
+
+    İnternet katmanında çalışır ancak diğer protokollere göre adres durumuyla ilgilenmez. 
+    Adından da anlaşılacağı üzere yönetim mesajlarının gönderilmesinden sorumlu olarak çalışır. 
+    Bir echo göndererek cihazın yanıt verip vermediğini, almaya hazır olup olmadığını kontrol eder. 
+    IP cihazının doğruluğunu da kontrol etmiş olur.
+
+    Ancak biz bu protokolü daha çok PING olarak duyarız. Yani Ping atarken çalışan protokol ICMP protokolüdür.
+
+ 
+
+3- İLETİŞİM/TAŞIMA KATMANI PROTOKOLLERİ (TCP-UDP)
+
+  -TCP (Transmission Control Protocol)
+
+    Birkaç paragraf yukarıda IP adresinin sürekli bilgiler taşıdığını söylemiştik. 
+    İnternet dünyasının kurallarla düzenlenen yapısında bu taşıma ve ulaştırma işlemi de elbette belirli protokollere bağlı şekilde gerçekleşir. 
+    Bu protokollerden ilki de TCP protokolüdür.
+
+    Temel olarak bağlantının kurulması için yolun sağlanmasını içeren bir göreve sahiptir. 
+    TCP protokolü ayrıca kontrollü bir protokoldür. Yani taşıdığı bilginin tam olmasına dikkat eder. 
+    Bununla birlikte karşı istasyonla bağlantı kurar ve bilgiyi ileteceği tarafın hazır olmasını bekler. 
+    Uzun ama doğru bir şekilde gerçekleşen bir taşıma sürecinin oluşturulmasında görevlidir.
+
+    Eğer bilgi istenilen şekilde ve istenilen durumda aktarılmazsa yeniden bilgiyi iletmeyi dener. 
+    Tüm süreci kontrol altında tutar.
+
+  -UDP (User Datagram Protocol)
+
+    UDP protokolünün görevide aynı şekilde hedeflenen bilgiyi iletmektir. 
+    Ancak TCP kurallarından çok daha farklı bir şekilde çalışır ve hedef kaynakla herhangi bir iletişim kurmaz, 
+    aktarımı takip etmez, ilettiği bilginin bütünlüğüyle ilgilenmez. 
+    Sadece bir kez aktarım yapmakla ilgilenir ve geri kalan detaylarla ilgili herhangi bir kontrol yapmaz.
+
+    Her ne kadar bu şekilde söylendiğinde güvensiz bir protokol olduğu düşünülse de, 
+    iletilen bilgilerin gerekliliğine göre UDP’nin hızına ve işlevlerine ihtiyaç duyduğumuz bölümler vardır. 
+    Bu nedenle tercih edilen protokollerden birisidir.
+
+4- UYGULAMA KATMANI PROTOKOLLERİ
+
+  Bu kısımda, TCP/IP modelindeki son katman olan ve OSI modelinde de Uygulama-Sunum-Oturum katmanlarını karşılayan
+  katman yapısına ait olan protokollerden bahsedeceğiz. 
+  Uygulama katmanı pek çok görevi bünyesinde bulundurduğu için 6 ayrı kısımda incelenmektedir.
+
+ 
+
+4.1 Yönetim Protokolleri (BOOTP-DNS-SNMP-NTP)
+
+  BOOTP
+
+    Bilgisayarımızın internete çıkmak için ihtiyacı olan IP adresini alma sürecini otomatikleştiren bir protokoldür. 
+    Güncel olarak bu görev için kullandığımız DHCP protokolünün eski bir sürümü olarak düşünülebilir. 
+    Server’dan internete çıkmamızı sağlayacak bir IP adresi ister bunu kullanabilmemizi sağlar.
+
+  DNS (Domain Name Services)
+
+    Domain adreslerimizi IP adreslerine çevirerek doğru adreslerle iletişim kurmamızı sağlar. 
+    Yani DNS Server’a asıl adresimizi sorar. 
+    Çünkü internet üzerinde işlemler IP adresi ile yapılmaktadır.
+
+    IPv4 adreslerinde 192.168.3.1 şeklindeki adresleri akılda tutmak kolay olsa da 
+    IPv6 adreslerde ilgili adresler çok uzun ve karmaşık olduğu için DNS protokolüne 
+    ilerleyen zamanlarda çok daha ihtiyaç duyabilecek olmamız kaçınılmaz bir gerçektir.
+
+  SNMP (v1, v2, v3)
+
+    Basit bir şekilde ağı yöneterek ağ cihazlarından istatistiki bilgiler almak için kullandığımız protokoldür. 
+    Oldukça çeşitli bilgiler talep edebiliriz. 
+    Son versiyonu olan v3 ile iletişim iyileştirilmiş ve şifreli bir halde kullanılmaya başlanılmıştır.
+
+  NTP (Network Time Protocol)
+
+    Saatleri senkronize eden bir protokoldür. 
+    Çoğu işletim sistemi bu protokolü destekler ve kullanır. 
+    Üzerinde RTC bulunmayan gömülü sistemler saatleri NTP kullanarak güncellerler.
+
+ 
+
+4.2 Uzaktan Erişim Protokolleri (Telnet-SSH)
+
+  Telnet (Telecommunication Network)
+
+    Uzak cihazlarda login olmamızı sağlayan bir protokoldür. 
+    Şifresiz bir iletişim metodu olduğu için özel bilgilerin ve önemli aygıtların söz konusu olduğu durumlarda kullanılması tavsiye edilmez.
+
+  SSH (Secure Shell)
+
+    Arayüzü ve görüntüsü tamamen Telnet protokolü ile aynı olsa da burada bilgiler uygulama katmanında şifrelenmektedir. 
+    Telnet’in güvenli bir versiyonu olduğu söylenebilir.
+
+4.3 Dosya Transfer Protokolleri (FTP-TFTP)
+
+  FTP (File Transfer Protocol)
+
+    Adından da anlaşılacağı gibi dosyaların transfer edilmesinde çalışan bir protokoldür. 
+    Kullanıcı adı ve şifre ile güvenlik sağlanır. 
+    List, add, rename ve delete gibi birçok özelliği yerine getirmemizi sağlar.
+
+  TFTP (Trivial File Transfer Protocol)
+
+    FTP çok daha genel ve fazla özelliğe sahip olduğu için daha az özellik gerektiği durumlarda kullanılabilmesi için 
+    oluşturulmuş bir diğer protokoldür. 
+    Sadece okuma ve yazma işlemlerini yapabilir. 
+    Herhangi bir kimlik doğrulaması gerekmez.
+
+4.4 Elektronik Posta Protokolleri (SMTP-POP3-IMAP4)
+
+  SMTP (Simple Mail Transfer Protocol)
+
+    Elektronik posta göndermek için kullanılan bir protokoldür.
+
+  POP3
+
+    Mail alma durumunda çalışan protokoldür. 
+    Maili makinemize indirerek offline bir şekilde okuyabilmemizi de sağlar.
+
+  IMAP4 (Internet Message Access Protocol)
+
+    POP3 günümüzde daha popüler bir protokol olsa da IMAP’te onunla aynı görevi yerine getirir ve tercih edilebilir. 
+    POP3’ten farklı olarak bu protokol mailleri hem indirebilir hem de sunucuda bırakabilir. 
+    Okuma, yanıt verme, silme gibi işlemleri de yerine getirebilir. 
+    Hangisini kullanmak istersek onu tercih edebiliriz.
+
+ 
+
+4.5 Tarayıcı Protokolleri (HTTP-HTTPS)
+
+  HTTP
+
+    Web sayfalarının internet tarayıcısında görülmesini sağlar. 
+    Bu konu hakkında detaylı yazımızı sayfamızdan okuyabilirsiniz.
+
+  HTTPS
+
+    HTTP protokolüne ek olarak ilave bir şifreleme sağlar. 
+    Şifreleme TLS/SSL seviyesinde bir şifrelemedir. 
+    Daha güvenli alan gerektiren internet sitelerinde HTTPS tercih edilir.
+
+ 
+
+4.6 VOIP Protokolleri (SIP-RTP)
+
+  SIP (Session Initiation Protocol)
+
+    Sinyal verme protokolü olarak bilinir. 
+    Sinyal sesi, numaralara basılması gibi işlemlerde çalışan protokoldür.
+
+ RTP (Real Time Transport Protocol)
+
+    Konuşma başladıktan sonra ses paketlerinin iletilmesini sağlayan protokoldür. 
+    Media Stream taşır ve bir UDP protokolüdür.
+
+####################################################################################################################
+Diger bir acidan Protokoller.....
+####################################################################################################################
+
 TCP(Transmission Control Protocol)[CONNECTION-ORIENTED], 
   bir ağ üzerindeki iletişimin nasıl kurulduğu ve sürdürüldüğüyle alakalı olan standarttır ve veri aktarımını sağlamaktadır. 
   TCP kendi içerisinde iletim kontrol mekanizması vardır. 
