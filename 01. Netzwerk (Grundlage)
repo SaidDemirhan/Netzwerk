@@ -1,6 +1,11 @@
 Mac adresi degismez (tc no gibi)
 6 bloktan olusur
-
+ilk 3 oktet firmayi son 3 oktet cihazi temsil eder
+------------------------------------------------------
+ARP 
+Adres cözümleme protokoludur.
+MAC ile IP adresini eslestirir. ip bilinen cihazin mac ini bulur
+--------------------------------------------------------
 Ip adresi degisir(modemi ac kapa degissin)
 cmd ye ipconfig yazarak ip adresimizi görebiliriz. (ipconfig /all ayrintili olan kod)
 internette bagalanirken yani dis dünyaya görünen(public) Ip adresimiz ile kendi agimizdaki ip adresimiz farklidir.
