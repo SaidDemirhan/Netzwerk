@@ -19,9 +19,13 @@ Bu 7 katmanın oluşması ve standartlaşmasında bazı kurallar takip edilmişt
   Veri henüz bit durumundadır. 
   
   Fiziksel Katmanın İletişim Kuralları; DSL, ISDN, RS-232,802.11a/b/g/n
+                                        Blootoot, WI-Fi, Hub Repeater,FDDI
 
 2.Data Link Layer(Veri Bağlantı Katmanı) : 
   Bilginin fiziksel bağlantı üzerinden güvenle aktarılmasını sağlamak için eş zamanlama, hata ve akış denetimlerini sağlar. 
+  Fiziksel katmana ulasabilmek icin kurallari belirler.
+  Veriler belli parcalara(Frame) bölünerek fiziksel katmana gönderilir.
+  
   Data Link katmanı iki alt bölüme ayrılır:
 
     MAC (Media Access Control); 
@@ -35,10 +39,12 @@ Bu 7 katmanın oluşması ve standartlaşmasında bazı kurallar takip edilmişt
       Akış kontrolünü sağlar. 
       
     Veri Bağlantısı Katmanın İletişim Kuralları; Ethernet, Token Ring, FDDI, PPP, ATM, HDCL
+                                                 MAC, CSMA/CA, CSMA/CD, SWITCH, BRIDGE 
     
 3.Network Layer (Ağ Katmanı) : 
   Paketlerin ağ üzerinde yönlendirilmesini ve ulaşmasını sağlar. 
   Alt ağlar arasındaki bağlantıya dair işlemler bu adımda gerçekleşir. 
+  Veriler paketleri ayrilir.
 
   Ağ Katmanın İletişim Kuralları; IP, ICMP, IPsec, ARP, RIP, BGP, IPX
   
@@ -46,6 +52,7 @@ Bu 7 katmanın oluşması ve standartlaşmasında bazı kurallar takip edilmişt
   Bir üst katmanı olan Oturum katmanından aldığı veriyi küçük birimlere bölerek ağ katmanına iletmekten sorumludur. 
   Uçtan uca bağlantının kurulmasını sağlar. 
   Verinin akışında büyük öneme sahiptir. 
+  Veriler segmentlere ayrilir
 
   Taşıma Katmanın İletişim Kuralları; DCCP, SCTP, SPX,TCP, UDP
 
@@ -58,25 +65,29 @@ Bu 7 katmanın oluşması ve standartlaşmasında bazı kurallar takip edilmişt
 6.Presentation Layer (Sunum Katmanı) : 
   Verimizi sunuma hazırlar. 
   Yani uygulamaya ulaşmadan önce verinin geçmesi gereken veri sıkıştırma, kod çözümü, şifreleme gibi işlemleri gerçekleştirir. 
+  Hangi uzanti ile gelecegi belirlenir.
 
-  Sunum Katmanın İletişim Kuralları; ASCII, MIDI, EBCDIC, MPEG
+  Sunum Katmanın İletişim Kuralları; ASCII, MIDI, EBCDIC, MPEG, GIF
 
 7.Application Layer (Uygulama Katmanı) : 
   Bizim deneyimlediğimiz katmandır. 
   Kullanıcıların elektronik posta gibi programlar aracılığı ile OSI sistemine girdikleri noktadır. 
+  Uygulamalarin ag üzerinde calismasi saglanir.
 
-  Uygulama Katmanın İletişim Kuralları; HTTP, SMPTP, POP, SNMP, FTP, Telnet
+  Uygulama Katmanın İletişim Kuralları; HTTP(S), SMPTP, POP, SNMP, FTP, Telnet, Firewall
 
 Bu katman ve aşamaları belirtilen standartlarda takip edebildiğimizde sağlıklı bir ağın içerisinde olduğumuzdan emin olabiliriz. 
 
 
 
-
+#####################################################################################################################################
 
 
 TCP/IP :
 
-Aslında tam olarak öyle. Ağ dünyasında her ne kadar standartlaştırılmalar yapılsa bile bazen bir standart yeterli olmayabilir. 
+Kücük veri paketlerini kayipsiz olarak istenilen yere ulastirma protokolune TCP denir.
+
+icerikle ilgilenmez Sadece verinin ulasip ulasmadiginla ilgilenir.
 
 OSI modelinin yaygın olmasına karşılık internet tarihinin teknik açıdan standartı TCP/IP başvuru modelidir. 
 
@@ -91,18 +102,18 @@ Yapı olarak OSI modeli gibi katmanlı yapıdadır. Ancak daha basit bir şekild
 TCP/IP katmanları her ne kadar az olsa da OSI'deki görevlerin tümünün karşılamaktadır. 
 Sadece bir katmanın birden çok görevi vardır. 
 
-UYGULAMA KATMANI (4) : 
+UYGULAMA KATMANI (4) : APPLICATION 
     OSI modelinin üstteki üç katmanına karşılık gelir. 
     Uygulama ile ilişkili olan tüm katmanlar bir arada toplanmıştır. 
 
-TAŞIMA KATMANI (3) : 
+TAŞIMA KATMANI (3) : TRANSPORT
     OSI modelindeki gibi akışın kalitesi, kontrolü ve hata durumlarıyla ilgilenir. 
     Bu katmanda kullanılmak üzere tanılanmaış TCP ve UDP adında iki adet protokol vardır. 
 
-İNTERNET KATMANI (2) : 
+İNTERNET KATMANI (2) : INTERNET
     Paketlerin oluşturulması, yönlendirilmesi ve eğer bir tıkanıklık oluşursa giderilmesi üzerine çalışır. 
 
-AĞ ERİŞİM KATMANI (1) : 
+AĞ ERİŞİM KATMANI (1) : NETWORK INTERFACE
     Bu katmanda ise bilgisayar ile ağlar arasında bir IP paketlerinin gönderilmesini sağlayacak bir bağlantının kurulmasıdır. 
 
  
