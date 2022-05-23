@@ -333,3 +333,9 @@ NOT: Köşeli parantez içerisinde sırası ile OSI modelinde kaçıncı katmand
 17 → HTTPS(HyperText Transfer Protocol Secure)[Application — TCP — 443] : 
   HTTP ile aynı özelliği taşır fakat bu yapıda kendi içerisinde TSL/SSL barındırdığı için 2 taraf arasındaki iletişim güvenlidir.
 
+
+#######################################################################################################################################
+
+STP
+
+carpisma önleyicidir.looplari engeller
