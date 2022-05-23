@@ -1,6 +1,8 @@
 Mac adresi degismez (tc no gibi)
 6 bloktan olusur
 ilk 3 oktet firmayi son 3 oktet cihazi temsil eder.
+degisemez. 
+hexadecimal sayilardan olusur 
 ------------------------------------------------------
 ARP 
 Adres cözümleme protokoludur.
@@ -39,6 +41,9 @@ LAN (Local Area Network)
           Kisa mesafelerde kurulan agdir
           VLAN: sanal olarak yerel aglara bölünme varsa.
                     koaly yapilandirma, hata tespiti, güncelleme vs
+                    Iki VLAN in v´birbiriyle haberlesmesi Router sartiyla gerceklesir 
+                    Vlanlarin haberlesmesini saglayan hatta TRUNK denir ve switchler arasinda veya switch reuter arasindaki 
+                    güven iliskisini kuruar.
           WLAN: Koblolar yerine Wireless üzerinden olusturulur.
 SAN (Storage Area Network)
           Depolama cihazlari arasinda kurulan agdir
@@ -125,7 +130,7 @@ NETWORK TE KULLANILAN CIHAZLAR
                     Internete erisebilen tüm cihazlari internete baglayan cihaz
                     Kablolu baglantiyi wifi ye ceviren bir cihaz
                     Ayni zamanda repeater olarak da islev görür.
-         NETWORK INTERFACE CARD
+         NETWORK INTERFACE CARD (NIC)
                     Bilgisayarin bir aga baglanmasini saglayan donanimdir
                     OSI1 ve 2 de calisir
                     MAC ile ortaklasa calisir.
