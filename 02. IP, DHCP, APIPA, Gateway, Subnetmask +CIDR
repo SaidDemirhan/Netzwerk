@@ -90,7 +90,30 @@ yani Networkler 32 ser olarak artarak devam eder.
    ....
    156.23.19.224: sonuncu network id
 
+//////////////////////////////////////////////////////////////////////////
 
-
+Eger host adresi 143.32.16.122/22(CIDR) olsaydi:
+   11111111.11111111.1111100.00000000
+   255.255.252.0 :subnetmask olur
+   süper sayimiz 4 olur.
+   143.32.0.0 : ilk netork id
+   143.32.4.0 
+   143.32.8.0
+   143.32.12.0
+   143.32.16.0 : Bahsi gecen host adrsinin network id si
+         Bahsi gecen host adrsi bu network e ait.(143.32.16.122)
+         ilk host adresi: 143.32.16.1
+         son host adresi: 143.32.19.254
+         broadcast adresi: 143.32.19.255
+         toplam kullanilabilir host sayisi: süpersayiya karislik gelen 1 in degeri
+            11111111.11111111.1111100.00000000
+            1024 512 256.128 64 32 16 8 4 2 1
+            
+            yani 1024-2(network id +broadcast id) =1022 host adresi kullanilabilir.
+   143.32.20.0
+   ....
+   143.32.252.0 : son network id
+   
+   /////////////////////////////////////////////////////////////////////////////
 
 
