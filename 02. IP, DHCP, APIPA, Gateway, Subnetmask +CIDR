@@ -33,6 +33,7 @@ NOT: sabit olan ID ler Network ID olur degisken olanlar ise Host ID (bilgisayarl
 Bilgi: Bir A class bir agin network Id si 10.0.0.0 olurken host ID si 10.255.255.255 tir.
 
 Iki farkli IP adresimiz vardir:
+
   1 Internete acilirken servis saglayicimizin verdi IP adresimiz
   2 Kendi agimizdaki IP adresimiz.
   #Kendi agimizdaki cihazlar internete cikarken NAT(Network Adress Translation) ile tek IP e cevrilir.
