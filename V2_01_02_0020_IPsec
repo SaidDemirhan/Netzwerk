@@ -1,0 +1,64 @@
+IPsec
+(İnternet Protokol Güvenliği)
+
+•
+IPsec'in (İnternet Protokol Güvenliği) görevi, İnternet gibi potansiyel olarak güvenli olmayan IP ağları üzerinden güvenli iletişimi sağlamaktır.
+•
+IPsec, doğrudan TCP/IP modelinin İnternet katmanında (İnternet Katmanı) çalışır ve IP protokollerinin daha da geliştirilmiş halidir.
+•
+Amaç, gizlilik (şifreleme yoluyla), özgünlük ve bütünlük koruma hedeflerine ulaşmaktır.
+
+taşıma modu
+•
+Bu, daha yüksek protokol katmanlarını korumak için kullanılır
+•
+IPsec ağ katmanında uygulanır, böylece bir sonraki üst düzey başlık, yani TCP veya UDP başlığı, uygulama başlığı ve kullanıcı verileri korunur
+•
+Güvenlik bilgilerini taşıyan IPsec başlığı, IP başlığı ile üst düzey başlık arasına yerleştirilir.
+•
+Ana bilgisayardan ana bilgisayara veya ana bilgisayardan ağ geçidine bağlantılar için kullanılır.
+
+tünel modu
+
+•
+Taşıma modu gibi, güvenli bir uçtan uca bağlantı için kullanılır.
+•
+Tünel modu, eksiksiz IP datagramlarını koruma imkanı sunar.
+•
+Bunun için tamamen yeni bir IP başlığı ve IPsec bilgisi bir IP datagramına eklenir.
+•
+Orijinal IP kaynağı ve hedef adresleri, kapsüllenmiş iç başlıkta korunur.
+
+•
+Gerçek iletişim uç noktaları, iç başlıklarda belirtilenlerdir ve korunmaktadır.
+•
+Kriptografik uç noktalar, dış başlıklarda bulunanlardır.
+•
+Bir güvenlik ağ geçidi (örn. VPN ağ geçidi), IPsec işleme sırasında kapsüllenmiş paketi çıkarır ve onu iletişim uç noktasına iletir.
+•
+Tünel modu, öncelikle ağ geçidinden ağ geçidine veya ana bilgisayardan ağ geçidine bağlantılar için kullanılır. Ancak, ana bilgisayardan ana bilgisayara veya ana bilgisayardan ağ geçidine bağlantılar da mümkündür.
+
+
+
+
+
+Kimlik Doğrulama Başlığı (AH
+•
+AH, iletilen paketlerin özgünlüğünü ve bütünlüğünü sağlamayı ve gönderenin kimliğini doğrulamayı amaçlar.
+•
+AH, bir IP datagramının değişmez kısımlarını korur. Yönlendiriciler tarafından aktarım sırasında değiştirilen IP başlık alanları, örneğin TTL alanı korunmaz.
+•
+IP adresi alanı korunur ve AH'yi NAT ile uyumsuz hale getirir.
+•
+AH ayrıca tekrar saldırılarına karşı koruma sağlar.
+•
+Kullanıcı verileri AH tarafından şifrelenmez.
+
+Kapsüllenen Güvenlik Yükü (ESP)
+•
+ESP, veri kaynağının bütünlüğü ve kimlik doğrulamasının yanı sıra gizlilik de sunar, yani kullanıcı verilerini şifreli biçimde iletir.
+•
+AH'nin aksine, IP paketinin başlığı bütünlük kontrolü tarafından dikkate alınmaz.
+•
+ESP alanı başlık ve treyler olarak ayrılmıştır.
+
