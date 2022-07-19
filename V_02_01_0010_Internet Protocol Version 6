@@ -1,0 +1,243 @@
+Internet Protocol Version 6
+IPv6
+
+•
+IPv4, hiçbir zaman bugünün boyutlarında bir İnternet için tasarlanmamıştı.
+•
+Ardıl gelişmeler ( IPng ) 1993'ten beri IETF tarafından değerlendirilmektedir.
+•
+Gereksinimler:
+•
+Büyük ölçüde artırılmış adres alanı
+•
+Geçiş dönemi için IPv4 ile paralel çalışma
+•
+IPv6, 1998'de RFC 2460'ta taslak standart olarak kabul edildi
+
+Özellikler:
+•
+128 bit adresler sayesinde önemli ölçüde daha büyük adres alanı
+•
+Daha hızlı yönlendirme (IP başlığı sağlama toplamı, akış etiketi yok)
+•
+Sabit boyutlu bir başlık (40 bayt) ile basitleştirilmiş paket formatı
+•
+İsteğe bağlı bilgiler için uzantı başlığı
+•
+Mobil IP adresi
+•
+İstemci otomatik yapılandırması
+
+IPv6 adreslerinin gösterimi
+
+•
+Adresin 128 biti, iki nokta üst üste ile ayrılmış sekiz onaltılık, 16 bitlik bloğa bölünür.
+2001:0DB8:0000:0000:0208:C7FF:FEC5:5E7A
+•
+IPv6 adreslerinin kısaltılması:
+•
+Baştaki sıfırlar atlanabilir:
+2001:DB8:0:0:208:C7FF:FEC5:5E7A
+•
+4 sıfırdan oluşan bir veya daha fazla ardışık blok iki ile değiştirilir
+İki nokta üst üste ("::") kısaltılmıştır.
+2001:DB8::208:C7FF:FEC5:5E7A
+•
+IPv4 adresleri, IPv6 adreslerine gömülebilir (veya sona eklenebilir), örneğin: X:X:X:X:X:X:192.168.0.1 veya 0:0:0:0:0:0:192.168 .0.1 veya ::192.168.0.1 veya ::C0A8:1
+
+IPv6'da önek
+
+•
+Ön ek, adresin ağ bölümünü yansıtır (IPv4'teki alt ağ maskesi gibi).
+•
+Bir adresin ilk 64 biti ağ öneki iken, son 64 biti her zaman arayüz kimliğini temsil eder.
+
+Adres türleri
+
+•
+IPv4:
+•
+Tek noktaya yayın (hedefli, kaynak ve hedef
+•
+Çok noktaya yayın (hedef, belirli bir
+•
+yayın (paket alt ağdaki tüm adreslere gider)
+•
+IPv6:
+•
+Tek noktaya yayın (olduğu gibi
+•
+Çok noktaya yayın (ayrıca yayın rolünü üstlenir)
+•
+Anycast (paket en yakına gider
+
+IPv6 adres alanının tahsisi
+
+•
+Adres ataması hiyerarşiktir
+•
+İlgili RIR'lerin whois hizmetleri, IPv6 ağlarının tahsisi hakkında bilgi sağlar.
+•
+Son müşterilere, sağlayıcı tarafından /48 veya /56 ön ekine sahip ağlar atanır
+
+
+
+
+Özel IPv6 adresleri
+
+•
+Ağ bitlerinin sayısı önekle tanımlanır.
+•
+Arabirim kimliğine 64 bit atanmıştır.
+
+•
+6to4 adresleri:
+•
+RFC 3056'ya göre tünel mekanizması
+•
+Önek: 2002::/16
+•
+6to4 yönlendiricinin IPv4 adresini içerir
+•
+ISATAP adresleri
+•
+RFC 5214'e göre tünel mekanizması
+•
+Önek: Arayüz tanımlayıcısının ilk 32 bitinde 00 00 5E FE veya 02 00 5E FE tanımlayıcısına sahip herhangi bir global tek noktaya yayın öneki, ardından IPv4 adresi
+•
+Teredo adresleri
+•
+RFC 4380'e göre tünel mekanizması
+•
+Önek: 2001::/32 (yani 2001:0: ile başlar)
+•
+dokümantasyon adresleri
+•
+Önek: 2001:db8::/32
+
+Küresel tek noktaya yayın adresleri
+
+•
+Küresel tek noktaya yayın adresleri, İnternet'teki küresel olarak yönlendirilebilir adreslerdir ve 2000::/3 ön ekine sahiptir.
+•
+Genel yönlendirme öneki, bir siteye atanan adres aralığını tanımlar.
+•
+Alt Ağ Kimliği, site içindeki bir alanı tanımlar (IPv4 gibi)
+•
+Arabirim kimliği, bir alt ağdaki bir arabirimi tanımlar
+
+Yerel tek noktaya yayın adreslerini bağla
+
+•
+Her arayüz, tutulan FE80 10 öneki ile otomatik olarak oluşturulmuş bir yerel bağlantı adresi alır.
+•
+Mümkünse, yerel alt ağdaki iletişim için bağlantı yerel adresi kullanılır.
+•
+Bağlantı yerel adreslerine sahip paketler yönlendirilmez.
+•
+Standart ağ geçidi otomatik yapılandırma ile belirlenirse, yönlendiricinin yerel bağlantı adresi girilir.
+•
+Adresler, bilgisayarın ağ bağdaştırıcısını tanımlamak için kullandığı ağ kimliği %44 ile tamamlanır, örneğin FE80 ::1E:D0E:AD32:F26%44
+
+Benzersiz yerel tek noktaya yayın adresleri
+
+•
+Benzersiz yerel adresler, IPv4'teki özel IP adreslerinin eşdeğeridir
+•
+Benzersiz yerel önek: FC00::/7 veya FD00::/8
+•
+Benzersiz yerel adresler, yerel (FD) veya merkezi (FC) (8. bit 1 veya 0) olarak atanabilir
+•
+Global önek, rastgele bir algoritma kullanılarak belirlenir.
+
+
+IPv6 çok noktaya yayın adresleri
+
+TF_US_NEINT1 - IPv6 15
+•
+Çok noktaya yayın, IPv4'e kıyasla IPv6 için revize edildi ve genişletildi
+•
+Çok noktaya yayın adresleri ayrıca yayınların işlevini de üstlenir
+•
+Bir çok noktaya yayın adresine giden paketler, bir çok noktaya yayın grubunun tüm üyelerine gönderilir
+•
+Çok noktaya yayın adresleri FF veya 1111 1111 ile başlar
+
+Anycast adresleri
+
+•
+Anycast adresleri birden çok arabirime atanır (genellikle birden çok ana bilgisayarda, aynı hizmeti sunan sistemlerde.).
+•
+İlke: Birden En Yakına, bir sonraki uygun ana bilgisayara adreslenir
+•
+Anycast adreslerinin herhangi bir öneki vardır ve tek noktaya yayın adreslerinden resmi olarak ayırt edilemezler.
+•
+Anycast adreslerinin atandığı sistemler, anycast adresleri olarak durumları hakkında bilgilendirilir.
+
+IPv6 başlıkları
+
+Başlık formatının basitleştirilmesi
+•
+40 baytlık sabit boyut
+•
+Tüm isteğe bağlı bileşenler dış kaynaklı
+•
+Daha kolay işleme (ayrıştırma)
+
+IPv6 otomatik yapılandırması
+
+2 varyant:
+•
+Durum Bilgili Adres Otomatik Yapılandırma
+•
+Düğüm, IPv6 yapılandırmasını DHCPv6 aracılığıyla alır (varsayılan ağ geçidi yok
+•
+Durum Bilgisiz Adres Otomatik Yapılandırma
+•
+düğüm, IPv6 yapılandırmasını yönlendirici reklamları ve isteğe bağlı olarak ek parametreleri (örn. etki alanı adı, DNS sunucusu) DHCPv6 aracılığıyla alır
+
+
+
+
+
+
+
+
+
+Komşu Keşif Protokolü (NDP)
+
+•
+IPv6 için Adres Çözümleme Protokolünü (ARP) değiştirir.
+•
+İşlevselliği ARP'nin çok ötesine geçer.
+•
+Özellikler:
+•
+otomatik yapılandırma
+•
+Adres çözünürlüğü (MAC adresinde IPv6)
+•
+Yinelenen IP Adresi Algılama DAD Yinelenen Adres Algılama Testi
+•
+Önek ve yönlendirici keşfi
+•
+Sonraki durak noktası
+•
+Parametrelerin belirlenmesi (Hop Limit, MTU)
+
+IPv6 alt ağ hesaplaması
+
+Binär hesaplama
+•
+IPv4'te olduğu gibi, alt ağ hesaplaması bitlere bakılarak ikili olarak yapılabilir.
+
+Onaltılık farkla hesaplama:
+•
+IPv6'da alt ağı hesaplamanın başka bir yolu da onaltılık farktır.
+•
+Ağ önekinin serbest bitlerinin değeri bir tablo kullanılarak belirlenir.
+•
+Bu fark daha sonra ağ kimliklerinin artışını temsil eder.
+
+
+
