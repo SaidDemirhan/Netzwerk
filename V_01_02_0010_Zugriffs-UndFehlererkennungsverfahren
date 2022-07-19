@@ -1,0 +1,172 @@
+Erisim prosedürü ve hata algilama
+
+•Agda istasyonlar birbirleri ile iletim ortamı olan fiziksel bağlantı yolları üzerinden haberleşirler.
+
+•Erişim yöntemi, bireysel istasyonların iletim ortamına erişme ve bu ortamı işgal etme şeklini tanımlar.
+
+ •Erişim yöntemi belirli bir ağ yapısına bağlı değildir.
+
+• Temel olarak iki tür vardır,
+
+• Stokastik erişim yöntemleri (örn. CSMA/CD ve CSMA/CA) ve
+
+• Deterministik erişim yöntemleri (örneğin, token uygunlugu).
+
+Token tabanlı erişim yöntemleri
+•Bir erişim yöntemi, belirleyici bir yöntem olan Token uygunlugudur.
+•Yalnızca Token’i ilgili sahibi gönderebilir.
+•İşlemi tamamlandığında, Token tekrar devreder.
+•İki uygulama vardır: Token Ring und Token Bus.
+
+CSMA/CD Carrier Sense Multiple Access with Collision Detection
+
+CSMA/CD, stokastik bir erişim yöntemidir.
+•
+Taşıyıcı Algısı: Her istasyon, iletim ortamının boş olup olmadığını kontrol eder.
+•
+Çoklu Erişim: Birkaç istasyon iletim ortamını paylaşır.
+•
+Çarpışma Algılama: Aynı anda birden fazla istasyon iletim yaptığında, çarpışmalar algılanır.
+
+Çakışmalar (Kollisionen)
+•
+CSMA/CD birkaç istasyon ortam için rekabet eder. Aynı anda iletirlerse, çarpışmalar meydana gelir (sinyallerin üst üste binmesi).
+•
+Ağ genişletme ve çarpışma algılama arasında bir çerçevenin minimum uzunluğu (64 bayt) ile sonuçlanan bir bağlantı vardır.
+•
+Çarpışmalar, özellikle verici tarafından tanınmalıdır.
+
+•
+Bir çarpışma algılandığında, çarpışmanın meydana geldiğini belirten bir sıkışma sinyali gönderilir.
+•
+Yeni bir iletim denemesi başlamadan önce rastgele bir süre (geri çekilme) beklenir.
+9
+Kollisionen und Kollisionsdomäne (cakismalar ve cakisma alani) 
+•
+Çarpışmaların alınabildiği alana çarpışma alanı denir.
+•
+Günümüzde yaygın olan Ethernet çeşitleri, ayrı iletim ve alım hatları olduğundan tam çift yönlü modda çalışabilir.
+•
+Çarpışmalar artık tam çift yönlü modda gerçekleşemez.
+10
+•
+CSMA/CA, WLAN'da (IEEE 802.11) kullanılır.
+•
+Burada da istasyonlar ortamı paylaşır.
+•
+Ancak, gizli istasyon sorunu oluşur, başka bir istasyon tanınmaz.
+•
+Çarpışmalar burada güvenilir bir şekilde tespit edilemediğinden çarpışmadan kaçınma kullanılır.
+
+Funktionsweise (işlevsellik)
+•
+WLAN istemcisi göndermeden önce alıcının almaya hazır olduğundan ve iletim ortamının boş olduğundan emin olmalıdır.
+•
+Her istasyon, radyo arayüzünü işgal etmesine izin verilmeden önce açıkça rezerve etmelidir. Bu işleme Konuşmadan Önce Dinle Listen Before Talk (LBT) denir.
+
+Ablauf (Prosedür)
+1.Ortam dinlendi (Carrier Sense).
+2.Eğer ortam ücretsiz ise bu kanal üzerinden Gönderme Talebi (RTS) gönderilir.
+3.Erişim Noktası (AP), Göndermek için Temizle (CTS) gönderir.
+4.WLAN istasyonu verileri gönderir.
+5.Erişim noktası (AP), alındığını bir onay (ACK) ile onaylar.
+13
+Çoğullama (Multiplex und Multiplexing)
+•
+Multipleks yöntemiyle, birkaç giriş sinyali birleştirilir ve tek bir ortam üzerinden iletilir.
+•
+Yöntemler uzay --, frekans --, zaman ve kod çoğullamadır.
+•
+Zaman bölmeli çoğullama ile, farklı giriş kanallarından gelen veriler belirli zaman aralıklarında bir kanalda senkron (sol) veya asenkron (sağ) olarak iletilir.
+Fehlererkennung und Fehlerkorrektur
+15
+Fehlerursachen
+•
+Veriler, ağlarda ikili kodda sinyaller şeklinde iletilir.
+•
+Sinyal iletimi sırasında parazit (örn. bozulma ve kayıp) meydana gelebilir.
+•
+Hataların türü ve sıklığı, büyük ölçüde iletim ortamına bağlıdır.
+•
+Dijital verileri iletirken, parazit (hata kaynakları) hatalı algılanan bitlere yol açar.
+•
+Türleri:
+•
+Tek bit hataları, diğerlerinden bağımsız olarak meydana gelen hatalardır.
+•
+Paket hataları (blok hataları), parazit nedeniyle diğerlerine bağlı olarak oluşur.
+•
+Senkronizasyon hatası: Tüm bitler veya karakterler yanlış tanınıyor --> bilgi kaybı
+16
+•
+Bit hata oranı, hata frekansının bir ölçüsüdür.
+bit hata oranı=bozulan bitlerin toplamı/iletilen bitlerin toplamı
+•
+Bit hataları için tipik olasılıklar:
+•Analog telefon ağı 2* 10^-4
+•Radyo bağlantısı 10^-3 -10^-4
+•Ethernet 10^-10 – 10^-12
+•Fiberglas 10^-10 – 10^-13
+17
+Fehlererkennung
+•
+Veri iletimi genellikle hatasız değildir.
+•
+Meydana gelen hatalar güvenilir bir şekilde tespit edilmelidir.
+•
+Hata kontrol sistemleri, verilerin geçerliliğinin kontrol edilebildiği ek bilgilerin (artıklık) iletilmesine dayanır.
+•
+Bu fazlalık net iletim hızını azaltır.
+•
+Bu nedenle amaç, çok az ek bilgi ile güvenilir hata tespiti sağlayan bir yöntem kullanmaktır.
+•
+Uygun yöntem, iletim kanalına bağlıdır.
+
+Parität(Denklik esitlik)
+•Veri iletimi ve depolamasındaki hataları tespit etmenin bir yöntemi eşlik bitlerinin eklenmesidir.
+
+•Tek bitlik hatalar eşlik biti aracılığıyla tespit edilebilir ancak düzeltilemez.
+•
+Parite kontrolü, çift veya tek pariteyi kontrol eder.
+•
+Eşlik biti de dahil olmak üzere "1" bit sayısı, çift veya tek bir sayıya genişletilir.
+19
+Çok boyutlu parite (çapraz veya blok paritesi)
+•
+Bu yöntemle baytlar bir dizide birleştirilir.
+•
+Her satır ve her sütun için bir eşlik biti belirlenir.
+•
+Yöntem ile 1 bitlik hatalar tespit edilip düzeltilebilir.
+•
+Bir hata tespit ve hata düzeltme yöntemidir.
+•
+Çoklu bit hataları tanınabilir ancak düzeltilemez.
+
+Döngüsel artıklık kontrolü (Zyklische Redundanzprüfung)
+•
+İngilizce döngüsel artıklık denetimi (CRC), verilere eklenen veriler için bir denetim değerinin (sağlama toplamı) belirlendiği bir hata algılama yöntemidir.
+•
+Alıcı, aynı yöntemi kullanarak sağlama toplamını hesaplar ve iletilen ile karşılaştırır.
+•
+Rastgele hataları tespit etmek için kullanılır. 1 bitlik ve bağımsız çoklu bit hataları algılanır.
+•
+Örneğin Ethernet çerçevesindeki uygulama:
+21
+Fehlerkorrektur
+
+ECC (hata düzeltme kodu) (error correcting code)
+•
+ECC, bir hata düzeltme kodlamasıdır.
+•
+Bu kodlama ile 32 bit için 6 kontrol biti ve 64 bit için 7 kontrol biti gereklidir.
+•
+ECC, 1 bitlik hataları düzeltebilir ve 2 bitlik hataları tespit edebilir
+•
+Daha fazla bit hatası artık güvenilir bir şekilde algılanmaz.
+•
+ECC yöntemi, özellikle yüksek veri bütünlüğü gerektiren sunucular için RAM modüllerinde sıklıkla kullanılır.
+
+Hamming kodu
+•Hamming Kodu, hata düzelten bir blok koddur.
+•Bununla, birkaç eşlik biti eklenir ve 1 bitlik hataların tanınmasını ve düzeltilmesini ve ayrıca 2 bitlik hataların tanınmasını sağlar.
