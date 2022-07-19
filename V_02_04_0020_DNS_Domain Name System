@@ -1,0 +1,142 @@
+Domain Name System (DNS) Alan Adı Sistemi 
+Ad çözümlemesi
+•
+Ad çözümleme, ana bilgisayar adlarını IP adreslerine çeviren bir işlemdir ve bunun tersi de geçerlidir.
+•
+Yapılandırma ayarları, dosyalar ve hizmetler bu sürece dahil olabilir.
+•
+İsim çözümleme süreci
+
+•
+DNS, tam nitelikli DNS adlarını ve diğer ana bilgisayar adlarını IP adreslerine çözümleyen bir hizmettir.
+•
+DNS, bu hizmeti, bir dosyada veya AD DS'de depolanan bir ad ve IP adresi veritabanını kullanarak sağlar.
+•
+Görevler:
+•
+Ana bilgisayar adlarını IP adreslerine ve IP adreslerini ana bilgisayar adlarına çözümleme
+•
+Servis sağlayıcıları arayın Etki Alanı Denetleyicileri, Genel Katalog Sunucuları, E-posta Sunucuları, KMS Ana Bilgisayarı
+
+ana bilgisayar adları
+•
+Ana bilgisayar adı, bir etki alanı adına ve tam nitelikli bir etki alanı adı (FQDN) oluşturmak için üst düzey etki alanına eklenen bir bilgisayar adıdır.
+•
+Kısa adlar veya NetBIOS eski ve artık neredeyse hiç kullanılmıyor
+
+•
+DNS, dağıtılmış hiyerarşik bir veritabanı olarak yapılandırılmıştır.
+•
+Veriler dünya çapında çok sayıda sunucuda depolanır.
+•
+Hiyerarşi (alıntı):
+
+
+kök sunucular
+• x.root server.net şemasından sonra adlandırılan 13 kök ad sunucusu vardır.
+•
+Her kök ad sunucusuna hem bir IPv4 adresi hem de bir IPv6 adresi altında erişilebilir.
+•
+Anycast, kök ad sunucularıyla iletişim kurarken yük dengeleme için kullanılır. 13 adrese dünya çapında birkaç yüz sunucu tarafından hizmet verilmektedir.
+
+DNS sunucuları
+•
+sunucu türleri
+•
+Birincil DNS sunucusu (ana)
+•
+Bölge adı verilen bir DNS alanının veritabanını barındırır.
+•
+Master üzerindeki veritabanı yazılabilir.
+•
+İkincil DNS Sunucusu (Slave)
+•
+Master'dan çoğaltılan kopyanın salt okunur bir kopyasına sahiptir
+bölge veritabanı.
+•
+Yalnızca sunucuyu önbelleğe alma (ipucu)
+•
+Herhangi bir veritabanını kendileri saklamazlar, sadece istekleri iletirler.
+
+DNS bölgesi
+•
+Bir DNS bölgesi, genellikle bir satırdan oluşan Kaynak Kayıtları (RR'ler) olarak adlandırılan bir dizi kaynak kaydından oluşur.
+•
+Farklı RR türleri vardır:
+•
+SOA girişleri (Başlangıç
+•
+A Girişleri (Ana Bilgisayar)
+•
+NS girişleri (ad sunucuları)
+•
+MX kayıtları (posta değiştirici)
+•
+CNAME kayıtları (takma ad)
+•
+PTR girişleri (işaretçiler)
+•
+SRV girişleri (Servis Bulucu)
+•
+BİRİNCİL BÖLGE
+•
+Standart bir birincil bölge, bir DNS veritabanının okuma/yazma kopyasıdır. Bu, DNS alt sisteminin bir bölümünde bir metin dosyası biçimindedir. DNS Sunucusu hizmeti, başlatıldığında bu metin dosyasını belleğine yükler.
+•
+Bölge aktarımı adı verilen bir işlem aracılığıyla, varsayılan birincil bölgeyi içeren metin dosyası, ikincil bölgeyi içeren tüm DNS sunucularına kopyalanır.
+•
+İKİNCİ BÖLGE
+•
+Standart bir ikincil bölge, DNS veritabanının salt okunur bir kopyasıdır. Burada da veriler bir metin dosyasında saklanır.
+•
+Bu bölge, yük dengeleme amacıyla ve ayrıca basit hata toleransı için kullanılır.
+•
+Varsayılan ikincil bölge, yalnızca bölge aktarım işlemi aracılığıyla güncellenebilir.
+
+DNS istemcisi
+
+•
+DNS istemcisi bağımsız bir program veya hizmet değil, bir kitaplıktır (çözücü olarak adlandırılır)
+•
+Çözümleyici, DNS ad çözümlemesi gerçekleştirmesi gereken uygulamalara bağlıdır.
+•
+Windows sistemleri, Windows'ta bir istemci tarafı DNS önbelleği içerir.
+•
+DNS önbelleği ipconfig /displaydns komutuyla görüntülenebilir ve ipconfig /flushdns komutuyla boşaltılabilir.
+
+DNS sunucularını sorgulama
+
+•
+DNS sunucularını sorgulamak için komut satırında "ad sunucusu arama" anlamına gelen nslookup komutu kullanılabilir.
+•
+nslookup ile ileriye veya geriye doğru arama yapılabilir. Varsayılan olarak, adı çözümlemek için yapılandırılmış DNS sunucusu kullanılır.
+•
+Komutun iki modu vardır, etkileşimli olmayan mod (varsayılan) ve etkileşimli mod.
+
+Dinamik Alan Adı Sistemi (DynDNS)
+
+•
+DynDNS veya DDNS, alan adlarının dinamik IP adreslerini güncelleyebilen bir sistemdir.
+•
+Bu, bir bölgede dinamik olarak DNS istemcisi kayıtlarını oluşturmayı, kaydetmeyi veya güncellemeyi içerir.
+•
+Dinamik güncellemeler, uygun istemciler veya DHCP sunucusu tarafından gerçekleştirilebilir.
+•
+Avantajlar:
+•
+DHCP kullanırken DNS girişlerinin otomatik güncellenmesi.
+•
+Daha az idari çaba.
+
+Alan Adı Sistemi Güvenlik Uzantıları (DNSSEC)
+
+•
+DNSSEC, DNS verilerinin gerçekliğini ve bütünlüğünü kriptografik olarak sağlayan Etki Alanı Adı Sisteminin bir uzantısıdır.
+•
+Alınan DNS verilerinin, bölgenin yaratıcısı tarafından yetkilendirilenlerle aynı olması sağlanır.
+•
+Bir DNS mesajının (DNS yanıtı) alıcısı, iletilen DNS bilgilerinin sahte olup olmadığını, yani sorumlu DNS sunucusundan gelip gelmediğini kontrol etmek için gömülü bir imza ve iki şifreleme anahtarı kullanabilir.
+•
+Her iki kontrol de olumlu sonuçlara yol açarsa, DNS yanıtı güvenilir (geçerli) olarak kabul edilir.
+
+
+
