@@ -1,0 +1,320 @@
+Ağ topolojileri(Netzwerktopologien)
+Netzwerktypen
+
+•
+Farklı boyutlara sahip farklı ağ türleri vardır:
+•
+PAN (Kişisel Alan Ağı)
+•
+LAN (Yerel Alan Ağı)
+•
+MAN (Metropolitan Alan Ağı)
+•
+WAN (Geniş Alan Ağı)
+•
+GAN (Küre Alan Ağı)
+
+PAN (Kişisel Alan Ağı)
+•
+Bu ağ türü, PDA'lar veya cep telefonları gibi ağa bağlı küçük cihazlardan oluşan bir ağdır.
+•
+Bu nedenle PAN'ler, USB veya FireWire gibi çeşitli kablolu iletim teknolojileri veya IrDA veya Bluetooth gibi kablosuz teknolojiler kullanılarak kurulabilir.
+•
+Bir PAN'ın menzili sadece birkaç metrede çok kısadır.
+•
+PAN en küçük ağdır.
+
+
+LAN (Yerel Alan Ağı)
+•
+LAN, alanı yaklaşık 1 km² ile sınırlı olan bir bilgisayar ağıdır. Bir yerel alan ağı, çeşitli teknolojiler kullanılarak uygulanabilir:
+•
+ethernet
+•
+Token ring
+•
+FDDI
+•
+ARCNET
+•
+Kablosuz LAN
+•
+Bir LAN'ın ana unsurları tekrarlayıcılar, hub'lar, köprüler ve anahtarlardır.
+
+
+
+
+
+
+MAN (Metropolitan Alan Ağı)
+•
+MAN'ler genellikle bir şehirdeki farklı ofis merkezlerini birbirine bağlamak için tasarlanmıştır.
+•
+Bir Ag 100 km'ye kadar uzayabilir.
+•
+MAN'ler genellikle uluslararası düzeyde aktif telekomünikasyon şirketleri tarafından kurulur ve bu şirketler bu şekilde kablolu metropolleri ulusal ve hatta uluslararası olarak geniş bir alan ağında (WAN) yeniden bağlar.
+
+WAN (Geniş Alan Ağı)
+•
+WAN'lar çok geniş bir coğrafi alanı kapsar, ülkeleri ve hatta kıtaları kapsar.
+•
+WAN'da bilgisayar sayısı sınırlı değildir.
+•
+Geniş alan ağları genellikle belirli bir kuruluşa veya şirkete aittir ve özel olarak işletilir veya kiralanır.
+•
+Ayrıca, İnternet servis sağlayıcıları yerel şirket ağlarını ve son müşterileri İnternet'e bağlamak için WAN'ları kullanır.
+
+GAN (Küre Alan Ağı)
+•
+İnternet gibi uzaysal bir ağa Küresel Alan Ağı denir.
+•
+Ancak, İnternet bu türdeki tek bilgisayar ağı değildir.Uluslararası şirketler ayrıca birkaç WAN içeren izole ağlar bulundurur ve böylece şirket bilgisayarlarını dünya çapında birbirine bağlar.
+•
+GAN'lar, geniş alan ağlarının fiber optik altyapısını kullanır ve bunları uluslararası denizaltı kabloları veya uydu iletimi kullanarak birbirine bağlar.
+11
+Netzwerktopologien
+•
+Ağ topolojisi, kullanılacak donanımı ve iletim ortamına erişim yöntemlerini belirler.
+
+
+
+•Bir ağ, kabaca cihazların ve alt ağların fiziksel ve mantıksal bir düzenlemesine bölünebilir.
+•
+Fiziksel topoloji, ağ bileşenlerinin uzamsal bağlantısı anlamına gelir.
+•
+Mantıksal topoloji, bağlı ağ cihazları arasındaki iletişim yollarının, veri akışının organizasyonu anlamına gelir.
+•
+Ağ topolojisi, kullanılacak donanımı, kullanılacak donanımı ve iletim ortamına erişim yöntemlerini belirler.
+•
+Ağ topolojisi, bireysel ağ elemanlarının bağlanma şeklidir (yapıdır).
+•
+Üç temel yapıya dayalı
+•
+Bus
+•
+ring
+•
+Yıldız
+•
+daha karmaşık topolojiler oluşturulabilir
+Bus
+• 
+Bus yapısı özellikle küçük yerel ağlarda yaygındı.
+•
+Eski Ethernet standartları bu teknolojinin tipik bir örneğidir.
+•
+Tüm istasyonlar ortak bir veri kablosuna bağlıdır ve birbirleriyle haberleşebilir.
+•
+Avantajlar:
+•
+kolay kurulum
+•
+Kolay genişletilebilirlik
+•
+Düşük maliyetli
+•
+dezavantaj:
+•
+Ortamın yüksek duyarlılığı
+•
+Sorun giderme ve analiz sorunları
+•
+İstasyon sayısı arttıkça çarpışma sayısı da artar.
+•
+İletim ortamı bozulursa, tüm iletişim bozulur.
+ring
+•
+Bir halkada, her istasyon kapalı bir halka şeklinde bir "öncül" ve bir "ardıl"a bağlıdır.
+•
+Erişim bir token tarafından kontrol edilir. Bir seferde yalnızca token sahip bir bilgisayar gönderebilir.
+•
+Modern halka ağları genellikle "mantıksal halkalar" olarak düzenlenir, ancak fiziksel olarak bir yıldız şeklinde uygulanır.
+
+•
+Avantajlar:
+•
+Yüksek güvenilirlik
+•
+Yüksek iletim güvenliği
+•
+Garantili iletim bant genişliği
+•
+Dezavantaj:
+•
+Yüksek kurulum maliyetleri
+•
+Yüksek karmaşıklık
+
+Yıldız
+•
+İstasyonlar, merkezi bir düğüm (hub veya anahtar) aracılığıyla yıldız konfigürasyonunda birbirine bağlanır.
+•
+İstasyonlar arasındaki iletişim, yalnızca merkezi düğüm aracılığıyla gerçekleşir.
+•
+Avantajlar:
+•
+Yüksek iletim güvenliği
+•
+Yüksek iletim bant genişliği
+•
+dezavantaj:
+•
+Kurulumda yüksek çaba
+•
+Nötr noktanın bozulmasına veya arızalanmasına karşı savunmasız
+
+
+
+
+
+
+
+
+
+19
+ağaç topolojisi
+•
+Yıldız yapısına dayanarak, ağaç topolojisi şeklinde daha büyük ağlar geliştirilebilir.
+•
+Hub'lar, anahtarlar, yönlendiriciler, ağ geçitleri vb. kullanılarak yapılarında esnek ağlar oluşturulabilir.
+•
+Öte yandan, karmaşıklık derecesi büyüdükçe artar. Yapılandırılmış kablolama, bir ağaç topolojisini destekler
+
+ağ topolojisi(Maschentopologie)
+•
+Ağ topolojisi veya ağ topolojisi, herhangi bir bağlayıcı yapıya tabi olması gerekmeyen merkezi olmayan bir ağdır.
+•
+Cihazlar veya ağlar arasında iki veya daha fazla bağlantı ile karakterize edilir.
+•
+Çok fazla kablolama ve yönetim ile ilişkilidir ve bu nedenle de yüksek maliyetler.
+•
+ Maschentopologie genellikle kendi kendini onarır.
+•
+Bir bağlantı kesilirse hemen yenisi kullanılır.
+•
+Ağ çalışır durumda kalır.
+•
+Avantajlar:
+•
+Merkezi olmayan kontrol
+•
+Sonsuz ağ uzantısı
+•
+Yüksek güvenilirlik
+•
+dezavantaj:
+•
+ayrıntılı yönetim
+•
+Pahalı ve yüksek kaliteli ağ
+23
+hücre topolojisi
+•
+Hücre topolojisi esas olarak radyo ağlarında ve kablosuz ağlarda kullanılır.
+•
+Hücre, uç cihazlar ve baz istasyonu arasında iletişimin mümkün olduğu bir baz istasyonunun etrafındaki alandır.
+
+•
+Avantajlar:
+•
+Kablolama gerekmez
+•
+dezavantaj:
+•
+Sınırlı Aralık
+•
+Bozulmaya eğilimli
+•
+dinlemesi nispeten kolay
+
+Yapılandırılmış Kablolama
+
+•
+Yapısal kablolama veya evrensel bina kablolaması (UGV), üzerinde farklı hizmetlerin (ses veya veri) iletildiği, geleceğe yönelik ve uygulamadan bağımsız bir ağ altyapısı için tek tip bir inşaat planıdır.
+•
+Bu, pahalı yanlış kurulumları ve genişletmeleri önlemek ve yeni ağ bileşenlerinin kurulumunu kolaylaştırmak için tasarlanmıştır.
+•
+Yapılandırılmamış kablolama çoğunlukla ihtiyaca veya belirli bir uygulamaya bağlıdır. Bunlar daha sonra yeni bir teknolojiye veya teknoloji nesline geçirilecekse, bu genellikle büyük sorunlara yol açar.
+
+•
+Yapısal kablolama, birkaç yılın gereksinimlerini de dikkate alan, yedekleri içeren ve uygulamadan bağımsız olarak kullanılabilen, örneğin veri ve telefon gibi, genel olarak uygulanabilir bir kablolama yapısına dayanmaktadır.
+•
+İçeriği:
+•
+kablolar ve konektörler gibi standartlaştırılmış bileşenler
+•
+hiyerarşik ağ topolojisi (yıldız, ağaç, ...)
+•
+Döşeme ve kurulum önerileri
+•
+standartlaştırılmış ölçüm, test ve dokümantasyon prosedürleri
+
+•
+Yapısal kablolamanın amaçları:
+•
+Mevcut ve gelecekteki tüm iletişim sistemleri için destek
+•
+Kesme frekansına göre kapasite rezervi
+•
+ağ, iletim protokolüne ve uç cihazlara karşı tarafsız davranmalıdır
+•
+esnek genişletilebilirlik
+•
+Yıldız şeklindeki kablolama sayesinde arıza güvenliği
+•
+Veri koruma ve veri güvenliği gerçekleştirilebilir olmalıdır
+•
+Mevcut standartlara uygunluk
+29
+•
+Yapısal kablolamanın unsurları:
+•
+Bağlantı paneli (Ara bağlantı paneli)
+•
+yama kablosu
+•
+bağlantı kutuları
+•
+ağ kablosu
+•
+dağıtım dolapları
+•
+Anahtarlar, hub'lar, yönlendiriciler
+
+•
+Üç alan içerir:
+•birincil alan
+•ikincil alan
+•Ücüncül alan
+
+birincil kablolama kampüs kablolaması
+•
+Birincil alan, kampüs kablolaması veya tesis kablolaması olarak adlandırılır. Bireysel binaların kendi aralarında kablolanmasını sağlar. Birincil alan genellikle büyük mesafeler, yüksek veri aktarım hızları ve az sayıda istasyon içerir.
+•
+Çoğu durumda, kablolama için maksimum 2.000 m uzunluğunda fiber optik kablo kullanılır. Kural olarak, bunlar çok modlu fiberlere sahip fiber optik kablolar veya daha uzun mesafeler için tek modlu fiberlere sahip fiber optik kablolardır. Bakır kablolar bazen daha kısa mesafeler için kullanılır.
+•
+Temel olarak, birincil alan cömertçe planlanmalıdır. Bu, iletim ortamının bant genişliği ve iletim hızı açısından açık olması gerektiği anlamına gelir.
+
+İkincil Kablolama - Bina Kablolama
+•
+İkincil alan, bina kablolaması veya yükseltici kablolama olarak adlandırılır.
+•
+Bir bina içinde tek tek katların ve katların kendi aralarında kablolanmasını sağlar.
+•
+Bu amaç için tercihen maksimum 500 m uzunluğunda fiber optik kablolar ve ayrıca bakır kablolar sağlanır.
+
+Üçüncül kablolama - zemin kablolaması
+
+•
+Üçüncül alan, zemin kablolaması olarak adlandırılır. Katların veya zemin dağıtıcılarının bağlantı kutusuna bağlanmasını sağlar.
+•
+Kat dağıtıcısında patch panelli network kabinet bulunurken, kullanıcı iş yerinde kablo bir bağlantı soketinde biter.
+•
+Uzunluğu 90 m artı 2 x 5 m bağlantı kablosu ile sınırlı olan bu nispeten kısa mesafe için bükümlü çift kablolar sağlanmıştır. Alternatif olarak fiber optik kablolar da kullanılabilir.
+
+
+
+Yapılandırılmış kablolama standartları
+ISO/IEC 11801 (2002) ve EN 50173-1 (2003)
+•
+Avrupa standardında (EN) ve global geçerliliği olan ISO standardında yapılanma hiyerarşik seviyeler şeklinde gerçekleşir. Bu seviyeler, topolojik veya yönetimsel olarak birbirine ait olan gruplar tarafından oluşturulur.
