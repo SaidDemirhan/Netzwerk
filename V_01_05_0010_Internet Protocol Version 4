@@ -1,0 +1,233 @@
+Internet Protocol Version 4
+•
+İnternet Protokolü (IP) 1981'de RFC 791'de yayınlandı.
+•
+TCP/IP protokol yığınının internet katmanında bulunur.
+•
+Bağlantısız ve güvensizdir, tüm paketlerin doğru sırada veya hiç ulaşacağını garanti etmez.
+•
+Her paket bağımsız bir varlık olarak değerlendirilir, yani her veri paketi ayrı ayrı yönlendirilebilir.
+
+•
+Mantıksal adresleme:
+•
+Bir TCP/IP ağındaki her ana bilgisayar, iletişim için bir IP adresine ihtiyaç duyar. Bu, en azından yerel ağda benzersiz olmalıdır (özel IP adresi).
+•
+Bunu yapmak için, her donanım arabirimine (ağ kartı veya bağdaştırıcı) mantıksal bir IPv4 adresi atanır.
+•
+Yönlendirme:
+•
+Diğer bir görev, veri paketlerini iletmektir. Her paket ile IP paketinin hedef ağa hangi rotaya iletileceğine karar verilir.
+
+•
+Kisimlara Ayirma (Fragmentierung)
+•
+Veriler, ağdaki bir veri bloğunun izin verilen boyutundan daha büyük olduğunda, veriler parçalara ayrılır.
+•
+Mümkün olan en büyük uzunluk MTU (maksimum iletim birimi) olarak adlandırılır ve Ethernet'te standart olarak 1.500 bayttır.
+•
+Veri daha büyükse, parçalara bölünür. Her parça daha sonra maksimum 1.500 bayt uzunluğa ve Tanımlama alanında aynı değere sahiptir.
+•
+Parçalanma genellikle veri çıkışı üzerinde olumsuz bir etkiye sahiptir.
+•
+Gönderici, Parçalamayı Parçalama bayrağıyla parçalanmayı önleyebilir.
+
+Bir IP paketinin yapısı
+
+•
+IP paketleri (datagramlar), IP iletişiminin temel unsurlarıdır.
+•
+2 bölümden oluşurlar:
+1.
+IP başlıkları
+•
+uzunluk 20 60 bayt
+•
+Başlık veri alanı 20 bayt uzunluğundadır, seçenekler ve dolgu verileri 40 bayta kadar olabilir.
+
+2.
+Yük alanı (yük)
+•
+Kullanıcı verileri, daha yüksek katmanların protokollerinin verilerini içerir (örn. TCP, UDP)
+•
+Yuvalamaya veri kapsülleme denir
+•
+Bir IP paketinin maksimum boyutu, başlık + yük, MTU olarak adlandırılır. Bu, 65.535 bayt, Ethernet'te maksimum 1.500 bayttır.
+
+adres yapısı
+
+•
+IP adresleri 32 bit uzunluğundadır
+•
+Teorik olarak 4,294,967,296 (2 üzeri 32) adres mümkündür
+•
+Adresler, daha iyi okunabilirlik için Dottet ondalık gösterimde gösterilir
+•
+32 bit, sekizli olarak adlandırılan, her biri 8 bitlik 4 bloğa bölünmüştür.
+•
+Her sekizli, ondalık eşdeğerine dönüştürülür ve bir nokta ile ayrılır.
+•
+Her sekizli, 0-255 arasında bir sayıyı temsil edebilir
+
+
+
+Netzklassen
+•
+Başlangıçta, sabit uzunluktaki ağ sınıfları için kesin olarak belirlenmiş bölümler vardı.
+•
+Bu sınıflandırma çok esnek olmadığından, 1993'ten beri bit değişkenli ağ maskelerini mümkün kılan sınıfsız etki alanları arası yönlendirme yöntemi esas olarak WAN'larda kullanılmaktadır.
+•
+Çoğu ağ etkin işletim sistemi, standart ağ maskesini eski sınıflandırmaya göre belirler, çünkü sınıflar hala çoğunlukla yerel ağda kullanılır.
+
+•
+Kullanılamayan veya özel amaçlara yönelik alanlar
+•
+0.0.0.0 => mevcut ağ
+•
+127.0.0.0 127.255.255.255 => geri döngü (yerel bilgisayar)
+•
+169.254.0.0 169.254.255.255 => Otomatik Özel IP Adresleme (APIPA)
+•
+255.255.255.255 => küresel yayın, tüm ağdaki tüm ana bilgisayarları adresler
+•
+Bir ağın ilk adresi => ağ kimliği
+•
+Bir yerel ağın son adresi => bu alt ağdaki tüm ana bilgisayarları adresler
+
+Özel IP adresi aralıkları
+•
+İşletmelerin ve bireylerin farklı boyutlarda yerel alan ağları oluşturmasına olanak tanıyan özel ağ adres sınıfları.
+•
+Bu alanların adresleri internette yönlendirilmez
+•
+Adres sınıflarında aşağıdaki alanlar tanımlanmıştır:
+•
+A Sınıfı: 10.0.0.0 10.255.255.255
+•
+B Sınıfı: 172.16.0.0 172.31.255.255
+•
+C Sınıfı: 192.168.0.0 192.168.255.255
+alt ağ maskesi
+
+•
+Alt ağ maskesi, bir IP adresinin aynı alt ağa ait olup olmadığını belirlemek için kullanılabilir.
+•
+Bir IP adresinin kaç bitinin ağ önekini oluşturduğunu belirten 32 bitten oluşan bir bit maskesidir.
+•
+2 parçadan oluşur (güç kaynağı ve ana bilgisayar parçası)
+•
+Soldan 1 bit sayısı ağ bölümünü, kalan 0 bit ise ana bilgisayar bölümünü gösterir.
+•
+Örnek: 11111111 11111111 11111111 00000000
+•
+Ağ kısmı, bir ağdaki tüm cihazlar için aynı olmalıdır.
+•
+yazımlar:
+•
+255.255.255.0 => Ondalık nokta gösterimi
+•
+/24 => son ek olarak (CIDR)
+
+14
+•
+Sınıfsız Etki Alanları Arası Yönlendirme (CIDR), adres alanının daha verimli kullanılması için bir yöntemdir.
+•
+CIDR ile, bir ağ sınıfına sabit bir IP adresi ataması yoktur
+•
+Sınıfla ilgili alt ağ oluşturmanın aksine, önek uzunluğu serbestçe seçilebilir ve CIDR gösterimi ile belirtilmelidir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+alt ağ oluşumu
+
+•
+Etkileri:
+•
+Varsayılan alt ağ maskesini değiştirme
+•
+çeşitli küçük ağların oluşumu
+•
+Ağ başına adreslenebilir ana bilgisayar sayısını azaltmak
+•
+
+Sonuçlar:
+•
+daha küçük ağlar
+•
+daha güvenli
+•
+Yayın trafiğinin azaltılması
+
+•
+Gerekli alt ağ sayısını ve alt ağ başına ana bilgisayar sayısını belirleme
+•
+Alt ağ maskesinde alt ağ maskesinde kalan sıfır sayısı, alt ağ başına ana bilgisayar sayısını belirler.
+•
+8 alt ağ oluşturmak için C Sınıfı bir adresin ana bilgisayar kısmından 3 bit ödünç alarak, alt ağ başına 32 adres oluşturulabilir
+•
+Bir alt ağdaki ilk ve son adresler, alt ağın ağ ve yayın adresini temsil ettikleri için kullanılmamalıdır.
+•
+Böylece alt ağ başına toplam 30 ana bilgisayar adreslenebilir!
+
+alt ağ oluşturma
+
+•
+Bir ağın, tümü aynı bitişik adres alanında kalan birden çok alt ağa (alt ağlara) bölünmesidir.
+•
+Bir amaç, ana bilgisayar adreslerinin israfını azaltmaktır.
+•
+Bir örnek kullanarak alt ağ oluşturma:
+•
+C sınıfı ağ
+•
+Ağ adresi = 192.168.1.0
+•
+Alt ağ maskesi = 255.255.255.0 (11111111 11111111 11111111 00000000)
+•
+ana bilgisayar payı = n
+•
+Alt ağ oluşturmadan, 256 olası IP adresine sahip bir ağ (254 ana bilgisayar için kullanılabilir).
+
+Alt Ağ Maskesinin Değişken Uzunluğu (VLSM)
+
+•
+Farklı boyutlarda alt ağlar oluşturma imkanı sunar.
+•
+Alt ağ oluşturma, bir alt ağda "sabit" sayıda IP adresine sahipken VLSM, alt ağ başına farklı sayıda IP adresine izin verir.
+•
+C sınıfı adres alanına dayalı örnek:
+•
+4 grup bilgisayar:
+•
+Grup 1: 72 ana bilgisayarlı veri merkezleri
+•
+Grup 2: 50 ana bilgisayarlı çağrı merkezleri
+•
+Grup 3: 25 ana bilgisayarlı operasyonel katman
+•
+Grup 4: 20 ana bilgisayarla yönetim
+•
+Geleneksel alt ağ oluşturma => 4 alt ağ (ağ başına 62 ana bilgisayar)
+
+süper ağ
+
+•
+Birden çok adres, tek bir ağ tanımlayıcısında birleştirilir.
+•
+Bu, IP adreslerinin atanmasının verimliliğini artırır ve kullanılmayan IP adreslerinin sayısını azaltır.
+•
+Yönlendirme tablolarının boyutunu küçültmeye yarar ve yönlendirmenin verimliliğini artırır.
+
