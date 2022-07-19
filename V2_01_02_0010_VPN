@@ -1,0 +1,128 @@
+VPN
+(Sanal özel ağ)
+
+anlam
+•
+Bir "Sanal Özel Ağ", bir sanal ağın genel bir ağ içinde simüle edildiği bir yöntemdir.
+•
+Bu ağ "özeldir", örneğin bir şirketin iyi korunmuş intraneti gibi dışarıdan erişilemez.
+•
+arasında bir VPN aracılığıyla güvenli veri alışverişi garanti edilebilir.
+•
+bir şirketin yerleri.
+•
+saha çalışanları ve şirket ağı.
+•
+ev ofisindeki ve şirket ağındaki çalışanlar.
+
+VPN
+tünel
+•
+Bir VPN tarafından oluşturulanlar gibi sanal bağlantılara tünel bağlantıları veya kısaca tüneller denir.
+•
+Bir protokol, taşıma için başka bir protokolde gömülüdür/kapsüllenmiştir.
+•
+Kapsülleme, orijinal iletişimi gizler.
+•
+Ek olarak, verilerin daha sonra ele geçirilebileceği ve kurcalamaya karşı korumalı bir şekilde iletilebileceği şifreleme gerçekleşir.
+•
+Tünel kurulumu için tünelin her iki ucunda da tünel yazılımı gereklidir.
+
+VPN
+tünel
+örnek 1
+•
+Bir ev ofis çalışanı, yerel sağlayıcısı aracılığıyla İnternet'e bağlanır.
+•
+Şirketinin VPN ağ geçidiyle iletişim kurmak için bir VPN istemcisi kullanıyor.
+•
+Her ikisi de veri trafiğinin gerçekleşeceği koşulları müzakere eder.
+•
+Müşteriye tünel aracılığıyla şirket ağından bir adres atanır. Müşteri böylece şirket ağının sanal bir üyesi olur.
+
+örnek 2
+•
+Konumlar birbirine bağlıysa, iletişim birbiriyle iletişim kuran ve tüm ağları sürekli olarak birbirine bağlayan iki VPN sunucusu aracılığıyla çalışır.
+•
+Uzak dallar böylece birbirine güvenli bir şekilde bağlanır.
+•
+Tünelin uç noktalarında şifrelemenin kodu çözülür, VPN tünelinin sonlandırıldığı söylenir. Şirket ağında yalnızca "normal" şifrelenmemiş trafik görülür.
+VPN şeması
+bağlantı kurma
+•
+İstemci, VPN sunucusuna İnternet üzerinden bağlanır.
+•
+İstemci, sunucuda kendini doğrulamalıdır. Bu, örneğin kullanıcı adı/şifre, sertifikalar veya diğer mekanizmalar gibi çeşitli yöntemler kullanılarak yapılabilir.
+•
+Başarılı kimlik doğrulamadan sonra, şifreleme türü, anahtarın geçerlilik süresi vb. gibi parametreler kendi aralarında görüşülür.
+•
+Ardından tünel bağlantısı kurulur.
+•
+Tünel bağlantısı, veri iletimi sırasında özgünlük, gizlilik ve bütünlük olmak üzere üç koruma hedefini sağlamayı amaçlamaktadır.
+
+Bölünmüş veya kapalı
+tünel açma
+•
+Normal VPN bağlantıları, "kapalı tünelleme" ile tüm İnternet veri trafiği tünelden yönlendirilir. Bağlantı süresince, harici ve yerel web servislerine veya ağ yazıcıları gibi yerel cihazlara erişim yoktur.
+•
+Kapalı tünelleme ile, tünel kurulur kurulmaz bilgisayar yerel ağından ve internetten tamamen yalıtılır.
+•
+Çoğu VPN istemcisi, yine de yerel trafiğe izin verecek şekilde yapılandırılabilir. Bu durumda "bölünmüş tünelleme"den söz edilir.
+•
+"Bölünmüş tünelleme" ile, yalnızca cihazları tünelin diğer ucunda hedef olarak bulunduran bağlantılar tünelden yönlendirilir.
+
+Bölünmüş tünelleme bir güvenlik riskidir.
+•
+VPN aracılığıyla bağlanan bir istemci, şirket ağının sanal bir parçasıdır. Bir bilgisayar korsanı bu bilgisayara girerse, yalnızca yerel bilgisayara değil, tüm şirket intranetine tam erişime sahip olur.
+•
+Bilgisayar neredeyse doğrudan ağdadır. Şirket ağını koruyan güvenlik mekanizmaları artık etkili değil.
+•
+VPN müşterisi şirket ağının sanal bir üyesidir, bu nedenle güvenlik duvarının arkasında görünür! "Açık/Bölünmüş Tünel" ile kendi ağınıza kontrolsüz yollar açarsınız.
+
+güvenlik duvarı
+•
+Güvenlik duvarları aracılığıyla VPN
+•
+Bir VPN bağlantısında güvenlik duvarlarını etkinleştirmek, güvenliği artırmak için uygun değildir. Her durumda, kapalı tüneldeki bağlantı, yalnızca sunucu ve istemci arasında veya VPN sunucuları arasında noktadan noktaya mümkündür.
+•
+Bu nedenle, bir güvenlik duvarı yalnızca performansı düşürür.
+•
+Paketlerin tüm içeriği şifreli olduğundan, daha üst düzey kontrol mekanizmalarıyla bile hiçbir şey elde edilemez.
+•
+VPN hala güvenlik duvarlarından geçiyorsa, iletişimin gerçekleştiği portlar açık tutulmalıdır.
+
+•
+Daha iyi bir çözüm, VPN ağ geçidini güvenlik duvarının önüne yerleştirmek, tüm şifreli veri paketlerinin şifresini çözmek ve ancak bundan sonra istenmeyen bağlantıları kontrol etmektir.
+
+VPN
+bağlantı türleri
+
+Uçtan Siteye VPN / Uzaktan Erişim VPN
+•
+Siteye Son VPN, ev ofislerinin veya mobil kullanıcıların (saha hizmeti) bir şirket ağına entegre edildiği bir VPN senaryosunu tanımlar.
+•
+VPN teknolojisi, bir ortak ağ aracılığıyla uzak yerel ağa mantıksal bir bağlantı, VPN tüneli oluşturur. Harici çalışanın bilgisayarına bir VPN istemcisi yüklenmelidir.
+•
+Uzak çalışan, doğrudan şirket ağındaymış gibi çalışabilir.
+
+Siteden Siteye VPN / LAN'dan LAN'a VPN
+•
+Siteden Siteye VPN veya LAN'dan LAN'a VPN, genel bir ağ aracılığıyla sanal bir ağ oluşturmak için birkaç yerel şube veya şube ağının birbirine bağlanmasına yönelik VPN senaryolarıdır.
+•
+Sanal özel ağlar giderek İnternet üzerinden kurulmaktadır. İnternet böylece ağ operatörlerinin klasik WAN servislerine rakip oluyor.
+
+Uçtan Uca VPN / Ana Bilgisayardan Ana Bilgisayara VPN
+•
+Uçtan Uca VPN, bir istemcinin uzak ağdaki başka bir istemciye eriştiği bir VPN senaryosunu tanımlar. Her iki tarafta da uygun VPN yazılımı kurulmalı ve yapılandırılmalıdır.
+•
+Kural olarak, bağlantı ancak bir ara istasyon desteği ile kurulabilir.
+•
+Bu, ana bilgisayardan ana bilgisayara doğrudan bağlantının mümkün olmadığı anlamına gelir. Bunun yerine, her iki taraf da daha sonra iki bağlantıyı birbirine bağlayan bir ağ geçidine bağlantı kurar.
+
+Uzak Masaüstü Ağ Geçidi
+•
+Uzak Masaüstü Ağ Geçidi RD Ağ Geçidi ), Windows Sunucularında uzak kullanıcıların bir VPN bağlantısı yapılandırmaya gerek kalmadan şifreli bir bağlantı kullanarak İnternet üzerinden dahili kurumsal ağ kaynaklarına bağlanmasına olanak tanıyan bir rol hizmetidir.
+•
+Ağ kaynakları, Uzak Masaüstü Oturumu sunucuları, RemoteApp programları çalıştıran Uzak Masaüstü Oturumu sunucuları veya Uzak Masaüstü'nün etkinleştirildiği bilgisayarlar olabilir.
+•
+RD Ağ Geçidi, İnternet'teki uzak kullanıcılar ile dahili ağ kaynakları arasında güvenli, şifreli bir bağlantı kurmak için HTTPS üzerinden Uzak Masaüstü Protokolü'nü (RDP) kullanır.
