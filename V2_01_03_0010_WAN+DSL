@@ -1,0 +1,180 @@
+geniş alan ağları ve
+DSL (Dijital Abone Hattı)
+
+geniş alan ağları
+ağlar
+•
+herhangi bir bilginin iletilmesi için altyapı temelini oluşturur. Hemen hemen tüm modern telekomünikasyon ağları bugün dijitalleştirilmiştir. Bilgiler dijital veri olarak iletilir.
+•
+Uyumlulaştırma türleri:
+•
+Devre anahtarlamalı Bağlantı süresince bir hat değiştirilir.
+•
+Paket anahtarlamalı Verilerin standart paketler halinde iletimi. Daha büyük miktarda veri ayrı paketlere bölünür.
+
+analog bağlantı
+Analog iletim
+•
+Sabit ağlarda klasik iletim, analog sinyaller aracılığıyla gerçekleşir. Bu tür ağlar ve hizmetleri aynı zamanda "Plain Old Telephone Service" (POTS) olarak da anılır.
+•
+Analog telefon ağları pratikte yalnızca bireysel cihazları yerel santrale bağlarken ve özel şube santrallerinde çalışırken kullanılır.
+•
+Analog ağlar iki telli bakır hatlarda çalıştırılır. Kullanılan frekans bandı 300 Hz ila 3.4 kHz aralığını kapsar
+•
+1990'ların sonundan beri Almanya'da saf analog bağlantılar mevcut değil. Dijital anahtarlama teknolojisine tam dönüşümden sonra, klasik telefon görüşmeleri de dijital olarak iletilir.
+
+telekomünikasyon
+Bağlantı birimi (TAE)
+•
+Bu, iki telli bir kabloyla bağlanır. İlk TAE kutusu ayrıca NTA (Ağ Sonlandırma Analoğu) olarak da adlandırılır.
+•
+Diğer TAE soketlerinden farklı olarak, bu ünite bir direnç ve bir diyotun seri bağlantısı şeklinde pasif bir test sonlandırması içerir.
+•
+F telefon anlamına gelir ve telefonlar için tasarlanmıştır.
+•
+Kodlama N, telefon olmayanları ve dolayısıyla telefonlar hariç tüm uç cihazları ifade eder.
+
+ISDN Entegre Hizmetler Dijital Ağı
+•
+Dijital bir telekomünikasyon ağıdır ve 1989 yılında Almanya'da o zamanki Deutsche Bundespost tarafından tanıtıldı. 1997 yılına kadar tüm telefon ağı dijital teknolojiye dönüştürüldü.
+•
+Telekomünikasyon hizmetleri ses, veri, metin ve görüntüler birleştirilir ve bir bağlantı hattı üzerinden sayısallaştırılmış biçimde iletilir. Farklı uç cihazlar aynı ISDN bağlantısını paralel olarak kullanabilir.
+•
+Telekom 2020'de son ISDN bağlantılarını kapattı. En geç 2022'ye kadar diğer sağlayıcıların da ISDN bağlantılarına sahip olmaması gerekiyor.
+
+DSL (Dijital Abone Hattı)
+
+DSL teknolojileri
+
+DSL (Dijital Abone Hattı) ve ADSL (Asimetrik Sayısal Abone Hattı)
+•
+Bu teknolojiler, normal bir telefon hattı üzerinden geniş bant İnternet bağlantısı için bir iletim yöntemidir.
+•
+Bununla birlikte, önceki teknolojilere göre önemli ölçüde daha yüksek iletim hızları mümkündür.
+•
+Giriş sırasında büyük bir avantaj, normal telefon --/ISDN sinyalinin hala aynı hatta iletilmesiydi, böylece aynı anda arama yapabilirsiniz.
+
+SDSL (Simetrik
+dijital abone Hattı)
+•
+SDSL, yalnızca bir çiftte HDSL ile aynı aktarım hızını sağlamak için geliştirilmiştir. Orijinal SDSL, HDSL'nin (Yüksek Veri Hızlı Dijital Abone Hattı) bir evrimiydi.
+•
+Bugün SDSL terimi, bütün bir simetrik iletim teknolojileri ailesini ifade etmektedir. Bunlar öncelikle SHDSL, G.SHDSL ve ESHDSL standartlarını içerir. Hepsi SDSL terimi altında listelenmiştir. Simetrik bir iletim teknolojisine dayanırlar.
+
+ADSL
+(Asimetrik Sayısal Abone Hattı)
+•
+ADSL teknolojisi, veri hizmetleri için daha fazla bant genişliği talebini karşılamak için 1991 ve 1995 yılları arasında geliştirilmiştir.
+•
+Buradaki asimetrik, yükleme ve indirmenin farklı hızlara sahip olduğu anlamına gelir.
+•
+Aşağı akış ve yukarı akış bir bakır çifti aracılığıyla birlikte iletildiğinden, karşılıklı girişim vardır. Yükleme hızı düşürülerek bu sorun azaltılmaya çalışılır.
+•
+İndirme hızı, yönteme, mesafeye ve hat kalitesine bağlı olarak genellikle 768 Kbit/s ile yaklaşık 8 Mbit/s arasındadır.
+•
+Prensipte, bir ADSL bağlantısı, geleneksel bir telefon hattında (bir çift bakır kablo) iki modem içerir.
+•
+En basit durumda, ADSL modem bir bilgisayara bir ağ kartı veya USB arabirimi aracılığıyla bağlanır. Telefon bağlantısında olduğu gibi çevirme yoktur. Bunun yerine bilgisayar, DSL bağlantısı üzerinden kalıcı olarak İnternet'e bağlıdır.
+
+Diğer geliştirmeler ADSL2, ADSL2+, VDSL ve VDSL2
+•
+Zaman içinde, ADSL teknolojisi tekrar tekrar genişletildi ve geliştirildi, böylece menzil ve iletim hızı tekrar tekrar artırılabilir.
+•
+Bununla birlikte, Almanya'da tam ağ kapsama alanı hala pratik olarak imkansızdır.
+•
+ADSL ile ilgili temel sorun sınırlı menzildir.
+
+•
+ADSL, asimetrik bir iletim yöntemine dayanmaktadır, şebeke operatöründen müşteriye iletim yolu (downlink) ve müşteriden şebeke operatörüne (uplink) iletim yolu farklı bant genişliklerine sahiptir.
+•
+Birçok simetrik sinyal (örn. SDSL ile) birkaç paralel hat üzerinden aynı anda iletilirse, iletim hızı ve sinyal aralığı sinyal kuplajıyla önemli ölçüde sınırlandırılır.
+
+ADSL2
+(Asimetrik Sayısal Abone Hattı 2)
+•
+ADSL2, pratikte ADSL'nin aşağıdaki gibi birçok sorununu çözen bir ADSL uzantısıdır:
+•
+bağlantı yönetimi için yüksek oranda veri
+•
+rahatsız frekans aralıkları kullanılamaz
+•
+karışma nedeniyle karşılıklı girişim
+•
+Almanya'da neredeyse hiç kullanılmadı. Bunun yerine doğrudan ADSL2+'ya geçtiler.
+
+ADSL2+ (Genişletilmiş bant genişliği Asimetrik
+dijital abone hattı 2)
+•
+ADSL ve ADSL2 ile tamamen geriye dönük uyumludur ve bu nedenle aynı hat paketinde paralel olarak çalıştırılabilir.
+•
+Daha fazla gelişme:
+•
+İletim hızını, menzili artırmak ve kablo ağı içindeki karşılıklı paraziti azaltmak.
+•
+Daha sağlam iletim yöntemleri ve bozuk taşıyıcı frekanslarını dinamik olarak gizleyerek paraziti daha iyi telafi eder.
+
+VDSL (
+Çok Yüksek Hızlı Dijital Abone Hattı)
+•
+VDSL, sabit ağda yüksek aktarım hızlarıyla geniş bant İnternet erişimi elde etmek için asimetrik bir aktarım teknolojisidir. Almanya'da, aşağı bağlantıda (asimetrik) 50 ila 100 Mbit/s iletim hızlarına sahip VDSL erişimi aranmaktadır.
+•
+VDSL, yaygın olarak DSL olarak adlandırılan ADSL, ADSL2 ve ADSL2+'yı temel alır. Bununla birlikte, VDSL hızına yalnızca kısa bir mesafede ve yalnızca bir hibrit ağda ulaşılır.
+•
+İletim yolu, fiber optik ve bakır kablo kombinasyonundan oluşur.
+
+•
+Bir telefon ağında VDSL kullanılıyorsa, ön koşul bir hibrit ağdır,
+fiber optik ve bakır hatlardan oluşur. Bakır hat üzerinden son yüz metrede çok yüksek bir iletim hızı elde edebilmek için fiber optik hatların abone bağlantısına mümkün olduğunca yakın döşenmesi gerekmektedir.
+•
+Ağ mimarisi
+
+•
+İki farklı VDSL standardı arasında temel bir ayrım yapılır.
+•
+Bunlar ITU (Uluslararası Telekomünikasyon Birliği) tarafından belirlendi.
+
+VDSL iletim hızları ve aralıkları
+VDSL1 (ITU T G.993.2), aşağı bağlantıda 52 MBit/s ve yukarı bağlantıda 11 MBit/s maksimum iletim hızına ulaşır.
+
+VDSSL2 (ITU T G.993.2 ), aşağı bağlantıda (asimetrik) 50, 100 ve 250 MBit/s iletim hızları ile sunulmaktadır.
+
+VDSL Yönlendirme / ITU T G.993.5
+•
+VDSL vektörü, yerel döngüde daha yüksek veri iletim hızları elde etmek için VDSL'nin bir uzantısıdır.
+•
+VDSL Vectoring ile bir ağ operatörü, VDSL bağlantılarının iletim hızını iki katına çıkarır, örneğin 50'den 100 MBit/s'ye. Bu, diğer şeylerin yanı sıra geliştirilmiş hata düzeltme ile yapılır.
+
+G.fast / ITU T G.9700 ve G.9701
+•
+G.fast, yaklaşık 70 metre uzunluğunda bir bakır çifti üzerinde 1,1 Gbit/sn vaat eden bir DSL çeşididir.
+•
+İyi koşullar altında G.fast, gönderme ve alma yönünde 500 MBit/s'den daha fazlasına ulaşmaz, brüt veri hızları için aşağı bağlantı ve yukarı bağlantı oranları eklenir. Ancak bu veri hızı yalnızca 100 metre uzunluğa kadar olan hatlar için geçerlidir. Bundan sonra, veri hızı önemli ölçüde azalır.
+•
+Pratikte, verimli kullanım için vektörleme kullanılmalıdır.
+
+VoIP ile IP bağlantısı
+•
+Yeni anahtarlanan DSL bağlantılarının çoğu, telefon veya ISDN içermeyen saf veri hatlarıdır. Müşterinin hala arama yapabilmesi için, İnternet üzerinden sesli bağlantı kurabilen cihazlara ihtiyacı var. Bu teknolojiye VoIP (IP üzerinden Ses) denir.
+•
+Bu IP telefonunun ses kalitesi, analog veya ISDN bağlantılarıyla karşılaştırılabilir veya kalite bakımından daha iyidir.
+
+tedarik sorunları
+
+•
+DSL'nin yaygın kullanımı, santrallerden müşterilere giden telefon kablolarına giderek daha fazla DSL bağlantısının kurulmasına yol açmıştır.
+•
+Bununla ilgili sorun, bir kablo demetinde ne kadar çok DSL bağlantısı değiştirilirse, DSL sinyallerinin birbiriyle o kadar fazla parazit yapmasıdır.
+•
+DSL bağlantılarının aşırı iletim gücü nedeniyle arızalanmamasını sağlamak için açıkça tanımlanmış bir sınır vardır.
+•
+Maksimum iletim gücü frekansa bağlıdır ve en kötü durumda veri iletiminin hala mümkün olacağı şekilde tasarlanmıştır.
+
+•
+İki DSL hattı yan yanaysa, birbirleriyle etkileşime girerler. Bu nedenle örneğin Deutsche Telekom, paraziti en aza indirmek için DSL hatlarını şebekelerindeki ana kablolarında mümkün olduğunca eşit olarak dağıtır.
+•
+DSL taşıyan hatlar kablo içinde birbirinden uzamsal olarak ne kadar uzak olursa, birbirleriyle o kadar az etkileşime girerler.
+•
+DSL hatları arasında yeterli mesafeyi elde etmek için, kablo demetindeki tüm kablo çiftleri DSL bağlantılarına bağlanmaz.
+•
+Pratikte, bir kablo demetindeki çiftlerin %50'sinden fazlasının DSL bağlantılarına bağlanamayacağına dair bir kılavuz vardır. Bu nedenle, DSL ile sağlanan alanlarda DSL siparişlerinin yürütülmesinde bazen sorunlar olabilir.
+
