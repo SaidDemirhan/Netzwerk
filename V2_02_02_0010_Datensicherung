@@ -1,0 +1,184 @@
+Yedekleme (veri yedekleme)
+
+Kuralların tanımı
+•
+Veri yedekleme, bir veritabanının planlanmış yedeklemesi ve kurtarılması için tüm önlemleri içerir.
+•
+Veri yedeklemenin bir parçası olarak
+•
+veriler, fiziksel olarak bağımsız veri taşıyıcılarında yedeklenir.
+•
+veri taşıyıcıları orijinal verilerden ayrı olarak saklanmalıdır.
+•
+veriler yedekten kurtarılabilir olmalıdır.
+
+Verileri yedekleme nedenleri
+•
+Geri dönüşü olmayan veri kaybı şirketlerin varlığını tehlikeye atabilir.
+•
+Aşağıdakilerin bir sonucu olarak veri kaybına karşı koruma:
+•
+Donanım hasarı (sabit sürücü çökmesi)
+•
+Veri birleştirme içindeki mantıksal hatalar
+•
+Hatalı manipülasyonlar (yanlışlıkla üzerine yazma veya silme)
+•
+"İnternet zararlıları" (virüsler vb.)
+•
+Veri hırsızlığı (hırsızlık, internet suçları)
+•
+Doğa güçleri (deprem, ateş, su)
+
+arşiv biti
+•
+MS işletim sistemlerinde bir dosya özniteliği.
+•
+Yeni oluşturulan veya değiştirilen dosyaları tanımlar.
+•
+Yedekleme programları için verilerin yedeklenmesi gerektiğine dair sinyal.
+•
+FAT ailesi, NTFS ve ZFS dosya sistemleri tarafından desteklenir.
+•
+Arşiv biti, yedekleme aracının yazma izinlerine sahip olmasını gerektirir.
+
+Türler
+•
+BT'de kullanılan üç genel yedekleme prosedürü vardır:
+•
+tam yedekleme
+•
+Artımlı yedekleme
+•
+diferansiyel yedekleme
+
+tam yedekleme
+•
+Tüm veritabanının yedeğidir.
+•
+Büyük miktarda veri nedeniyle, yedekleme ve geri yükleme çok zaman alır.
+•
+Ayrıca, yedekleme ortamında büyük miktarda depolama alanı gerekir.
+•
+Arşiv biti: Tam yedekleme, arşiv bitini sıfırlar.
+
+Artımlı yedekleme
+•
+Son yedeklemeden bu yana değişen veya yeni olan tüm veriler (tam, artımlı veya farksal) yedeklenir.
+•
+Yedeklerken, veri miktarı nispeten küçüktür.
+•
+Geri yüklerken, tam yedekleme dışında, her artımlı yedekleme geri yüklenmelidir.
+•
+Arşiv biti, artımlı veri yedeklemesiyle sıfırlanır.
+
+diferansiyel yedekleme
+•
+Son tam yedeklemeden bu yana değişen veya eklenen tüm veriler yedeklenir.
+•
+Yedekleme yapılırken yedeklenecek veri miktarı sürekli artmaktadır.
+•
+Geri yüklerken, tam yedekleme ve son diferansiyel yedekleme geri yüklenmelidir.
+•
+Arşiv biti, diferansiyel veri yedeklemesi sırasında sıfırlanmaz.
+
+yedekleme stratejisi
+•
+Verilerin üç kopyası mevcut olmalıdır
+•
+İlk kopya aslında bir kopya değildir: günlük olarak kullanılan üretim verileridir.
+•
+İkinci kopya, sitede yerel olarak tutulan gerçek yedektir.
+•
+Üçüncü kopya, uzak bir yerde saklanması gereken yedeğin bir kopyası olan saha dışı yedeğidir.
+
+•
+Planlama ve kararlılık içerir
+•
+yedeklenecek veriler
+•
+yedekleme türleri
+•
+yedekleme süreleri,
+•
+yedekleme medyası,
+•
+depolama yerleri,
+•
+iyileşme,
+•
+sorumluluklar ve kontrol
+
+Dede baba oğul ilkesi (kuşak ilkesi)
+•
+En sık kullanılan stratejilerden biri de üretim ilkesidir.
+•
+Bu strateji ile veriler kronolojik bir derecelendirmede yedeklenir.
+•
+Bu şekilde, nispeten küçük bir depolama gereksinimi ile eksiksiz yedeklemeler oluşturulabilir ve nispeten kısa bir sürede yönetilebilir.
+•
+Bir düzeyin yedekleme verileri bozulursa, veriler bir sonraki üst düzeyden kurtarılabilir.
+
+yedek plan
+•
+Veri yedekleme için kurallar ve sorumluluklar yedekleme planına kaydedilir.
+•
+Nasıl güvence altına alınır?
+•
+Sorumlu kim?
+•
+Ne zaman yedeklenir?
+•
+Hangi veriler yedeklenir?
+•
+Hangi depolama ortamı kullanılıyor
+•
+Yedek nerede saklanır
+
+•
+Veri yedeklemesi kaybolmaya karşı nasıl korunur?
+•
+Yedekleme ne kadar süreyle tutulur?
+•
+Veri yedeklemenin kurtarılabilirliği ne zaman ve nasıl kontrol edilir?
+•
+Veri taşıyıcılar hangi süre sonunda kopyalanır?
+
+yedekleme ortamı
+•
+Aşağıdaki özelliklerde farklılık gösteren verileri yedeklemek için çok sayıda depolama ortamı kullanılabilir:
+•
+depolama kapasitesi
+•
+erişim zamanı
+•
+Erişim türü
+•
+duyarlılık
+•
+Fiyat
+•
+Dahili depolama (sabit sürücüler) ve harici depolama (CD/DVD, USB çubuklar, harici sabit sürücüler, teyp sürücüleri, NAS, SAN, bulut vb.) arasında da bir ayrım yapılabilir.
+
+•
+İş sektöründe çoğunlukla büyük kapasiteli manyetik bant veya bulut çözümleri
+•
+Özel sektörde daha fazlası:
+•
+•(harici) disk
+•
+optik depolama ortamı (CD, DVD)
+Uyarı: Kendi yazdığınız CD/DVD'lerin sınırlı bir kullanım ömrü vardır!
+•
+ağdaki sabit disk
+•
+geniş bant internet bağlantısı üzerinden harici sunucu
+
+teyp sürücüleri
+•
+Linear Tape Open, kısaca LTO, ½ inçlik manyetik bantlar ve ilgili bant sürücüleri için bir özelliktir. IBM, HP ve Seagate tarafından ortak bir proje olarak geliştirilmiştir.
+
+Teyp Sürücüleri - Teyp Kitaplığı
+•
+Bir teyp kitaplığı (ayrıca teyp robotu, teyp silosu, teyp müzik kutusu veya Alman teyp kitaplığı), bir veya daha fazla teyp sürücüsünün ve birkaç manyetik şeridin bulunduğu ve cihazın otomatik olarak teyp sürücüsüne veya sürücülere yerleştirdiği bir cihazdır.
+
