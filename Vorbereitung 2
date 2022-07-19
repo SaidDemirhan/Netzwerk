@@ -1,0 +1,357 @@
+Netwerk2 
+
+1. Bei welcher IEEE-Norm handelt sich um WLAN?
+Bitte wählen Sie 1 von 4 Antworten!
+
+IEEE-802.11 #
+IEEE 802.5 
+IEEE 802.15 
+IEEE 802.3 
+
+2. Welche Adressen kommen in einem Ethernet-Frame stets vor?
+
+Quell-MAC-Adresse 
+VLAN-Adresse 
+Quell-IP-Adresse #
+Ziel-MAC-Adresse #
+Ziel-IP-Adresse 
+
+3. Die Authentifizierung soll mit einem digitalen Zertifikat erfolgen.
+Welches Schutzziel wird durch den Zertifikatsbestandteil Public Key sichergestellt?
+
+Vertraulichkeit #
+Integrität 
+Authentizität 
+Verfügbarkeit 
+
+4. Welches Speichersystem ist exclusiv mit einen Host gebunden?
+SAN 
+SAD 
+DAS #
+NAS 
+
+5. Eine plötzliche, unerwartete Flut von Broadcast-Nachrichten heißt...
+
+Broadcast Storm #
+Electric Shower 
+Net Frenzy 
+Tornado 
+
+6. Welche Aussagen kennzeichnen ein Socket (Netzwerk)?
+Bitte wählen Sie 2 von 4 Antworten!
+
+Ist die Bezeichnung für den Übergang in ein anderes Netz 
+Ist ein Kommunikationsendpunkt #
+Ist die Zuordnung eines Dienstes zu einer Portnummer 
+Ist eine Kombination aus IP-Adresse und Port #
+
+7. Wählen Sie drei Sicherheitszielen, die das Protokoll lPsec bereitstellt.
+Bitte wählen Sie 3 von 6 Antworten!
+Vertraulichkeit #
+Datenintegrität #
+Datenredundanz 
+Datenkomprimierung 
+Authentifizierung #
+Autorisierung 
+
+8. Welche beiden Aussagen zur asymmetrischen Datenverschlüsselung sind zutreffend?
+Bitte wählen Sie 2 von 4 Antworten!
+
+Der öffentliche Schlüssel wird zur Verschlüsselung und der private zur Entschlüsselung von Nachrichten verwendet #
+
+Ein öffentlicher Schlüssel wird aus einem privaten Schlüssel abgeleitet #
+
+Verschlüsselung mit öffentlichen Schlüsseln ist weniger sicher als die mit privaten Schlüsseln 
+
+Verschlüsselte Daten sind gefährdet, wenn der öffentliche Schlüssel bekannt wird 
+
+9. Bei einem Zahlvorgang an einer elektronischen Kasse entstehen 5 KB Daten, die in einer halben Sekunde an die zentrale Datenbank übermittelt werden sollen.
+Wählen Sie die Übertragungsgeschwindigkeit in kBit/s, die mindestens zur Übertragung eines Zahlungsvorgangs erforderlich ist. Das Ergebnis ist auf volle kBit/s gerundet.
+
+Elektronik yazar kasadaki bir ödeme işlemi, yarım saniyede merkezi veri tabanına iletilmesi gereken 5 KB'lık veri oluşturur.
+Bir ödeme işlemini iletmek için gereken minimum aktarım hızını kBit/s olarak seçin. Sonuç tam kBit/s'ye yuvarlanır.
+
+Hinweis:
+1 KB = 1.024 Byte; 1 kBit/s = 1.000 Bit/s
+10 kBit/s 
+41 kBit/s 
+5 kBit/s 
+82 kBit/s #
+
+10. Bei einer Datenübertragung soll folgende Bit-Folge übertragen werden:
+
+0110110 1
+0011000 1
+1000000 0
+1100001 0
+
+Für die Erkennung von Übertragungsfehlern wird eine Paritätsprüfung durchführt. Das letzte Bit ist das Paritätsbit. 
+
+Der Empfänger erhält diese Bit-Folge:
+
+0110110 1
+0010000 1
+1000000 0
+1100001 0
+
+Worauf wird die Paritätsprüfung durchgeführt? Ist die Datenübertragung korrekt? Wenn sie Fehler enthält, in welcher Zeile?
+Bitte wählen Sie 2 von 7 Antworten!
+
+Fehler in der vierten Zeile
+Prüfung auf ungerade Bits #
+Fehler in der zweiten Zeile #
+Prüfung auf gerade Bits
+Fehler in der dritten Zeile
+Fehler in der ersten Zeile
+keine Fehler
+
+11. 1983 wurde von Paul Mockapetris das Domain Name System (DNS) spezifiziert. Wie lautet sein dezentraler Vorgänger, den man heute noch auf jedem Betriebssystem findet?
+Bind 
+ADNS 
+Nameserver 
+Die Datei Hosts #
+Die Datei Protocols 
+
+12. Eine MAC Adresse kenzeichnet eine Netztwerkkarte. Sie sollte auf der Welt einmalig sein. 
+Welches Netzwerkprotokoll arbeitet mit der MAC Adresse? Wie sieht die MAC Adresse aus?
+Bitte wählen Sie 2 von 4 Antworten!
+
+Protokoll IP
+Protokoll ARP #
+4 Byte, Darstellung mit dualen Werten (1100 0000.1010 1000.0000 0000.0000 0001)
+6 Byte, Darstellung mit Hexadezimalen Werten ( FC:01:A6:80:E2:2F) #
+
+13. Welche Schicht des OSI-Modells gewährleistet eine Verbindung und die Auswahl einer Route zwischen zwei Endsystemen, auf denen Routing erfolgt?
+
+Network Layer #
+Transport Layer 
+Presentation Layer 
+Physical Layer 
+
+14. Welche beiden Aussagen zur symmetrischen Datenverschlüsselung sind zutreffend?
+Bitte wählen Sie 2 von 4 Antworten!
+
+Sehr schnell bei der Ver- und Entschlüsselung der Nachricht. #
+
+Es muss sichergestellt werden, dass der Schlüssel der beiden Teilnehmer über einen sicheren Kanal ausgetauscht wird#
+
+Die symmetrische Verschlüsselung erfordert für eine sichere Übertragung einen hohen Rechenaufwand.
+
+Die symmetrische Verschlüsselung ist weniger sicher als die asymmetrische Verschlüsselung.
+
+15. UDP
+entlastet das Netz 
+ist verbindungslos #
+ist verbindungsorientiert 
+16. Das Protokoll _____ dient zum Versenden von Mails im Netzwerk.
+
+SNMP 
+SMTP #
+SPX 
+SCTP 
+
+17. Wie wird die VPN-Verbindungs-Art zwischen zwei Clients genannt?
+
+end-to-end #
+end-to-site 
+site-to-site 
+
+18. Welche der folgenden Aussagen sind korrekt? 
+Das Domain Name System …
+Bitte wählen Sie 2 von 4 Antworten!
+
+... ist eine verteilte Datenbank #
+
+... verwendet Negative Lookups zur Auflösung von IP-Adressen zu Domainnamen 
+
+... verwendet Update Messages, um veraltete Resource Records aus Caches zu löschen 
+
+... verwendet einen hierarchischen Namensraum #
+
+19. Sie sollen für einen Server eine Sicherung der Daten konfigurieren. An den Wochentagen ist der Zeitaufwand für die Erstellung einer vollständigen Sicherung höher als die für die Sicherung zur Verfügung stehende Zeit. Der Speicherbedarf der Sicherungsdateien braucht nicht beachtet werden. 
+Die Daten sollen mit möglichst geringem Aufwand wiederhergestellt werden können.
+Welchen Sicherungstyp werden Sie verwenden?
+
+tägliche Sicherung
+inkrementelle Sicherung
+vollständige Sicherung
+differenzielle Sicherung #
+20. Bei der Datensicherung wird das Archiv-Bit einer Datei berücksichtigt.
+Ordnen Sie zu, welche Aktion das Archivbit wie beeinflusst.
+Verileri yedeklerken, dosyanın arşiv biti dikkate alınır.
+Hangi eylemin arşiv bitini nasıl etkilediğini haritalayın.
+
+Eine Datei mit nichtgesetztem Archiv-Bit umbenennen C
+Eine inkrementelle Datensicherung durchführen A
+Ein Vollbackup durchführen A
+Eine Datei lesen B
+Eine Datei erstellen C 
+Eine differenzielle Datensicherung durchführen B
+A Archiv-Bit wird zurückgesetzt
+B Archiv-Bit wird nicht geändert
+C Archiv-Bit wird gesetzt
+
+21. Sie verwalten einen Dateiserver mit dem Betriebssystem Windows 2012 R2. Sie sollen die Datenverfügbarkeit auf dem Server erhöhen. Dazu planen Sie einen RAID Verbund zu erstellen. Sie beschaffen 4 neue Festplatten gleicher Größe. Ihr Ziel ist die größt mögliche Verfügbarkeit der Daten mit möglichst viel Speicherplatz. Der Ausfall eines Datenträgers soll toleriert werden.
+
+Windows 2012 R2 işletim sistemiyle bir dosya sunucusunu yönetiyorsunuz. Sunucudaki veri kullanılabilirliğini artırmaları gerekir. Bunu yapmak için bir RAID dizisi oluşturmayı planlıyorsunuz. Aynı boyutta 4 yeni sabit disk satın alıyorsunuz. Amacınız, mümkün olduğunca fazla depolama alanı ile verilerin mümkün olan en yüksek kullanılabilirliğini sağlamaktır. Bir veri taşıyıcısının başarısızlığına müsamaha gösterilmelidir.
+
+Welchen RAID Typ werden Sie auswählen?
+RAID 1
+übergreifendes Volumen
+RAID 0
+RAID 5 #
+
+22. Welchen Pakettyp benutzt ping?
+ICMP #
+TCP 
+UDP 
+IGMP 
+
+23. Die Verbindung von Zentrale und Verkaufsbüro der Goldstern GmbH sind erfolgt mit den angegebenen DSL-Anschlüssen über das Internet.
+Zentrale: SDSL mit 5 Mbit/s symmetrisch
+Filiale:         ADSL mit 24 Mbit/s download, 1 Mbit/s upload
+Welche Zeit (gerundet) benötigt der Transfer einer 3 MiB großen Datei aus der Filiale in die Zentrale.
+
+Goldstern GmbH'nin genel merkezi ve satış ofisi, belirtilen DSL bağlantıları kullanılarak İnternet üzerinden bağlanır.
+Merkez: 5 Mbit/s simetrik SDSL
+Şube: 24 Mbit/s indirme, 1 Mbit/s yükleme ile ADSL
+3 MiB'lik bir dosyanın şubeden merkeze transferi ne kadar (yuvarlak) sürer.
+
+24 s 
+25,17 s #
+12,6 s 
+5,03 s 
+
+24. Ordnen Sie den Anwendungsgebiete den entsprechenden Cloud-Dienst zu.
+
+İlgili bulut hizmetini uygulama alanlarına atayın.
+
+Platform as a Service (PaaS) D
+Infrastructure as a Service (IaaS) A B
+Software as a Service (SaaS) C
+A Serverrechenkapazität 
+B Speichersysteme 
+C Webbasierter E-Mail-Dienst
+D Entwicklungsumgebungen
+
+
+
+
+	
+25. Welche beiden Schnittstellen /Protokolle werden für die Anbindung vom SAN (Storage Area Network) verwendet?
+Bitte wählen Sie 2 von 5 Antworten!
+eSATA 
+SAS 
+SCSI 
+iSCSI #
+Fibre Channel #
+
+26. Sie verwalten einen Dateiserver mit dem Betriebssystem Windows 2012 R2. Der Server stellt Daten im Netzwerk zur Verfügung. Mitarbeiter bemängeln die langsamen Reaktionszeiten des Servers bei Dateizugriff aus dem Netzwerk. 
+
+Sie sollen die Schreib-/ Lesezugriffszeiten auf dem Server verringern. Dazu planen Sie einen RAID Verbund zu erstellen. Sie beschaffen 4 neue Festplatten gleicher Größe und einen RAID Controller. Ihr Ziel ist der größt mögliche Geschwindigkeitszuwachs bei einer Erhöhung der Datenverfügbarkeit. Der Ausfall eines Datenträgers darf nicht zum Verlust von Daten führen!
+Windows 2012 R2 işletim sistemiyle bir dosya sunucusunu yönetiyorsunuz. Sunucu, verileri ağda kullanılabilir hale getirir. Çalışanlar, ağdan dosyalara erişirken sunucunun yavaş yanıt verme sürelerinden şikayet eder.
+
+Sunucudaki yazma/okuma erişim sürelerini azaltmayı amaçlarlar. Bunu yapmak için bir RAID dizisi oluşturmayı planlıyorsunuz. Aynı boyutta 4 yeni sabit disk ve bir RAID denetleyicisi satın alıyorsunuz. Hedefiniz, veri kullanılabilirliğindeki artışla hızdaki mümkün olan en büyük artıştır. Bir veri ortamının arızalanması, veri kaybına yol açmamalıdır!
+
+Welchen RAID Typ werden Sie auswählen?
+RAID 10 #
+RAID 0 
+RAID 5 
+RAID 1 
+27. Sie verwalten einen Anwendungsserver mit dem Betriebssystem Windows 2012 R2. Der Server stellt eine Anwendung, die eine große Menge temporärer Daten erzeugt, im Netzwerk zur Verfügung. Bei einer Überprüfung stellen Sie fest, daß die Menge der temporären Daten die Festplatte des Servers stark belastet, was zu Verzögerungen bei der Ausführung der Anwendung führt.
+
+Sie sollen Anzahl der Schreib- und Lesezugriffe auf die Festplatte des Server verringern. Ihre Lösung soll aber zu keinen Einschränkungen für die Anwendung führen. Wenn möglich soll ihre Lösung die Leistung des Servers bei der Bearbeitung der Daten erhöhen.
+
+Wie gehen Sie vor?
+
+Sie bauen zwei neue Festplatten in den Server ein und erstellen einen RAID 0 auf diesen Festplatten. Sie konfigurieren die Anwendung so, das die temporären Daten auf die neue Festplatte ausgelagert werden. #
+
+Sie bauen eine neue Festplatte in den Server ein und konfigurieren die Anwendung so, das die temporären Daten auf die neue Festplatte ausgelagert werden. 
+
+Sie bauen drei neue Festplatten in den Server ein und erstellen einen RAID 5 auf diesen Festplatten. Sie konfigurieren die Anwendung so, das die temporären Daten auf die neue Festplatte ausgelagert werden.
+
+Sie bauen zwei neue Festplatten in den Server ein und erstellen einen RAID 1 auf diesen Festplatten. Sie konfigurieren die Anwendung so, das die temporären Daten auf die neue Festplatte ausgelagert werden.
+
+
+
+
+
+
+Bir uygulama sunucusunu Windows 2012 R2 işletim sistemiyle yönetiyorsunuz. Sunucu, ağda büyük miktarda geçici veri üreten bir uygulama yapar. İncelemeden sonra, geçici veri miktarının sunucunun sabit sürücüsüne ağır bir yük bindirdiğini ve uygulamanın yürütülmesinde gecikmelere neden olduğunu fark ettiniz.
+
+Sunucunun sabit diskine yazma ve okuma erişimlerinin sayısını azaltmalıdırlar. Ancak, çözümünüz uygulama için herhangi bir kısıtlamaya yol açmamalıdır. Mümkünse, çözümleri, verileri işlerken sunucunun performansını artırmalıdır.
+
+Nasıl devam edersiniz?
+
+Sunucuya iki yeni sabit sürücü takıyorsunuz ve bu sabit sürücüler üzerinde bir RAID 0 oluşturuyorsunuz. Uygulamayı, geçici veriler yeni sabit diske aktarılacak şekilde yapılandırırsınız. #
+
+Sunucuya yeni bir sabit sürücü takarsınız ve uygulamayı, geçici verilerin yeni sabit sürücüye aktarılacağı şekilde yapılandırırsınız.
+
+Sunucuya üç yeni sabit sürücü takıyorsunuz ve bu sabit sürücüler üzerinde bir RAID 5 oluşturuyorsunuz. Uygulamayı, geçici veriler yeni sabit diske aktarılacak şekilde yapılandırırsınız.
+
+Sunucuya iki yeni sabit sürücü takıyorsunuz ve bu sabit sürücüler üzerinde bir RAID 1 oluşturuyorsunuz. Uygulamayı, geçici veriler yeni sabit diske aktarılacak şekilde yapılandırırsınız.
+
+
+
+
+
+
+
+28. Welche Auswirkung hat eine zu geringe Datenübertragungsrate für den Anwender in einem Intranet?
+
+Viele Anwendungen können nicht aufgerufen werden. 
+
+Der Web-Server stellt seinen Betrieb häufiger wegen Überlastung ein. 
+
+Es fehlt jede Sicherheit gegen Hacker im Netzwerk. 
+
+Die Übertragung wird häufig unterbrochen. 
+
+Die Anwender haben mit langen Antwortzeiten zu rechnen. #
+
+Bir intranette kullanıcı için çok düşük bir veri aktarım hızının etkileri nelerdir?
+
+Birçok uygulama çağrılamaz.
+
+Web sunucusu aşırı yüklenme nedeniyle sık sık kapanıyor.
+
+Ağda bilgisayar korsanlarına karşı güvenlik yoktur.
+
+İletim sıklıkla kesintiye uğrar.
+
+Kullanıcılar, uzun yanıt sürelerini hesaba katmak zorundadır. #
+
+
+29. Für die Sicherheit der verschlüsselten Daten ist welche der folgenden Eigenschaften entscheidend?
+
+Betriebssystem 
+Passwort 
+Schlüssellänge #
+Hersteller der Verschlüsselungssoftware 
+
+
+
+
+
+
+
+30. Warum können Netzwerke in einem Netzwerkverbund als logisch getrennt betrachtet werden?
+
+Das lokale Netz ist vom öffentlichen Netz getrennt. 
+
+Die Netzwerke sind durch Router getrennt. 
+
+Jedes Netz hat eine eigene Adresse. #
+
+Die Netzwerke sind durch Bridges getrennt. 
+
+31. Welche Eigenschaft trifft auf UDP (User Datagram Protokoll) nicht zu?
+
+schnell 
+
+geringer Overhead 
+
+sicher in der Übertragung 
+
+verwendet Portnummern zur Adressierung 
+
