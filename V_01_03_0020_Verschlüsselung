@@ -1,0 +1,208 @@
+Temel şifreleme
+
+•
+Şifreleme, okunabilir düz metnin bir şifreleme işlemi kullanılarak kolayca yorumlanamayan "okunmaz" bir karakter dizisine dönüştürüldüğü işlemdir.
+•
+Hedefler:
+•
+Bir mesajın gizliliğini sağlamak için.
+•
+Veri bütünlüğünü sağlamak için
+•
+özgünlük
+•
+yükümlülük
+
+Steganografi ve kriptografi arasındaki fark
+
+•
+Steganografi:
+•
+Veri veya bilgilerin gizli iletimi veya depolanmasıdır.
+•
+Amaç, kamuflaj yoluyla bir mesajın gizliliğini ve gizliliğini sağlamaktır.
+•
+Güvenli ve algılanamayan iletişim sağlama girişimidir.
+•
+Üçüncü bir taraf, steganografik bilgilerin varlığını tanımamalıdır.
+•
+kriptografi:
+•
+Bilgiyi gizli tutma bilimidir.
+•
+Veriler, yetkisiz kişiler tarafından okunamayacak/anlaşamayacak bir forma dönüştürülür.
+•
+Kriptografi ayrıca alıcının şifrelenmiş mesajı tekrar okuyabilmesini gerektirir.
+
+•
+Şifreleme yöntemi:
+•
+Şifreleme ve şifre çözme için bir algoritmadan oluşur.
+•
+yanı sıra anahtar değişimi, orijinalliğin ve bütünlüğün doğrulanması için prosedürler.
+•
+Bilinen şifreleme yöntemleri simetrik, asimetrik ve hibrit şifreleme yöntemlerine ayrılmaktadır.
+•
+Hibrit şifreleme yöntemi ile simetrik ve asimetrik bir şifreleme yöntemi birleştirilmiştir.
+
+•
+Şifreleme algoritması:
+•
+Düz metni şifreli metne dönüştürmek için matematiksel bir işlem.
+•
+Düz metin ve bir anahtar algoritmaya iletilir.
+•
+Sadece anahtarla, aynı algoritma kullanılarak şifreli metin tekrar düz metne dönüştürülebilir.
+
+•
+Bir şifrelemenin güvenliği için bir kriter, olası anahtar sayısı ve yönetilebilir sayıda zayıf anahtardır.
+•
+1.024 bit uzunluğunda bir anahtar, yani 1.024 sıfır ve bir dizi, yalnızca 64 bitlik bir anahtardan daha güvenlidir.
+•
+Şifrelemenin nasıl çalıştığını bilseniz bile, sonunda doğru anahtarı elde etmek için tüm olası anahtarları denemeniz gerekir.
+•
+Kural olarak, bir anahtar ne kadar uzunsa, şifrelenmiş bilgilere anahtarsız erişmek o kadar zor olur.
+9
+•
+Güçlü şifreleme güvenlidir. Şifreleme her zaman güvenlik ve rahatlık arasında bir denge unsurudur.
+•
+Mutlak güvenlik diye bir şey yoktur. Sadece çabayı artırabilirsiniz. Şifreleme, birisi şifrelenmiş verilerin düz metnini almanın bir yolunu bulana kadar kendinize zaman kazandırmaktır.
+•
+Sık sık duyurulan raporların aksine, NSA (ABD) gibi gizli servisler her şifrelemeyi kıramaz.
+•
+Anahtarların yeterince uzun olması, özel anahtarın parolasının yeterince güçlü olması ve özel anahtarın gizli olması ve gizli kalması koşuluyla şifreleme güvenlidir.
+
+şifreleme türleri
+
+simetrik şifreleme
+
+•
+Şifreleme ve şifre çözme için bir anahtar kullanılır.
+•
+Anahtar, iletişim ortakları arasında değiş tokuş edilmelidir.
+•
+Üçüncü bir taraf anahtarı ele geçirirse, iki iletişim katılımcısından biri gibi davranabilir veya bilgileri okuyabilir.
+•
+Avantaj:
+•
+Büyük miktarda veriyle bile hızlıdır ve az kaynak kullanır.
+•
+dezavantaj:
+•
+İletişimden önce güvenli bir anahtar değişimi gereklidir.
+
+•
+Örnek prosedürler şunlardır:
+•
+Sezar şifresi
+•
+Veri Şifreleme Standardı (DES)
+•
+Gelişmiş Şifreleme Standardı (AES)
+•
+balon balığı(Blowfish)
+•
+vb.
+
+asimetrik şifreleme
+
+•
+Her iletişim katılımcısının bir ortak anahtar ve bir özel anahtardan oluşan bir çift anahtarı vardır.
+•
+Yalnızca özel anahtarın gizli tutulması gerekir.
+•
+Herkes açık anahtarla mesajları şifreleyebilir ve özgürce dağıtabilir.
+•
+İletilerin şifresi yalnızca ilgili özel anahtarla çözülebilir
+•
+Ayrıca genellikle ortak anahtar yöntemleri olarak da adlandırılır
+
+•
+Avantaj:
+•
+Güvenli olmayan ağlar üzerinden sorunsuz anahtar değişimi mümkündür.
+•
+dezavantaj:
+•
+Simetrik yöntemlere göre yüksek kaynak tüketimi ve çok yavaş.
+
+•
+Örnek prosedürler şunlardır:
+•
+RSA
+•
+Merkle Hellman
+•
+Benaloh		
+
+Hibrit şifreleme
+
+•
+Asimetrik ve simetrik şifrelemenin birleşimidir
+•
+Rastgele bir simetrik anahtar oluşturulur (oturum anahtarı-Session Key)
+•
+Bu oturum anahtarı, aktarım sırasında verileri simetrik olarak şifrelemek için kullanılır.
+•
+İletimden önce oturum anahtarı, alıcının açık anahtarı ile asimetrik olarak şifrelenir ve alıcıya gönderilir.
+•
+Bu, "anahtar dağıtım sorununu" çözmeli ve simetrik şifrelemenin hız avantajını kullanmalıdır.
+
+
+
+
+
+
+
+
+
+Hash yöntemi (tek yönlü şifreleme)
+
+•
+Tek yönlü şifreleme, adından da anlaşılacağı gibi geri alınamayan bir şifreleme şeklidir.
+•
+Herhangi bir kayıttan, karma değer veya kriptografik sağlama toplamı olarak bilinen sabit uzunlukta bir karakter dizisi.
+•
+Bir mesajın gerçekliği, kendi kendine hesaplanan özet değeri ile iletilen özet değeri karşılaştırılarak kontrol edilir.
+•
+Her iki sonuç da eşleşirse, mesaj iletim sırasında değiştirilmemiştir.
+•
+Prosedür:
+•
+MD5 (kullanımdan kaldırıldı, güvensiz)
+•
+SHA (Güvenli Karma Algoritması), ör. SHA1, SHA2, SHA3
+• RIPEMD 160
+22
+Elektronik imza
+
+•
+Dijital imza, bir mesajın hash değerinin, imzanın özel bir imza anahtarı kullanılarak hesaplandığı asimetrik bir şifreleme sistemidir.
+•
+İmza, ilişkili ortak imza anahtarı kullanılarak iletinin özgünlük ve bütünlük açısından kontrol edilmesini sağlar.
+•
+İmza anahtarı bir kişiye benzersiz olarak atanmalıdır.
+
+Yasal sonuçlar:
+
+•
+İmza bir mesaja veya belgeye iliştirilmişse, imzalanmış olarak kabul edilir.
+•
+Dijital imzalar, orijinalliklerini güvenilir ve doğrulanabilir kılmak için dijital mesajlar ve belgeler için kullanılır.
+•
+İmzanın gerçekliği elektronik olarak kontrol edilebilir.
+
+•
+Gereksinimler:
+•
+Orijinalliğin doğrulanabilmesi için bir elektronik sertifikaya dayalı olmalıdır.
+•
+Dijital imza başka belgelere aktarılamaz.
+•
+Belgenin imzalandığından beri değiştirilmediğine dair kanıt sağlamayı amaçlamaktadır.
+•
+Dijital imza, imzalayanın kimliğini doğrulamak için tasarlanmıştır.
+
+
+
+
