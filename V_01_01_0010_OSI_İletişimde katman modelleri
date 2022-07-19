@@ -1,0 +1,306 @@
+İletişimde katman modelleri
+5
+iletişim= birçok farklı görev veya sorun:
+•
+Yerel ağda veri iletimi
+•
+internette yön bulma
+•
+Her şey geldi mi?
+•
+Veriler doğru geldi mi?
+•
+Mesaj hangi hizmet için
+6
+katman modelleri
+•
+Katman modelleri yardımıyla ağdaki iletişim gibi karmaşık ve karmaşık süreçler haritalandırılabilir ve yürütülebilir.
+•
+Katman modelleri, belirli bir sırada geçirilmesi gereken ayrı katmanlardan oluşur.
+•
+Her katman için verilerin nasıl işlendiğini belirten kurallar (protokoller) vardır.
+•
+Bu, yüksek düzeyde bir esnekliktir, çünkü bireysel katmanlar kendi protokolleriyle desteklenebilir, değiştirilebilir veya değiştirilebilir, örneğin başka bir iletim ortamının kullanımı için eklenebilir, değiştirilebilir veya takas edilebilir.
+7
+OSI Model (Açık Sistem Arabağlantısı)
+•
+OSI modelinin kısaltması, Açık Sistemler Ara Bağlantı Modeli anlamına gelir. OSI modelinin gelişimi 1970'lerde başladı.
+•
+Yayın, Uluslararası Telekomünikasyon Birliği (ITU) ve Uluslararası Standardizasyon Örgütü (ISO) tarafından yapılmıştır.
+•
+Amaç, farklı teknik sistemler arasında farklı medya ve teknolojiler aracılığıyla iletişimi sağlayan ve uyumluluk sağlayan bir referans model oluşturmaktı.
+•
+OSI modeli, birbiri üzerine hiyerarşik olarak inşa edilen toplam yedi farklı katman kullanır.
+•
+Her katmana özel görevler atanır.
+•
+Yukarıdaki ve aşağıdaki katmanların arayüzleri tam olarak tanımlanmıştır.
+•
+Bu, diğer katmanları etkilemeden tek tek katmanların ayarlanabileceği, birleştirilebileceği veya değiştirilebileceği anlamına gelir.
+•Sonuç olarak, örneğin iletim ortamı gerektiği gibi değiştirilebilir.
+
+Katmanlar 5-7, uygulamaya yönelik katmanlardır.
+
+Katmanlar 1-4, taşıma odaklı katmanlardır.
+10
+Katman 1, fiziksel katman(Bitübertragungsschicht (Physical Layer))
+•
+Fiziksel katman, iletim ortamına yönelik elektriksel, mekanik ve işlevsel arayüzü tanımlar.
+•
+Fiziksel iletimin türü (elektriksel veya optik) bu katmanda tanımlanır.
+•
+Hangi ortamın kullanıldığı (kablo, radyo, kızılötesi), olası konektör teknolojileri, elektroniğin doğası, fiziksel bitlerin temsili ve kodlanması vb. belirlenir.
+•
+Bu katmanın protokolleri yalnızca kullanılan aktarım ortamına ve prosedüre göre farklılık gösterir.
+•11
+Bit iletim katmanı aşağıdaki noktaları içerir:
+•
+bağlantı türleri
+•
+fiziksel topolojiler
+•
+dijital sinyalizasyon
+•
+analog sinyalizasyon
+•
+bit senkronizasyonu
+•
+Bant genişliği
+•
+çoğullama
+•
+Ağ bağlantısı donanımı:
+•
+Elektrik sinyallerini yeniden üreten yoğunlaştırıcılar, ayırıcılar ve yükselticiler.
+•
+Cihazları iletim ortamına, modemlere ve dijital ve analog dönüşümler gerçekleştiren kodeklere bağlamak için mekanik arabirimler sağlayan iletim ortamı konektörleri.
+12
+Katman 2, veri bağlantısı katmanı(Sicherungsschicht
+(Data Link Layer)
+•
+Güvenlik katmanı, uç cihaz ile iletim ortamı arasında güvenilir ve işleyen bir bağlantı sağlar.
+•İletim hatalarını ve veri kaybını önlemek için bu katman, hata algılama, hata düzeltme ve veri akışı kontrolü için işlevler içerir.
+•
+Daha yüksek katmanlardan gelen veriler, fiziksel ortam aracılığıyla iletilmek üzere burada hazırlanır. Fiziksel ortam üzerinden iletim için bitler bir mantıksal küme (çerçeve) halinde birleştirilir.
+•
+Veri bağlantı katmanı ayrıca bir mantıksal bağlantı kontrolü (LLC) ve bir orta erişim kontrol katmanı (MAC) olarak alt bölümlere ayrılmıştır.
+•
+Mantıksal arayüze erişim ve iletimden LLC sorumludur.
+•
+MAC katmanı, iletim ortamına erişimi kontrol eder ve bu nedenle hatasız veri aktarımından sorumludur.
+•
+Görevleri: 
+mantıksal topolojiler
+medya erişimi
+Adresleme (MAC adresi)
+İletim senkronizasyonu
+Bağlantı Hizmetleri
+•
+Bağlantı donanımı:
+köprüler
+anahtarlar
+Uygun sürücülere sahip ağ arabirim kartları, muhtemelen ayrıca adaptörler
+15
+Katman 3, ağ katmanı VermittlungsschichtNetwork Layer))
+•
+Ağ katmanı, iletim ortamı ve topolojiden bağımsız olarak uç cihazlar arasındaki zamansal ve mantıksal olarak ayrı iletişimi kontrol eder.
+•
+Terminallerin mantıksal adreslenmesi ilk kez bu katmanda gerçekleşir.
+•
+Adresleme, yönlendirme (göndericiden alıcıya giden yolu bulma) ile yakından bağlantılıdır.
+•
+Teknikler ve yöntemler:
+Adresleme (mantıksal ağ)
+arabuluculuk
+Rota arama ve seçme
+Bağlantı Hizmetleri
+•
+Donanım:
+yönlendiriciler/ağ geçitleri
+•
+Protokoller:
+ARP (Adres Çözümleme Protokolü)
+ICMP (İnternet Kontrol Mesaj Protokolü)
+IGMP (İnternet Grubu yönetim protokolü)
+IP (İnternet Protokolü)
+IPsec (İnternet Protokolü Güvenliği)
+17
+Katman 4, taşıma katmanı(Transportschicht (Transport Layer))
+•
+Bu katmanın görevi, iki uç istasyon arasında güvenilir veri iletimini garanti etmektir.
+•
+Bu, bağlantının kurulmasını ve sürdürülmesini, hata işlemeyi, verileri düzenlemeyi ve ardından bağlantıyı sonlandırmayı içerir.
+•
+Ek olarak, bu katman, üst katmanlardan gelen mesajları, alt katmanlar tarafından daha fazla işlenebilecek bölümlere ayırır.
+•18
+Protokoller:
+•
+TCP (İletim Kontrol Protokolü)
+UDP (Kullanıcı Datagram Protokolü)
+SCTP (Akış Kontrolü İletim Protokolü)
+UDP bağlantısızken TCP ve SCTP bağlantı yönelimlidir
+•19
+Protokoller, iletişim için port numaralarını kullanır.
+•
+Sistemde port numarası, % system32 driver etc services (Windows) veya /etc/services (Linux) dosyasındaki servise atanır.
+•
+bağlantı noktası kullanımı
+Bilinen bağlantı noktaları
+0 -1,023
+Bu bağlantı noktaları kalıcı olarak bir uygulamaya veya protokole atanır. Bu bağlantı noktaları yalnızca kök (yönetici) tarafından bağlanabilir.
+
+Kayıtlı bağlantı noktaları
+1.024 49.151
+Bu portlar hizmetler içindir.
+
+Dinamik olarak ayrılmış bağlantı noktaları
+49.152-65.535
+Bu bağlantı noktaları dinamik olarak atanır. Herhangi bir istemci bu bağlantı noktalarını kullanabilir
+•20
+TCP (İletim Kontrol Protokolü)
+•
+TCP, bağlantı yönelimli bir protokoldür.
+•
+TCP, verilerini bir veri akışı olarak gördüğü için akış odaklı bir şekilde çalışır. Sıra numaralarını kullanarak, alıcı taraf, segmentleri doğru sırayla yeniden bir araya getirebilir ve bunları bir veri akışına geri dönüştürebilir.
+•TCP, alıcı bir alındı bildirimi gönderene kadar alıcıya veri paketleri gönderen bir mekanizma aracılığıyla güvenilir veri aktarımı sağlar.
+•
+Nispeten büyük ek yük bir dezavantajdır.
+•21
+TCP, sözde 3-yollu el sıkışma kullanarak bağlantı kuran bağlantı yönelimli bir protokoldür.
+•
+İletişimden sonra bağlantı tekrar temizlenir.
+•22
+UDP (Kullanıcı Datagram Protokolü)
+•
+Minimum protokol bilgisi ile verilerin iletilmesine izin veren basit bir protokoldür.
+•
+UDP bağlantısızdır, alımı sağlamak uygulama protokollerine bağlıdır.
+•
+UDP, sabit boyutlu datagramlarla çalışır, bir veri akışını bölme ve yeniden birleştirme yeteneğine sahip değildir.
+•
+Ne zaman kullanılır:
+•
+hız, iletimin güvenliğinden daha önemlidir.
+•
+veri miktarı çok küçük olduğunda, büyük bir başlık buna değmez.
+
+UDP (User Datagram Protocol - Kullanıcı Veribloğu İletişim Kuralları), TCP/IP protokol takımının iki aktarım katmanı protokolünden birisidir. Verileri bağlantı kurmadan yollar.
+
+Gelişmiş bilgisayar ağlarında paket anahtarlı bilgisayar iletişiminde bir datagram modu oluşturabilmek için UDP protokolü yazılmıştır. Bu protokol minimum protokol mekanizmasıyla bir uygulama programından diğerine mesaj göndermek için bir prosedür içerir. Bu protokol 'transaction' yönlendirmelidir. Paketin teslim garantisini isteyen uygulamalar TCP protokolünü kullanır.
+•23
+SCTP (Akış Kontrolü İletim Protokolü)
+•
+SCTP protokolü, güvenli bir aktarım protokolüdür ve sinyal aktarımının ötesine geçen görevleri üstlenir. SCTP, bir uygulama yeni protokolün özel performansını gerektirdiğinde her zaman kullanılır.
+•
+İsteğe bağlı veri paketlerinin sırayla alınması, mesajların birden çok akışta sıralı iletimi ve onaylanmış hatasız veri alımı dahil olmak üzere birden çok hizmeti destekler.
+•
+Ayrıca SCTP, çoklu akış ve çoklu ana konumlamayı destekler.
+•
+TCP'nin aksine SCTP, bir hizmet reddi saldırısı olan SYN taşmasına karşı dirençlidir.
+•
+SCTP bu nedenle karma bir ağda (SCTP ve TCP) tarafsız davranır.
+
+SCTP (İngilizce : Stream Control Transmission Protocol) taşıma katmanı (transport layer) protokollerinden biridir. TCP ve UDP gibi popüler olan protokollerle aynı işi yapar. Bu protokol mesaj karışıklığı anında mesajların sıralı ve güvenli bir şekilde iletimini sağlar.
+
+
+•24
+Oturum katmanının (oturum katmanı olarak da adlandırılır) görevi, üstündeki katmanlara güvenilir bir uçtan uca taşıma hizmeti sağlamaktır.
+•
+Oturum katmanı aynı zamanda bir bilgi sistemi olarak da tanımlanabilir. Üst katmanların ağda mevcut hizmetleri tanımasına ve talep etmesine yardımcı olur.
+•
+İletişim birimleri arasındaki diyaloğu oluşturmak, sürdürmek ve ortadan kaldırmak bu katmanın bir diğer önemli görevidir.
+25
+Katman 5, oturum katmanı (oturum katmanı)
+•
+Oturum katmanının görevleri:
+•
+diyalog kontrolü:
+basit
+yarı dubleks
+Tam dubleks
+•
+oturum yönetimi:
+bağlantı kurma
+veri aktarımı
+bağlantı paylaşımı
+26
+Katman 6, sunum katmanı(Sunu Katmanı)
+•
+Bu katmanın görevi, iletişim uygulamalarında farklı veri türlerinin kullanımını ve bunların farklı donanım ve bellenim türleri üzerindeki farklı temsillerini uygulamaktır.
+•
+Farklı sistemler arasında iletişim kurarken, örneğin farklı donanım ve
+farklı yerel işletim sistemlerinde, bilgilerin görüntülenme biçiminde farklılıklar olabilir.
+•
+Bu durumlarda, karşılıklı anlayış için bir dizi dönüştürme yapılmalıdır.
+
+
+27 •Dönüşüm türleri şunlardır:
+bit düzeni
+bayt sırası
+karakter seti
+dosya sözdizimi
+•
+Sunum katmanı, bilgilerin her sistemde doğru şekilde sunulması için uygun dönüşümleri gerçekleştirebilir.
+•
+Bu katmanın diğer görevleri şunlardır:
+•
+Verilerin şifrelenmesi veya şifresinin çözülmesi (güvenlik yönleri).
+•
+Veri iletiminden önce ve sonra verilerin sıkıştırılması veya açılmasından (maliyet yönü) önce ve sonra verilerin sıkıştırılması veya açılması (maliyet yönü).
+28 
+Katman 7, uygulama katmanı(Uygulama katmanı)
+•
+Uygulama katmanı, uygulamalar için işlevler sağlar ve alt katmanlarla bağlantıyı kurar. Veri girişi ve çıkışı da bu seviyede gerçekleşir.
+•
+Bu katman, uygulamaların kendisini içermez, bunun yerine hizmetleri kullanılabilir hale getirir.
+•
+Vardiyanın görevleri şunlardır:
+•
+Ağ Servisleri (Dosya --, Dizin --, Veritabanı --, İsim Servisi vb.)
+•
+Hizmet sunumu (aktif, pasif)
+•
+Hizmet kullanımı (OS çağrı durdurma, uzaktan çalıştırma, ortak çalışma)
+29 •
+İletişimde, uygulama katmanı taşıma katmanıyla yakın çalışır.
+•
+Vardiyanın bazı günlükleri:
+HTTP (Köprü Metni Aktarım Protokolü)
+FTP (Dosya Aktarım Protokolü)
+SMTP (Basit Posta Aktarım Protokolü)
+DNS (Alan Adı Sistemi)
+LDAP (Hafif Dizin Erişim Protokolü)
+Dinamik Ana Bilgisayar Yapılandırma Protokolü (DHCP)
+ 31 DoD Modeli
+•DoD katman modeli, İnternet'in temel aldığı katman modelidir.
+•
+1960'ların sonlarında Savunma Bakanlığı (DoD) adına DARPA (Savunma İleri Araştırma Projeleri Ajansı) tarafından geliştirilmiştir.
+•Merkezi olmayan yapısı nedeniyle arızalara karşı koruma sağlaması gereken ARPANET'teki iletişimi tanımlamalıdır.
+•OSI modeli birkaç yıl sonra geliştirilmiş olsa da, TCP/IP ağlarındaki iletişimi tanımlamak için kullanılır.
+•
+Başta İnternet olmak üzere TCP/IP ağlarındaki iletişimi tanımladığı için TCP/IP modeli olarak adlandırılır.
+•
+4 katmana ayrılmıştır.
+•
+Protokoller katmanlara sıkıca bağlıdır ve bu nedenle herhangi bir ayarlamaya izin vermez.
+35
+TCP/IP OSI modeline karşı
+•İnternet ve ağ teknolojisindeki protokolleri tanımlamaya gelince, ya TCP/IP ya da OSI katman modeli kullanılır.
+•İnternet ve dolayısıyla tüm ağlar TCP/IP katman modeline dayansa da, düzenli olarak OSI katman modeline başvurulur.
+•OSI katman modeli, TCP/IP katman modelinden yalnızca birkaç yıl sonra geliştirildi. Ancak bu geriye dönük uyumluluk üzerine kuruludur. Doğrudan karşılaştırma belirli bir benzerlik gösterir.
+•Ancak, OSI katman modeli çok daha iyi yapılandırılmış ve daha esnektir. OSI katman modeli, tek tek katmanların birleştirilmesine veya kaldırılmasına izin verir.
+37
+Protokoller (İletişim Kuralları)
+•Protokoller, bir referans modelinin her katmanında tanımlanır. Böylece ilgili katmandaki iletişim kuralları ile ilgilidir.
+•Katmanlar arasındaki geçişlerde, protokoller arayüzler aracılığıyla haberleşir.
+•Bazı protokoller çok katmanlıdır ve iki veya daha fazla katmanı kapsar.
+•Veri alışverişinin başarılı olması için ilgili istasyonların aynı ağ protokollerini anlaması ve kullanması gerekir.
+•Protokole bağlı olarak veri aktarımı, bağlantı yönelimli, bağlantısız, güvenli veya güvenli olmayan gibi çeşitli biçimlerde olabilir.
+39 OSI'de iletişim süreci modeli
+Şekil 5: OSI
+Arabuluculuk (kendi çizimi)
+Cihazlar iletişimde araya giriyorsa, tüm katmanların bu cihazlardan geçirilmesi gerekmez.
+41
+Veri kapsülleme ilkesi
+•Her katman, gönderirken başlığını önceki katmanın verilerine ekler. Başlık ve önceki katmandaki veriler yükü oluşturur.
+•Alındığında, her katman, verileri bir sonraki üst katmana geçirmeden önce başlığını kaldırır.
