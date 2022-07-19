@@ -1,0 +1,76 @@
+ağ depolama
+
+DAS (Doğrudan Bağlı Depolama)
+
+•
+Doğrudan Bağlı Depolama (DAS), tek bir bilgisayara bağlı ve ayrı bir muhafazada bulunan sabit sürücüleri ifade eder.
+•
+SATA, eSATA ve UAS'li USB (USB Ekli SCSI) gibi doğrudan (noktadan noktaya) bağlantılar için blok yönelimli iletim protokolleri kullanılır.
+•
+DAS'a entegre edilmiş veri taşıyıcıları, dahili sürücülerle aynı performansı sunar.
+
+SAN (Depolama Alanı Ağı)
+
+•
+Depolama alanı ağı (SAN), veri depolama sistemlerini sunucu sistemlerine bağlamak için bir ağı tanımlar.
+•
+SAN'lar, büyük miktarda verinin yüksek hızlı iletimi için tasarlanmıştır.
+•
+Tüm bellek bir blok olarak mevcuttur ve bağımsız sunuculara esnek bir şekilde atanabilir. Depolama yönetimi merkezileştirilmiştir.
+
+•
+Depolama Alanı Ağı, LAN ile paralel olarak çalışacak şekilde tasarlanmıştır.
+•
+SAN, birçok küçük depodan oluşabilmesine rağmen, kendisini LAN'a tam bir yığın depolama olarak sunar.
+•
+Belleğe erişim blok tabanlıdır.
+
+Amaçlar:
+•
+bir ağ içindeki farklı sunucular arasında veri paylaşımı
+•
+SAN sistemlerinin diğer işlevleri arasında RAID, veri tekilleştirme, çoğaltma, sıkıştırma, şifreleme yer alır.
+•
+disk yansıtma ve yedekleme ve geri yükleme
+•
+Arşivlenen verilerin arşivlenmesi ve alınması, bir depolama ortamından diğerine veri geçişleri.
+•
+SAN'lar, Ağa Bağlı Depolama (NAS) sistemlerine sahip alt ağlar da içerebilir.
+
+Sanal-SAN
+•
+Sanal Depolama Alanı Ağı (VSAN), bir hiper yönetici üzerinde uygulanan yazılım tanımlı bir depolama çözümüdür.
+•
+Bir VSAN'ın avantajları basit yönetim ve ölçeklenebilirliktir
+•
+Kullanım için ön koşul, depolama donanımının hiper yönetici tarafından algılanması ve desteklenmesidir.
+
+iletim ortamı
+1. Fiber Kanal
+•
+Fiber Kanal (FC), standart bir depolama alanı ağı arabirimidir.
+•
+Fiber Kanal Protokolüne (FCP) dayalıdır. (Not: FCP, bakır tel üzerinden de kullanılabilir.
+•
+Çok yüksek aktarım hızları sağlar.
+2. iSCSI
+•
+iSCSI, SCSI verilerinin TCP/IP kullanılarak iletildiği bir yöntemdir
+•
+Bükümlü çift kablolama ile geleneksel ağ teknolojisine dayanmaktadır.
+•
+Bir dezavantajı, SCSI verilerinin TCP/IP paketlerinde kapsüllenmesinden kaynaklanan büyük protokol yüküdür.
+
+NAS (Ağa Bağlı Depolama)
+
+•
+Ağa Bağlı Depolama (NAS), ağda sağlanan ve yönetimi kolay bir dosya sunucusunu belirtir.
+•
+Aygıt, genellikle RAID olarak bağlanan birden çok sabit sürücü içerir.
+•
+Dosya erişimi, dosya paylaşım protokolleri (SMB, NFS) kullanılarak dosya düzeyinde yapılır.
+•
+SAN'a kıyasla daha yavaş erişim.
+•
+Yönetim bir web arayüzü üzerinden gerçekleştirilebilir.
+
