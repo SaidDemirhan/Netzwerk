@@ -1,0 +1,159 @@
+VoIP - IP Üzerinden Ses
+
+VoIP (IP üzerinden Ses)
+İsteğe bağlı olarak buraya bir alt başlık veya açıklama eklenebilir.
+•
+VoIP, bir IP ağı üzerinden ses verilerinin iletimi ve değişimidir.
+•
+Bu ağ yerel (LAN), geniş alan ağı (WAN) veya tüm İnternet olabilir.
+•
+IP üzerinden ses, paket yönelimli İnternet Protokolüne (IP) dayanır.
+•
+Voice over IP'nin telefon alanında kullanılması, mevcut iletim ortamını çok daha kaynak tasarruflu bir şekilde kullanmasına dayanmaktadır.
+•
+Bu şekilde, bir telefon hattının klasik kullanımı ile tam olarak bir tanesi olan IP tabanlı bir geniş bant bağlantısı aracılığıyla birkaç ses bağlantısı gerçekleştirilebilir.
+
+bileşenler
+•
+Sabit hatlı telefon mümkün olduğunca az bileşenden oluşurken, İnternet üzerinden VoIP ile ilgili birçok bileşen vardır.
+
+ses kalitesi
+•
+Ses kalitesi, bağlantıya ve sesi dijitalleştirmek için kullanılan codec bileşenine bağlıdır. G.722 codec bileşeni, HD telefonu etkinleştirir (Yüksek Çözünürlüklü Ses Performansı (HDSP)).
+•
+Sabit hatlı telefonda, anahtarlama sistemi devre anahtarlamalı bağlantı kalitesini garanti eder. İnternette, ses verileri farklı ağlar ve istasyonlardan geçer ve bu da gecikmelere neden olur.
+•
+İnternet üzerinden sorunsuz bir telefon görüşmesi, yalnızca bağlantının tutarlı kalite güvencesi (Quality of Service, QoS) ile mümkündür.
+
+günlükler ve
+standartlar
+•
+İnternet üzerinden ses iletimi standart hale getirilmiştir.
+•
+Tek tip ses kodekleri ve protokolleri, farklı üreticilerin teknolojisi ile bağlantılar arasında VoIP aracılığıyla iletişimin de mümkün olmasını sağlar.
+
+Taşıma protokolleri
+•
+IP üzerinden Ses ile, bağlantıyı kurmak ve sonlandırmak için veri paketleri (sinyalleme, çağrı kontrolü) ile gerçek ses paketleri (veri akışı) arasında bir ayrım yapılmalıdır.
+•
+Sinyalizasyon verileri mümkün olduğunca güvenli bir şekilde iletilmelidir. Bağlantıyı siz kontrol edersiniz. Daha uzun seyahat etmelerine ve daha büyük bir protokol ek yüküne sahip olmalarına izin verilir.
+•
+TCP kullanarak bağlantı kurmak önemlidir.
+
+•
+Dil paketleri ise daha hızlı ve gecikmeden seyahat etmek zorundadır. Güvenli olmayan bir iletimi karşılayabilirsiniz. Bir veri paketinin kaybı tolere edilebilir.
+•
+Pratikte, ses paketleri önce RTP paketlerinde ve daha sonra UDP paketlerinde paketlenir ve ayrıca adresleme için bir IP başlığı ile sağlanır. TCP'nin aksine UDP, veri paketlerinin çok hızlı iletilmesini sağlayan bağlantısız, güvenli olmayan bir protokoldür.
+•
+Fiziksel ortamdaki iletim teknolojisi daha sonra ilgili ortama ve iletim sistemine bağlı olan bir paket çerçevesi ekler.
+
+RTP Gerçek Zamanlı Aktarım Protokolü
+•
+TCP ve UDP gibi, RTP de bir taşıma protokolüdür. IETF tarafından tasarlanmıştır ve özellikle codec bileşenine bağlı olarak %1 ila %20 paket kaybının tolere edilebildiği ses ve video verileri için gerçek zamanlı olarak sürekli bir veri aktarımı sağlar.
+•
+RTP, paket çalışma zamanı kısa olduğu için UDP'ye dayanır, ancak UDP'nin paket kaybını algılama işlevi yoktur
+•
+RTP, paketleri daha sonra doğru sıraya koyabilmek için sıra numaralarını kullanır.
+•
+Ancak RTP, iletimin hizmet kalitesini (Hizmet Kalitesi) garanti etmez. RTP, belirli bir düzeyde paket kaybının kabul edilebilir olmasıyla ilgilidir.
+
+SRTP Güvenli Gerçek Zamanlı Aktarım Protokolü
+•
+SIP, SIPS veya H.323 ile bağlantı kurulduktan sonra ses verileri RTP ile iletilir.
+•
+Bu veri aktarımı şifrelenmez ve üçüncü bir tarafça kaydedilebilir. Sonuç olarak, arama bağlantısı gizlice dinlenebilir veya manipüle edilebilir.
+•
+Bu güvenlik açığını kapatmak için ses verileri SRTP ile şifrelenir. Bu, dinlemenin artık mümkün olmadığı anlamına gelir.
+
+SIP mimarisi
+
+
+SIP Oturum Başlatma Protokolü
+•
+SIP, katılımcıları çok noktalı konferanslara bağlamak için geliştirildi.
+•
+Tıpkı H.323 gibi SIP de ses ve video bağlantılarını kurmak, çalıştırmak ve sonlandırmak için uygundur. Hem noktadan noktaya hem de çok noktaya yayın bağlantıları onunla kontrol edilebilir.
+•
+Bu, onu noktadan noktaya telefon (VoIP) için ideal kılar.
+
+•
+SIP, telefonun IP ağlarına nispeten kolay ve hızlı bir şekilde geçmesine izin verir.
+•
+Basitliği nedeniyle SIP'in anlaşılması kolaydır ve daha az uygulama çabası gerektirir.
+•
+Veri paketlerinin iletimi, IP uygulamalarının mantığını takip eder.
+•
+SIP, HTTP (Köprü Metni Aktarım Protokolü) ile yakından ilişkilidir, ancak uyumlu değildir.
+•
+SIP telefonu, tarayıcı ortamlarına, web hizmetlerine, uygulamalara ve cihazlara kolayca entegre edilebilir
+•
+Bununla birlikte, bilgiler düz metin olarak iletilir, dokunulabilir ve manipüle edilebilir. Bu nedenle, şifreli SIPS varyantının kullanılması tavsiye edilir.
+
+SIP kullanarak adresleme
+•
+SIP, İnternet üzerinden küresel kullanıcı yerelleştirmesi için tasarlanmıştır. Katılımcılara URL ve DNS ile adres verilir.
+•
+Her SIP abonesi, UserID@Domain e-posta adresine benzer bir adrese sahiptir.
+•
+SIP adresi, abonenin IP adresi ile birlikte SIP sağlayıcısının bir veri tabanında saklanır.
+•
+Sağlayıcıların veri tabanları birbirleriyle iletişim halindedir ve bağlantının çeşitli sunucular üzerinden kurulmasını sağlar.
+
+metrikler ve gereksinimler
+
+metrikler ve gereksinimler
+Gecikme, titreşim ve paket kaybına ses kalitesinin bağımlılığı
+•
+IP üzerinden ses yalnızca ağ geçitleri dahil tam yüklü bir ağ için bant genişliği, çalışma zamanı ve titreşim gibi önemli parametreler yeterliyse bir ağda kullanılabilir. Bu aslında ses kalitesini etkiler.
+•
+Ana problemler genellikle çok az bant genişliği ve çok uzun mesafelerden kaynaklanır.
+•
+Paket kayıpları, yüksek titreşim ve büyük gecikmeler ses kalitesini düşürür.
+
+Gecikme Çalışma zamanı gecikmesi
+•
+Veri biçimlerini dönüştürürken ve yönlendirme yoluyla çalışma zamanı gecikmeleri ortaya çıkar.
+•
+En büyük gecikmeler nakliye sırasında meydana gelir. Bunlar ara istasyonlarda (anahtar, yönlendirici, ağ geçidi, güvenlik duvarı ve proxy) oluşturulur.
+•
+Kodek ve mevcut bilgi işlem gücüne bağlı olarak, ses sinyali sayısallaştırılırken ve sıkıştırılırken de bir gecikme meydana gelir.
+
+AD dönüştürme 20 ms
+Ambalajlama 30ms
+Diğer hizmet süreleri 10ms
+800 kilometreden fazla rota 50ms
+titreşim tamponlama 30ms
+D-A dönüşümü 20 ms
+Toplam çalışma süresi 160 ms
+titreme
+•
+Ağ teknolojisinde, jitter, veri paketlerinin farklı çalışma zamanlarını tanımlamak için kullanılır.
+•
+Bu etki özellikle multimedya uygulamalarında yıkıcıdır, çünkü paketler zamanında çıktı alınamayacak kadar geç veya çok erken gelebilir. Düşük ses kalitesine yol açarlar.
+•
+Bunu önlemek için, düzensiz, tekrarlanan veya hatalı veri akışını telafi etmek için gelen veri trafiğini arabelleğe alan bir titreşim arabelleği kullanılır.
+•
+Bu tekniğin hoş olmayan bir etkisi, terimin daha da artmasıdır.
+
+
+paket kaybı
+•
+Bir dil paketi yalnızca yaklaşık olarak bir heceye eşdeğer olan yaklaşık 20 ila 30 ms'lik konuşma içerir. Bunların daha sonra teslim edilmesi pek mantıklı değildir ve ayrıca gerekli değildir. Bu çok sık olmadıkça, kayıp kabul edilebilir.
+•
+Beynimiz, mantıksal bir cümle bağlamındaki eksik veya yanlış kelimeleri veya kelime hecelerini bağımsız olarak doldurabilir.
+•
+Ancak veri paketleri çok sık kayboluyorsa, bu durum kesintiler yoluyla fark edilir hale gelir.
+•
+Bu ses kalitesini düşürür. Bu nedenle, birçok ardışık paket kaybolur kaybolmaz, tüm kelimeler veya cümlelerin bir kısmı kaybolur.
+
+Hizmet Kalitesi (QoS)
+•
+IP üzerinden Ses ile bir telefon görüşmesinin kaliteli olması için arama süresi boyunca belirli bir bant genişliği garanti edilmelidir.
+•
+Ses iletimi iletim teknolojisinden özel özellikler gerektirdiğinden, bu durumda paket odaklı protokoller, iletim hataları, gecikmeler ve çalışma zamanı farklılıkları ancak yeterli bant genişliği veya ek protokoller ile önlenebilir.
+•
+Bu önlemler Hizmet Kalitesi (QoS) altında özetlenmiştir. VoIP kullanan modern cihazlar, bunu esas olarak telefon ve VoIP paketlerinin tercihli aktarımı için bant genişliği ayırarak başarır.
+
+
+
+
