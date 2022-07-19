@@ -1,0 +1,316 @@
+WLAN (Kablosuz Yerel Alan Ağı)
+
+•
+WLAN, verileri iletmek için kablolu bağlantılar yerine radyo sinyallerini kullanan bir ağdır.
+•
+WLAN, GHz aralığında çalışır ve iyi koşullar altında kablolu bir ağınkine yaklaşan veri aktarım hızlarına olanak tanır.
+•
+WLAN uygulamaları:
+•
+Dairede veya evde kablosuz ağ
+•
+Yerel olarak değişen işler
+•
+Toplantı odalarında basit ağ bağlantısı
+•
+Ağ kablolamasının mümkün olmadığı veya çok pahalı olduğu alternatifler
+•
+Kamu Hotspot Noktaları
+
+Radyo Spektrumu ve Düzenleyici Otorite
+•
+Spektrum terimi, radyo dalgalarının üzerinden geçtiği bitişik frekans aralığını ifade eder.
+•
+Almanya'da Federal Ağ Ajansı, radyo spektrumunun farklı alanlarının nasıl kullanılabileceğini düzenler.
+•
+Radyo spektrumu, belirli kullanımlar için ayrılmış frekans bantları adı verilen birçok küçük alana bölünmüştür.
+•
+Spektrumdaki bantlardan ikisi WiFi'ye ayrılmıştır, yani 2.4 ila 2.4835 GHz ve 5.15 ila 5.725 GHz.
+
+•
+Bilgi:
+•
+Bu bantların yalnızca WLAN'lar tarafından kullanılmadığına dikkat edilmelidir.
+•
+2,4 GHz bandı, örneğin Bluetooth tarafından da kullanılır.
+•
+Karşılık gelen cihazlar bu nedenle zaman zaman WLAN çalışmasına da müdahale edebilir.
+•
+Kablosuz ağlar, verilerini bir veya daha fazla kanal üzerinden iletebilir. Bu ayar normalde erişim noktasında yapılır.
+•
+Modern WLAN donanımı, örneğin dizüstü bilgisayarlar veya akıllı telefonlar, kullanılan kanalı otomatik olarak tanır.
+
+ağ adı
+ 
+SSID Hizmet Kümesi Tanımlayıcısı
+•
+Kablosuz ağların SSID adı verilen bir adı vardır.SSID genellikle erişim noktasında ayarlanır. Bu, istemcide doğru ağı seçmek için kullanılır (örn. dizüstü bilgisayar)
+
+Çoklu SSID
+•
+Bir kablosuz erişim noktası, birden çok SSID ile çalışabilir. Bu tür çoklu SSID'ler, bir kablosuz erişim noktasının birden çok Sanal Yerel Alan Ağı (VLAN) kurmasına izin verir.
+•
+Bu şekilde, birbirinden kesin olarak ayrılmış birkaç WLAN ağı sunulabilir. En basit uygulama, çeşitli yönlendiricilerin sunduğu WLAN konuk erişimidir.
+
+topoloji
+•
+WLAN'lar hücre topolojisinde yerleşiktir.
+•
+WLAN'ın hücre topolojisinde, bir merkezi erişim noktası (AP) bir anahtar görevi görür. Bir radyo hücresi en az bir vericiden, kablosuz erişim noktasından (WAP) ve
+bir alıcı, örneğin bir defter.
+•
+Modern standartlarda, bir WLAN'daki istemci sayısı teorik olarak 255'tir. Pratikte, erişim noktası üreticileri bunu önemli ölçüde daha düşük bir değerle, genellikle 225'in altında sınırlar.
+•
+Radyo hücresi boyutu büyük ölçüde erişim noktalarının (izin verilen) iletim gücü tarafından belirlenir, aynı zamanda radyo frekansı ve radyo hücresindeki fiziksel koşullar tarafından da belirlenir.
+
+modlar
+
+Özel mod
+•
+Hızlı ve fazla çaba harcamadan kurulabilir.
+•
+Tüm istasyonlar eşit haklara sahiptir ve iletişim için kendilerini düzenlerler.
+•
+Tüm istasyonlar aynı SSID'yi kullanır.
+•
+Yalnızca iletim aralığında olması gereken sınırlı sayıda istasyon için uygundur.
+•
+Menzili artırmak için, katılımcı istasyonlar, menzil dışındaki cihazlar arasında veri iletmek için yönlendirme yetenekleriyle donatılabilir.
+
+altyapı modu
+•
+Merkezi bileşen, bağlı istasyonlar ve diğer ağlar arasındaki tüm iletişim için kullanılan kablosuz erişim noktasıdır.
+•
+Erişim noktası, istemcileri koordine eder ve küçük veri paketleri gönderir. İşaretçiler, tüm istasyonlara. Bu, daha kolay bağlantı kurulmasını ve bağlantı kalitesinin izlenmesini sağlar.
+•
+Bağlı istasyonlar, aynı SSID'yi kullanarak birbirleriyle iletişim kurar.
+•
+Erişim noktası, kablolu ağ ile bağlantı kurabilir.
+
+Wi-Fi Direct
+•
+Veriler bir kablo kullanmak yerine, örneğin bir bilgisayardan akıllı telefona veya dijital kameradan yazıcıya iletilir.
+•
+Veri aktarımı için erişim noktası veya etkin nokta gerekmez, WiFi özellikli cihazlar kendi kendilerine baz istasyonu gibi çalışır.
+
+IEEE 802.11 standartları
+
+aktarım hızları
+•
+•"IEEE 802.11", kablosuz LAN yapısının dayandığı teknik çözümler için standardı tanımlar.
+•
+Radyo standartları olarak yalnızca 802.11a/g/n/ac/ad kullanılırken, eski 802.11b artık kullanılmamaktadır.
+•
+IEEE 802.11ad yalnızca 10 m'ye kadar uzaklıkta ve aynı odada çalışır.
+
+MIMO çoklu giriş çoklu çıkış
+•
+Bu teknoloji ile erişim noktası birkaç bağımsız veri akışı gönderir.
+•
+Her veri akışı, uzayda farklı yollar kullandığı ve verileri alıcıya veya WLAN istemcisine aktardığı için bir uzamsal akış (SS) olarak adlandırılır.
+•
+WLAN standardına bağlı olarak, bir verici iki, dört ve hatta sekiz uzaysal akışı destekleyebilir. 802.11n'ye göre WLAN'larda, 802.11ac sekiz ile maksimum dört uzamsal akış vardır.
+•
+Aynı anda kullanılabilen akış sayısı yalnızca WLAN standardına değil, aynı zamanda erişim noktasında ve istemcide bulunan antenlerin sayısına da bağlıdır.
+
+Mekansal Akışlar-Çeşitli Mekansal Akışlar
+•
+Uzamsal akışların sayısı veri hızı için belirleyicidir.
+•
+MIMO teknolojisinin yardımıyla 802.11n standardıyla 600 Mbit/s'ye (brüt) kadar veri çıkış hızları mümkündür, ancak bu yalnızca 5 GHz bandında ve verici ve alıcı tarafında her biri dört antenle mümkündür.
+•
+Örneğin, bir dizüstü bilgisayarda maksimum üç, genellikle yalnızca iki anten bulunduğundan, bu tamamen teorik bir değerdir.
+
+girişim kaynakları
+
+"aktif bozucular"
+•
+Kendi başlarına radyo dalgaları üreten ve yayan tüm cihazlar anlamına gelen, sık rastlanan bir parazit kaynağıdır. Bunlar sadece diğer WiFi vericileri değil.
+•
+Bunlara (çoğunlukla eski) DECT telefonlar, mikrodalga fırınlar, çeşitli Bluetooth cihazları ve hatta kablosuz güvenlik kameraları da dahildir.
+•
+Güç kaynağı da bir parazit kaynağı olarak kabul edilebilir. WLAN cihazları genellikle enerjilerini takılabilir güç kaynaklarından alır. Güç kaynaklarının kalitesine bağlı olarak, güç kaynağından gelen parazit, güç kaynağı aracılığıyla WLAN cihazına ulaşabilir.
+
+mesafe veya yapısal koşullar
+•
+İstemci erişim noktasından ne kadar uzaktaysa, iletim o kadar yavaş olur. Bir WLAN'ın gerçek aralığı ve istemcilerin maksimum aktarım hızına ulaştığı alan, diğer şeylerin yanı sıra şunlardan etkilenir:
+•
+Duvarlar, kapalı kapılar, dolaplar ve cam yüzeyler
+•
+Masif mobilya
+•
+Betonarme duvarlar ve tavanlar
+•
+muhtemelen daha büyük bir akvaryum
+•
+Isıtma sistemleri, boru hatları, elektrik hatları, diğer metaller
+
+radyo kanalları
+•
+Bireysel tarafların radyo ağlarının yoğun nüfuslu alanlarda birbirini engellememesini sağlamak için popüler 2,4 gigahertz frekans bandında 13 kanal bulunmaktadır.
+•
+Ancak, birçok yönlendirici, teslim edildiğinde varsayılan olarak kanal 1'e ayarlanır. Gerekirse bu değiştirilmelidir.
+•
+İhbar:
+•
+WLAN veri çıkışı düşükse, farklı bir kanal deneyebilirsiniz. En az beş kanallık bir mesafe önerilir.
+•
+Bazı yönlendiriciler, gerektiğinde kanalı otomatik olarak değiştirme seçeneği de sunar.
+
+tekrarlayıcılar
+
+WLAN tekrarlayıcı
+•
+Tekrarlayıcı, WLAN yönlendirici ile aynı üreticiden gelmek zorunda değildir.
+•
+Önemli : Yalnızca çift bant modu veya çapraz bant tekrarı olan modeller aynı anda 2,4 ve 5 GHz bandını destekler.
+•
+Bununla birlikte, tekrarlayıcıların, erişim noktasından sinyali aldıkları ve aynı, yenilenmiş sinyali tekrar yaydıkları için veri çıkışını yarıya indirdiği unutulmamalıdır (tekrarlayıcılar amplifikatörler değil!).
+
+•
+Daha büyük dairelerde ölü noktaları önlemek için birkaç tekrarlayıcı kullanılabilir.
+•
+Bireysel tekrarlayıcılar, her biri başka bir tekrarlayıcının değil, WLAN yönlendiricisinin sinyalini güçlendirecek şekilde ayarlanmalıdır.
+•
+Aksi takdirde, tekrarlayıcı zaten yarıya indirilmiş WLAN hızını daha da düşürür.
+
+ağ WLAN
+•
+IEEE 802.11s, WLAN özellikli aygıtların diğer aygıtlar için en yakın erişim noktasına "aktarma istasyonları" görevi gördüğü bir kablosuz ağ ağı (WMN) standardıdır.
+•
+WLAN istasyonları kendi aralarında kablosuz bir omurga oluşturur ve çerçeveleri erişim noktasının kapsama alanı dışındaki istasyonlara iletir. Bu şekilde, radyo hücresinin kapsama alanı arttırılır.
+•
+Teorik olarak, bir ağ WLAN, herhangi bir boyutta bir radyo hücresi oluşturabilir. Bunun için yalnızca İnternet bağlantısı olması gereken tek bir erişim noktası gereklidir.
+•
+Evin her yerinde tam sinyal gücü ve güvenilir hızlı bir ağ için, ağ teknolojisine sahip WLAN yönlendiricileri yakın zamanda piyasaya çıktı.
+•
+Bunları daha geniş alanları veya birkaç katı kaplamak için kullanmak mantıklıdır.
+
+işlevsellik
+•
+İki, üç veya daha fazla cihazla birlikte ağ yönlendiriciler, WLAN hızını korurken kapsamlı bir ağ kurar.
+•
+Tüm cihazlar birbirleriyle iletişim kurar, kendi WiFi sinyallerini üretir ve birbirleriyle doğrudan veri alışverişinde bulunur. Dolayısıyla bunlar sadece sinyal yükselticileri değildir.
+•
+Tüm ağ ağı aynı (SSID) altında çalışır.
+
+Bilgi
+•
+Ancak pratikte, piyasadaki ağ yönlendiricileri, yalnızca seçilen şirket içi donanımla istenen ağ yapısını uygular.
+•
+AVM, Google ve Netgear gibi şirketler şu anda teklif veriyor kendi "ağ" sistemleri. Hepsinin ortak noktası, menzili artırmak için sözde "ağ noktaları"nın yönlendiriciye uyması ve kendi üretimimizden gelmesi gerektiğidir. IEEE 802.11s'e göre ağ ile pek ortak yanı yoktur.
+•
+Dizüstü bilgisayarlar ve tabletler gibi yaygın WLAN cihazları şu anda bir ağ noktası olarak çalışamamaktadır.
+
+WiFi güvenliği
+
+WiFi SSID'sini gizle
+•
+WLAN adının "Gizli SSID'yi etkinleştir" veya "Yayın SSID'sini devre dışı bırak" biçiminde gizlenmesi, bir WLAN'ın güvenliğini artırmaya yönelik bir önlem gibi görünmektedir.
+•
+Saldırganın bir WLAN üzerinde kimliğini doğrulayabilmesi için yalnızca WLAN parolasına değil, aynı zamanda WLAN adına da ihtiyacı vardır. Bir "Gizli SSID" çok basit yöntemlerle okunabilir ve standarda uymaz.
+•
+Kullanıcının dezavantajı, gizli WLAN'a ilk bağlandığında bağlantıyı manuel olarak kurmak zorunda olmasıdır. Bazı cihazların gizli WiFi'ye otomatik olarak bağlanma sorunları vardır.
+
+MAC adresi filtresi
+•
+Bir MAC filtresi, WLAN adaptörünün donanım adresi daha önce kablosuz erişim noktasında kayıtlı değilse, herhangi birinin bir WLAN'a bağlanmasını temel olarak engeller.
+•
+Erişim noktası, söz konusu istemci doğru WLAN parolasına sahip olsa bile bağlantı girişimini reddedecektir.
+•
+Bir WLAN adaptörünün iletilen MAC adresini taklit etmek nispeten basittir. Bu nedenle, bir MAC filtresi güvenliği gerçekten artırmaz.
+
+WEP - Kablolu Eşdeğer Güvenlik
+•
+WEP, IEEE 802.11 standardına uyan WLAN'ların kimlik doğrulaması ve şifrelenmesi için 1999'dan kalma eski bir standarttır. WEP, kimlik doğrulama, şifreleme ve bütünlük denetimi işlevleri sağladı.
+•
+WEP, temel tasarım zayıflıkları içerir ve 2001'den beri güvensiz olarak kabul edilir. WEP güvenli WLAN'a girmek nispeten kolaydır.
+•
+Not : WEP eskidir ve artık kullanılmamalıdır. 2013'ten beri, yeni erişim noktalarının artık WEP sunmasına izin verilmemektedir. 2014'ten itibaren dizüstü bilgisayarlar ve WLAN çubukları gibi WLAN cihazları artık WEP'i desteklemeyebilir.
+
+WPA WiFi Korumalı Erişim
+•
+WPA, başlangıçta WEP donanımına dayanıyordu, böylece basit bir yazılım güncellemesi, bir kablosuz erişim noktasını WEP'ten WPA'ya yükseltebilirdi.
+•
+WPA, şifreleme için TKIP'yi (Geçici Anahtar Bütünlüğü Protokolü) kullanır. TKIP, gelişmiş anahtar hesaplaması sunar (Hızlı Paket Anahtarlama, FPK). WEP ile karşılaştırıldığında, WPA yalnızca biraz daha güvenlidir.
+•
+Bu nedenle, WPA yalnızca geçici olarak kullanıldı; bugün, WPA2 her yerde önerilir.
+
+WPA2 (WiFi Korumalı Erişim 2) veya IEEE 802.11i
+•
+2004 yılından itibaren IEEE 802.11 tabanlı WLAN'ların kimlik doğrulaması ve şifrelenmesi için bir standarttır ve WEP'in büyük güvenlik eksikliklerini ortadan kaldırmayı amaçlar.
+•
+IEEE 802.11i'nin benimsenmesinden sonra, üretici derneği Wi Fi Alliance, önceki standart WPA'yı ikinci bir sürümle genişletti.
+•
+WPA2 bu nedenle IEEE 802.11i standardını temel alır. WPA2'nin IEEE 802.11i ile aynı olmadığına dikkat edilmelidir. WPA2, IEEE 802.11i özelliklerinin yalnızca bir kısmını içerir
+•
+WPA ve WPA2 arasındaki temel fark, şifreleme yöntemidir. WPA daha az güvenli TKIP'yi kullanırken, WPA2 güvenli AES'yi kullanır.
+
+WPA2 kimlik doğrulama yöntemi
+•
+WPA2 Kurumsal
+•
+Bir RADIUS sunucusu kullanır (Kullanıcı Hizmetinde Uzaktan Kimlik Doğrulama Araması) ve böylece merkezi kullanıcı yönetimini sağlar. Kullanıcıların kişisel erişim verileri vardır.
+•
+Kimlik doğrulama, Genişletilebilir Kimlik Doğrulama Protokolü (EAP) aracılığıyla yapılır.
+•
+WPA personeli
+•
+Ortak bir önceden paylaşılan anahtarla kimlik doğrulama.
+
+IEEE 802.1x/RADIUS
+•
+Kimlik doğrulama prosedürünün bileşenleri şunlardır:
+•
+başvuru sahibi
+•
+doğrulayıcı
+•
+Kimlik Doğrulama Sunucusu (onay)
+•
+Kimlik doğrulayıcı, istekte bulunan için ağa erişimi etkinleştirir veya reddeder.
+
+WPA3 (Wi-Fi Korumalı Erişim 3)
+•
+WPA3, kimlik doğrulamayı basitleştiren ve kimlik doğrulama ve şifreleme güvenliğini artıran yeni özellikler içerir.
+•
+daha sağlam kimlik doğrulama ve gelişmiş şifreleme
+•
+kontrolü olmayan cihazlar için kolay konfigürasyon
+•
+her cihaz için ayrı şifreleme
+•
+WPA2 cihazlarıyla birlikte çalışabilirlik
+•
+Ayrıca Kişisel ve Kurumsal Modu kullanır.
+•
+Ürün yazılımı veya sürücü güncellemesi yoluyla WPA3'ü WLAN istemcilerine ve erişim noktalarına dahil edin.
+•
+WPA3 cihazları, WPA2'ye (WPA3 SAE Geçiş Modu) geri dönebilmelidir.
+
+WPS - Wi-Fi Korumalı Kurulum
+•
+WPS, WiFi Alliance'ın (WFA) bir özelliğidir ve arkasında şifrelemeli bir WLAN'ın basit yapısı için otomatik bir yapılandırma bulunur.
+•
+WPS'nin amacı, mevcut bir ağa cihaz eklemeyi kolaylaştırmaktı. Bir WLAN istemcisini yapılandırırken ana zorluk, erişim noktasında saklanan WLAN parolasını (önceden paylaşılan anahtar) girmektir.
+•
+WPS, bu süreci basitleştirir ve otomatikleştirir. Yapılandırma, bir düğmeye (WPS PBC) basılarak veya bir pin (WPS PIN) girilerek yapılır.
+•
+Güvenli olmadığı düşünüldüğünden WPS artık kullanılmamalıdır.
+
+Güvenli bir radyo ağı için güvenlik kuralları:
+•
+Yeni WLAN yönlendiricileri için önceden ayarlanmış parolayı değiştirin
+•
+SSID'yi değiştirin, şifrelemeyi WPA2'ye ayarlayın
+•
+Güvenli şifre kullan
+•
+WPS'yi devre dışı bırak
+•
+Gerekirse, uzaktan bakımı devre dışı bırakın
+•
+Yabancılar WLAN'ı kullanacaksa, misafir erişimini etkinleştirin ve yapılandırın
+•
+Ürün yazılımının güncel olup olmadığını düzenli olarak kontrol edin
+
