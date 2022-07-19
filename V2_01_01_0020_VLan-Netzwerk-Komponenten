@@ -1,0 +1,55 @@
+ağ bileşenleri
+
+Pasif ağ bileşenleri
+Pasif ağ bileşenleri, kendi güç kaynaklarına sahip olmayan ağ bileşenleridir.
+Bunlar örneğin:
+Çeşitli düzenekleri bağlamak için ağ kabloları, ağ soketleri, patch paneller veya basit DSL ayırıcılar.
+Ancak, genellikle ihmal edilen bu bileşenler, güçlü ve hatasız bir ağın ilk adımıdır.
+
+Aktif ağ bileşenleri
+Bunların tümü, sinyalleri aktif olarak işleyebilen veya yükseltebilen ve bir güç kaynağına sahip ağ cihazlarıdır.
+Örnekler:
+tekrarlayıcılar
+merkez
+köprü
+anahtarlar
+yönlendiriciler
+Geçit
+sunucu
+WAP
+güvenlik duvarı
+
+tekrarlayıcılar
+Tekrarlayıcılar genellikle iletim bağlantılarının yükselticileri olarak anlaşılır.
+Bir tekrarlayıcı, OSI katman modelinin fiziksel katmanı olan katman 1 üzerinde çalışır.
+Birden çok bağlantı noktasına sahip bir tekrarlayıcı, bir hub (çok bağlantı noktalı tekrarlayıcı) olarak da bilinir. Birkaç ağ segmentini birbirine bağlayabilir.
+
+merkez
+Hub, bir ağdaki birden çok istasyonu birbirine bağlayan bir bağlantı elemanıdır. Yıldız topolojisine dayalı bir Ethernet ağında, bir hub, veri paketleri için bir dağıtıcı görevi görür.
+Hub'lar, OSI katman modelinin bit iletim katmanı (katman 1) üzerinde çalışır ve bu nedenle saf dağıtım işleviyle sınırlıdır.
+Bir hub üzerindeki bağlantı sayısı, ana bilgisayar sayısı için yeterli değilse, ikinci bir hub gerekir.
+
+yönlendiriciler
+Bir yönlendirici, farklı protokoller ve mimarilerle de çalışabilen mantıksal olarak ayrı ağları birbirine bağlar.
+OSI katman modelinin ağ katmanında (katman 3) çalışır.
+Genellikle bir ağın çevresinde, onu İnternet'e veya başka bir daha büyük ağa bağlamak için bir yönlendirici bulunur.
+Görevler şunları içerir:
+Mevcut rotaların belirlenmesi
+Çeşitli kriterler dikkate alınarak en uygun rotanın seçimi
+
+
+
+
+Kablosuz Erişim Noktası (WAP)
+Kısaca WLAN Erişim Noktası veya Erişim Noktası (AP) olarak da bilinen Kablosuz Erişim Noktası (WAP), istemcileri WLAN aracılığıyla kablolu ağa bağlamak için yerel alan ağı (LAN) içindeki bir radyo baz istasyonudur.
+IEEE 802.11'e göre WLAN için frekans aralıklarının kullanımı dünya çapında farklı şekilde düzenlenmiştir.
+
+DSL yönlendirici
+İnternet bağlantısını kurar.
+Bir DSL yönlendiricinin en az iki bağlantısı vardır. Biri LAN tarafı, diğeri WAN tarafı için. Bağlantı noktaları genellikle LAN ve WAN olarak etiketlenir. Bazen ne oldukları konusunda her zaman net olmayan bağlantı noktası etiketleri vardır.
+LAN her zaman özel IP adreslerine sahip yerel ağ anlamına gelirken, WAN tarafı genel ağı ifade eder.
+
+anahtarlar
+Anahtar, bir yerel alan ağındaki (LAN) birden çok bilgisayarı veya ağ kesimini bağlamak için kullanılan elektronik bir cihazdır.
+Bağlantı yıldız topolojisinde yapılır.
+
