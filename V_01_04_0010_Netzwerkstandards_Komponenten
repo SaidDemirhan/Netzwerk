@@ -1,0 +1,373 @@
+Ağ standartları
+
+•
+IEEE (Elektrik ve Elektronik Mühendisleri Enstitüsü), elektrik mühendisliği ve mühendisliğinde profesyonellerden ve uzmanlardan oluşan, Yerel Alan Ağı (LAN) alanında standardizasyonu ile tanınan uluslararası bir organizasyondur.
+•
+802, yerel ve metropol alan ağları (LAN ve MAN) için standartlaştırılmış protokolleri ve iletim teknolojilerini içeren IEEE'nin (Elektrik ve Elektronik Mühendisleri Enstitüsü) bir proje grubunun numarasıdır.
+•
+802 proje grubunun adı, Şubat 1980 başlangıç tarihinden türetilmiştir. IEEE standartları hazırlar.
+•
+802 projesi, Ethernet'in ağırlıklı olarak kullanıldığı yerel ağların standardizasyonuna hakimdir.
+
+•
+IEEE Projesi 802:
+•
+Proje 802, yerel alan ağları alanında standartların getirilmesi ihtiyacı ile kuruldu. Daha sonra geniş alan ağı (WAN) standartları da eklendi.
+•
+802 ailesinin standartları, fiziksel katmanı (OSI katmanı 1) ve veri bağlantı katmanını (OSI katmanı 2) içerir.
+•
+İlk noktadan sonraki sayı standardı belirtir. Bir grup içindeki bireysel standartlar, eklenen bir harf veya ek sayılar veya tarihlerle tanımlanır.
+6
+•
+IEEE 802, başlangıçta Ethernet (802.3), Token Bus (802.4) ve Token Ring (802.5) gibi LAN teknolojilerinden sorumludur.
+•
+Projenin diğer bölümleri arasında kablosuz LAN (802.11), Bluetooth (802.15.1) ve WiMAX (802.16) bulunuyor.
+
+
+
+IEEE 802.3 / Ethernet
+•
+1990'larda Ethernet, Token Ring'e (koaksiyel kabloya dayalı) ve FDDI'ye (fiber optik kabloya dayalı) üstün geldi.
+•
+Ethernet, OSI katman modelinin 1. ve 2. katmanlarındaki standartları farklı iletim ortamları için adresleme ve erişim kontrolünü tanımlayan paket anahtarlamalı bir ağ teknolojisidir.
+•
+Özellikle bir Ethernet ağının basit ve ucuz yapısı, tüm dünyaya hızla yayılmasını sağlamıştır.
+•
+Token Ring, FDDI, ATM ve SDH artık pek alakalı değil.
+
+•
+Ethernet, 802.3 altında standartlaştırılmıştır ve 802.1 ve 802.2'ye dayanmaktadır.
+•
+Orijinal Ethernet, bus topolojisinde ve CSMA/CD erişim yönteminde iletim ortamı olarak bir koaksiyel kabloya dayanmaktadır.
+•
+Ethernet, verileri sabit bir erişim modeli olmadan paketler halinde taşır. Bu, Ethernet'i, her katılımcıya sabit bir zaman çerçevesi ile minimum bant genişliğini garanti edebilen ATM veya SDH/Sonet gibi diğer paket yönelimli sistemlerden ayırır.
+
+Standartlar ve iletim hızı TABLO
+
+10
+IEEE 802.3u / FastEthernet
+
+•
+Fast Ethernet, çoğunlukla yerel ağlarda kullanılır, ancak büyük ağları bağlamak için de uygundur. Fiber optik üzerinden hızlı Ethernet çeşitleri 70 km'ye kadar menzile sahiptir.
+•
+Hızlı Ethernet, hem fiber optik kablolar hem de bükümlü çift kablolar için geliştirilmiştir ve verilerin her iki yönde iletilmesine olanak tanır (tam dupleks
+•
+1, 10, 100 Megabit/sn (Hızlı Ethernet), 1000 Megabit/sn (Gigabit Ethernet), 2.5, 5, 10, 40, 50, 100, 200 ve 400 Gigabit/sn iletim hızları şu anda belirtilmiştir.
+•
+Hızlı Ethernet genellikle tam çift yönlü modda çalışır ve CSMA/CD kullanmaz. Bu nedenle akış kontrolü gereklidir.
+
+Begriff
+•akış kontrolü
+•
+Akış kontrolü ile alıcı, iletim hızını azaltmak için uzak istasyona iletimde duraklama sinyali verebilir.
+•jumbo çerçeveler
+•
+1GBase T'de zaten tanıtıldı, ancak 10GBase T'de standart hale getirildi.
+•
+Bir jumbo çerçeve, 9.014 bayta kadar kullanıcı verisi içerir, önceki bir Ethernet çerçevesinde yalnızca 1.500 bayttı, böylece ek yükü azaltır.
+•otomatik müzakere-Negation
+•
+Otomatik Anlaşma ile Ethernet ana bilgisayarları, hattın diğer ucundaki uzak istasyonun Ethernet varyantını otomatik olarak algılayabilir.
+
+Pasif ağ bileşenleri
+•
+Pasif ağ bileşenleri, kendi güç kaynaklarına sahip olmayan ağ bileşenleridir.
+•
+Bunlar örneğin:
+•
+Farklı düzenekleri bağlamak için ağ kabloları, ağ soketleri, patch paneller veya basit DSL ayırıcılar.
+•
+Ancak, genellikle ihmal edilen bu bileşenler, güçlü ve hatasız bir ağın ilk adımıdır.
+
+
+
+
+
+Bükümlü çift kablo
+ISO/IEC 11801 (2002) standardına göre XX/YZZ biçiminde kablo tanımlama sistemi
+•
+XX, genel koruma anlamına gelir
+•
+U = kalkansız (ekransız)
+•
+F = folyo kalkan (kaplanmış plastik folyo)
+•
+S = örgülü kalkan (bükülmüş örgü)
+•
+SF = örgü ve folyo kalkan
+
+•
+Y, tel çifti koruması anlamına gelir
+•
+U = kalkansız (ekransız)
+•
+F = folyo kalkan (kaplanmış plastik folyo)
+•
+S = örgülü kalkan (tel örgü)
+•
+
+ZZ, büküm tipini temsil eder
+•
+TP = bükümlü çift (genellikle)
+•
+QP = dörtlü çift
+
+ışık dalgası hattı kablosu
+•
+ışık dalgası hattı (LWL), Fiber Optik (FO), modüle edilmiş ışığın iletildiği bir iletkendir.
+•
+Optik fiber, cam elyaftan veya plastikten yapılabilir ve diğer şeylerin yanı sıra son derece yüksek iletim hızı ile karakterize edilir.
+•
+Fiber optiklerdeki iletim teknolojisi, genlik, frekans veya faz modülasyonu şeklini alan yoğunluk modülasyonuna dayanmaktadır.
+•
+Optik dalga kılavuzları elektromanyetik parazitlere karşı duyarsızdır, büyük ölçüde hataya karşı korumalıdır ve camdan yapılmışlarsa son derece düşük zayıflama değerlerine sahiptirler.
+•
+Yapı olarak, bir cam fiber optik kablo, silindirik bir çekirdek cam, onu çevreleyen bir kaplama ve kaplamadan oluşur.
+•
+Optik çekirdek camı ve optik kaplama camı, farklı kırılma indekslerine sahip yüksek saflıkta kuvars camdan yapılmıştır.
+
+Fiberglassin yapisi:
+1 çekirdek
+2 Kaban
+3 koruyucu kaplama
+4 dış kabuk
+
+
+
+
+
+21
+Lichtwellenleiter (LWL)-Modi
+•
+İletim sırasında, farklı yayılma sürelerine sahip ışık dalgaları, modlar, çekirdek cam ile kaplama camı arasındaki sınır tabakadaki sık yansımalarla oluşturulur.
+•
+Tek modlu ve çok modlu fiber optikler arasında bir ayrım yapılır:
+1.Tek modlu fiber optik
+•Küçük bir çekirdek çapına sahiptir ve yalnızca tek bir ışık modunu iletmek için kullanılır.
+•Kırılma indisi düşüktür, bu nedenle uzun mesafeli sinyal iletimi için kullanılır.
+•Lazerler besleme için kullanılır
+
+2. Çok modlu fiber optik (Çok modlu fiber)
+•
+Geniş bir çekirdek çapına sahiptir ve aynı anda birden fazla ışık modunu iletmek için kullanılır.
+•Kırılma indisi yüksektir, bu nedenle nispeten kısa mesafelerde sinyal iletimi için kullanılır.
+•Işık sağlamak için LED'ler kullanılabilir.
+
+Aktif ağ bileşenleri
+•
+Bunların tümü, sinyalleri aktif olarak işleyebilen veya yükseltebilen ve bir güç kaynağına sahip ağ cihazlarıdır.
+•
+Örnekler:
+•tekrarlayıcılar
+•merkez
+•köprü
+•anahtarlar
+•yönlendiriciler
+•geçit
+•sunucu
+•WAP
+•güvenlik duvarı
+
+Repeater
+•
+Tekrarlayıcılar genellikle iletim bağlantılarının yükselticileri olarak anlaşılır.
+•
+Bir tekrarlayıcı, OSI katman modelinin fiziksel katmanı olan katman 1 üzerinde çalışır.
+•
+Birden çok bağlantı noktasına sahip bir tekrarlayıcı, bir hub (çok bağlantı noktalı tekrarlayıcı) olarak da bilinir. Birden fazla ağ segmentini birbirine bağlayabilir.
+
+Hub
+•
+Hub, bir ağdaki birden çok istasyonu birbirine bağlayan bir bağlantı elemanıdır. Yıldız topolojisine dayalı bir Ethernet ağında, bir hub, veri paketleri için bir dağıtıcı görevi görür.
+•
+Hub'lar, OSI katman modelinin bit iletim katmanı (katman 1) üzerinde çalışır ve bu nedenle saf dağıtım işleviyle sınırlıdır.
+•
+Bir hub üzerindeki bağlantı sayısı, ana bilgisayar sayısı için yeterli değilse, ikinci bir hub gerekir.
+
+
+Router
+•
+Bir yönlendirici, farklı protokoller ve mimarilerle de çalışabilen mantıksal olarak ayrı ağları birbirine bağlar.
+•
+OSI katman modelinin ağ katmanında (katman 3) çalışır.
+•
+Genellikle bir ağın çevresinde, onu İnternet'e veya başka bir daha büyük ağa bağlamak için bir yönlendirici bulunur.
+•
+Görevler şunları içerir:
+•Mevcut rotaların belirlenmesi
+•Çeşitli kriterler dikkate alınarak en uygun rotanın seçimi
+
+Wireless Access Point (WAP) Kablosuz Erişim Noktası
+•
+Kısaca WLAN Erişim Noktası veya Erişim Noktası (AP) olarak da bilinen Kablosuz Erişim Noktası (WAP), istemcileri WLAN aracılığıyla kablolu ağa bağlamak için yerel alan ağı (LAN) içindeki kablosuz bir baz istasyonudur.
+•
+IEEE 802.11'e göre WLAN için frekans aralıklarının kullanımı dünya çapında farklı şekilde düzenlenmiştir.
+
+DSL Router (yönlendirici)
+
+•
+İnternet bağlantısını kurar.
+•
+Bir DSL yönlendiricinin en az iki bağlantısı vardır. Biri LAN tarafı, diğeri WAN tarafı için. Bağlantı noktaları genellikle LAN ve WAN olarak etiketlenir. Bazen ne oldukları konusunda her zaman net olmayan bağlantı noktası etiketleri vardır.
+•
+LAN her zaman özel IP adreslerine sahip yerel ağ anlamına gelirken, WAN tarafı genel ağı ifade eder.
+30
+Switch (anahtar) 
+•
+Anahtar, bir yerel alan ağındaki (LAN) birden çok bilgisayarı veya ağ kesimini bağlamak için kullanılan elektronik bir aygıttır.
+•
+Bağlantı yıldız topolojisinde yapılır.
+
+•
+Anahtar, OSI modelinin 2. katmanında çalışan bir cihazdır. Ayrıca OSI katman 3'te (Katman 3 anahtarı) çalışan modeller de vardır.
+•
+Prensip olarak, hangi ana bilgisayara hangi port üzerinden ulaşılabileceğini hatırlayan akıllı bir hub olarak tanımlanabilir.
+•
+Bir anahtarın ayrı portları birbirinden bağımsız olarak veri alabilir ve gönderebilir.
+•
+Bağlantı noktaları, dahili bir yüksek hızlı veri yolu (arka panel) aracılığıyla birbirine bağlanır.
+•
+Bir veri arabelleği (önbellek), mümkünse hiçbir veri paketinin kaybolmamasını sağlar.
+
+
+Layer 3 Switch
+•
+Katman 3 anahtarı, çerçeveleri MAC adreslerine göre iletebilir ve ayrıca paketleri IP adreslerine göre yönlendirebilir.
+•
+Temelde bir anahtar ve yönlendirici kombinasyonudur
+•
+Yönlendiriciye göre avantajlar:
+•daha ucuz
+•daha düşük gecikme süresi
+•daha yüksek verim
+•daha kolay yönetim
+•Yapılandırmak için daha esnek
+
+çalışma yöntemi:
+•
+Öte yandan bir anahtar, trafiği doğrudan hedef bağlantı noktasına iletir.
+•
+Bir anahtar, MAC adres tablosundaki her bir bağlantı noktasına bağlı aygıtların MAC adreslerini saklar.
+•
+Anahtar bir çerçeve aldığında, anahtar önce giden bağlantı noktası çerçevesinin hedef MAC adresi için MAC adres tablosuna bakar.
+•
+Giden bağlantı noktası bulunursa, çerçeve doğrudan bu bağlantı noktasına iletilir.
+•
+Bir çerçeve bilinmeyen bir hedef MAC adresi veya bir yayınla geldiğinde, kaynak bağlantı noktası dışındaki tüm bağlantı noktalarına iletilir.
+
+Switch und Broadcast
+•
+Yayınlar, IP istemci/sunucu iletişiminin önemli bir parçasıdır.
+•
+Aynı yayın etki alanındaki çok fazla ana bilgisayar, kabul edilemez bir
+yayın trafiğine neden olur.
+•
+Yayınlar, tüm anahtar bağlantı noktalarında iletildikleri için yükü artırır.
+•
+Her yayın paketi, ağdaki her anahtarın CPU'sunu yükler
+•
+Bir anahtar her zaman bir yayın etki alanı oluşturur.
+
+Switch Arbeitsweise
+
+• Gerçek anahtarlama, yani yeni gelen bir çerçevenin hangi porta tekrar gönderileceğine dair karar, aşağıdaki yöntemler kullanılarak gerçekleştirilebilir.
+•Kesintisiz
+•Mağaza&İlet
+•Fragmansız (Modifiye Edilmiş Kesit)
+•Hatasız Geçiş
+
+
+
+
+
+
+
+41
+Switch Vorteile
+•
+Kesintisiz:
+•
+Anahtar, hedefin adresini okuduktan hemen sonra çerçeveyi iletir.
+•
+MAC adresinin arkasındaki tüm kontrol alanları kontrol edilmediğinden hatalı çerçeveler iletilebilir.
+•
+Mağaza ve ileri:
+•
+Anahtar, gelen çerçeveleri tam olarak okur.
+•
+Çerçeveler eksiksizlik ve hatasızlık açısından kontrol edilebilir.
+
+•
+Fragmansız (Değiştirilmiş Kesit):
+•
+Fragment Free konseptiyle, özel bir kesme biçimi olarak anahtar, bir çarpışma sonucunda bir çerçevenin herhangi bir parçasını almadığından emin olmak için iletmeden önce bir çerçevenin ilk 64 baytını kontrol eder.
+•
+Hatasız Geçiş:
+•
+Kes ve sakla ve ilet karma şeklidir. Belirli bir hata oranı aşılırsa, sistem otomatik olarak depola ve ilet moduna geçer.
+•
+Hata oranı azalırsa, tekrar kesmeye geçer.
+43
+•
+Bir anahtar, çarpışmaları o bağlantı noktasına sınırlar.
+•
+Tam çift yönlü çalışmada artık çarpışma olmaz ve aynı zamanda ulaşılabilir hız iki katına çıkar.
+•
+Hız ve dupleks modu, her bağlantı noktasında bağımsız olarak müzakere edilebilir.
+•
+Bant genişliğini artırmak için iki veya daha fazla fiziksel bağlantı noktası tek bir mantıksal bağlantı noktasında (trunk) birleştirilebilir, bu, LACP veya PAGP gibi statik veya dinamik yöntemler kullanılarak yapılabilir.
+
+Switch Nachteile
+•
+Anahtarların bir dezavantajı, bir ağda hata ayıklamanın artık o kadar kolay olmamasıdır, çünkü paketler artık ağdaki tüm dizilerde görünmez, ancak ideal olarak yalnızca gerçekten hedefe gidenlerde görünür.
+•
+Yöneticinin trafiği izlemesini sağlamaya devam etmek için, daha iyi anahtarlar bağlantı noktası yansıtma yeteneğine sahiptir.
+•
+Diğer bir dezavantaj, anahtarlarda hub'lardan çok daha yüksek olan gecikmedir. Switch ilk önce MAC adres tablosunu kullanarak doğru çıkış portunu bulmalıdır.Bu bant genişliğinden tasarruf sağlar, ancak zaman kazandırır.
+
+
+Spanning Tree Protocol (STP) Kapsayan Ağaç Protokolü
+
+•
+Ethernet döngü/döngü tanımaz
+•
+her zaman noktadan noktaya bağlantılar veya BUS yapıları
+•
+Döngüler tasarım kusurlarıdır çünkü yayınlar asla sonlanan bir hedefe ulaşmaz
+•
+Sorun: yayın fırtınaları
+•
+Çözüm: IEEE 802.1d (yayılan ağaç)
+
+•
+Yayılan ağaç protokolünün şematik işlevi:
+•
+Yedekli ortamlarda, döngü oluşumunu önlemek için bağlantılar kasıtlı olarak bloke edilir (solda).
+•
+Anahtarlardan biri arızalanırsa (sağda), topoloji yeniden hesaplanır. Engellenen bağlantı noktaları, her şeye yeniden erişilinceye kadar açılır.
+
+Berechnung des Spanning Trees
+
+1.
+Kök köprünün seçilmesi
+•
+Tüm kapsayan ağacın referans noktasını oluşturur ve ağacın yollarını ve ayarlarını hesaplar. Temel köprü, üç bileşenden oluşan "Köprü Kimliği"ne göre seçilir:
+•
+Köprü Önceliği
+•
+Sistem Kimliği Uzantısı
+•
+Mac Adresi
+•
+Köprü önceliği 0 ile 61440 arasındadır ve 4096'lık artışlarla yapılandırılabilir. En düşük değere sahip köprü kazanır.
+
+2.
+Kök bağlantı noktası seçimi
+•
+Her anahtar, temel köprüye giden yol maliyetini biriktirir.
+•
+Her anahtar, köke giden en düşük yol maliyetine sahip bağlantı noktasını belirler ve diğer bağlantı noktalarını engeller
+3.
+Belirlenen portların belirlenmesi
+•
+Belirlenmiş bağlantı noktaları, trafiği ileten tüm kök olmayan bağlantı noktalarıdır. Diğer uç bir kök bağlantı noktasıysa, bağlantı noktası belirlenmiş bir bağlantı noktasıdır.
