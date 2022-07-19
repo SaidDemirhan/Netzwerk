@@ -1,0 +1,160 @@
+Büyük veri
+
+anlam
+•
+Her gün üretilen büyük miktarda veride kalıp bulmak, kullanıcıya çok büyük faydalar sağlar
+•
+bilimsel bilginin elde edilmesi.
+•
+fiyatların ayarlanması.
+•
+satın alma önerileri oluşturmak.
+•
+şüpheli aktivitenin tespiti.
+•
+Birçok şirket, ekonomi sektörü ve otorite artık "Büyük Veri"ye güveniyor.
+•
+Ama aslında “Büyük Veri” nedir?
+
+•
+Büyük veri, şirketlerin sürekli olarak ürettiği çok büyük miktarda yapılandırılmamış ve yarı yapılandırılmış veriyi tanımlamak için kullanılan genel bir terimdir.
+•
+Büyük veri, belirli bir miktarda veriye atıfta bulunmaz, ancak peta ve eksabaytlarca veri ile eşanlamlı olarak kullanılır.
+•
+Bu verileri ilişkisel bir veritabanında analiz etmek pahalı ve zaman alıcıdır.
+•
+İnternette ve şirketlerde bulunan veri dağı (büyük veri) giderek daha büyük, daha kafa karıştırıcı ve işlenmesi zor hale geliyor.
+•
+En son teknolojilerle oluşturulan araçlar ve programlar sorunu çözmelidir (örnekler Apache Spark veya Hadoop'tur).
+
+boyutlar
+•
+Tanım olarak, Büyük Veri 4 boyuta atıfta bulunur
+1.
+Veri Hacmi (
+2.
+Veri Hızı
+3.
+Veri Çeşitliliği
+•
+Bu tanım boyutlarla genişletilir
+5.
+Veri Doğruluğu (Özgünlük)
+6.
+Veri değeri
+
+Veri Hacmi
+•
+Büyük Veri, büyük miktarda yapılandırılmamış, düşük yoğunluklu veriyi işlemekle ilgilidir, ör. Bir web sitesinde, bir mobil uygulamada veya Nesnelerin İnterneti veya Endüstri 4.0 konuları gibi sensör özellikli cihazlarda trafik verileri...
+•
+Bu muazzam miktardaki veri, geleneksel veritabanı sistemleri için büyük bir zorluk teşkil eder, ancak bunların yönetilmesi gerekir.
+•
+Statista'ya göre 2017'den 2025'e kadar yıllık 163 zettabayta kadar veri miktarı gelecekte artmaya devam edecek.
+
+Veri Hızı
+•
+Hıza bakmanın iki yolu vardır:
+1.
+Çok çeşitli uygulama alanlarında muazzam veri üretim hızı.
+2.
+Hızla artan miktardaki verinin de hızlı tepki verilebilmesi için derhal işlenmesi gerekir.
+•
+İnternet özellikli akıllı verileri toplayan yazılım veya cihazlar, gerçek zamanlı veriler sağlar ve çok hızlı gerçek zamanlı değerlendirme ve gerçek zamanlı eylemler gerektirir.
+
+Veri Çeşitliliği
+•
+Mevcut birçok yeni yapılandırılmamış ve yarı yapılandırılmış veri türünü ifade eder.
+•
+Metin, ses ve video gibi bu tür verilerin anlamlarını anlamak ve yönetim ve analiz için meta veriler oluşturabilmek için ek çaba gerekir.
+•
+Bu performans geleneksel ilişkisel veritabanları ile elde edilemez.
+
+Veri doğruluğu
+•
+Verilerin belirsizliği (doğruluğu) ve veri kalitesi ile ilgilidir.
+•
+Veriler, bazıları istenen kaliteye sahip olmayan çok çeşitli kaynaklardan gelir.
+•
+Gerçek amaç için, veriler kontrol edilmeli ve işlenmelidir.
+
+Veri değeri
+•
+Değer = katma değer veya iş değeri
+•
+Verinin kendine has bir değeri vardır, aynı zamanda dijital çağın altını olarak da anılır.
+•
+Dünyanın en büyük teknoloji şirketlerinin büyük piyasa değeri, daha fazla verimlilik ve yeni ürünler için sürekli olarak topladıkları ve analiz ettikleri verilerden gelir.
+•
+Bu sadece analizle ilgili değil, kalıpları tanıyarak, sağlam varsayımlarda bulunarak ve davranışları tahmin ederek verilerin değerini tanımakla ilgilidir.
+
+amaçlar
+•
+Veri destekli web analizi yoluyla işe alım
+•
+Dolandırıcılığı Önleme ve Uyumluluk
+•
+salgınların tahmini
+•
+ürün geliştirme
+•
+Sigorta risk değerlendirmesi
+•
+Farklı profillerin oluşturulması (hareket, satın alma davranışı vb.)
+•
+Büyük veri ve bağlamlarında bahsedilen alt alanlar (örneğin tahmine dayalı analitik) için yeni uygulama alanları şu anda neredeyse her gün ortaya çıkıyor.
+
+riskler
+•
+Totaliter gözetim durumuna giden veri destekli yol olarak büyük veri
+•
+şeffaf çalışan
+•
+Algoritmalara bağımlılık
+•
+mahremiyet erozyonu
+
+ETL (Ayıkla, Dönüştür, Yükle)
+
+•
+ETL, farklı yapılandırılmış birkaç veri kaynağından gelen verilerin bir hedef veritabanında veya veri ambarında birleştirildiği bir süreci tanımlar.
+•
+Sürecin üç aşaması:
+1.
+Çıkarma: Farklı kaynaklardan veri çıkarma
+2.
+Dönüştürme: Veri yapısının ve veri içeriğinin hedef veritabanının formatına ve şemasına dönüştürülmesi
+3.
+Yükle: Verileri hedef veritabanına yükleyin
+
+çıkarma
+•
+Bu adımda, verilerin kısmi alanları çeşitli kaynaklardan çıkarılır ve dönüşüm için hazırlanır.
+•
+Ekstraksiyon senkron veya asenkron olabilir.
+•
+Eşzamansız çıkarma, periyodik, olay odaklı veya istek odaklı olabilir.
+
+dönüşüm
+•
+Dönüşüm sırasında, çıkarılan veriler hedef veritabanının formatına ve şemasına uyarlanır.
+•
+Dönüşüm süreci birkaç bireysel adımdan oluşur:
+•
+Biçimlendirmenin temel yönlerini tanımlama
+•
+Kötü verileri temizleyin
+•
+Benzer bilgileri ve yinelenen verileri kontrol edin
+•
+Verileri gruplayın, sıralayın ve toplayın
+•
+Hedef formatlara ve hedef şemalara uyum
+
+Yük
+•
+Son adım, önceden kontrol edilmiş ve zenginleştirilmiş verileri yüklemektir.
+•
+Hedef veritabanına gerçek entegrasyonun gerçekleştiği yer burasıdır, veriler fiziksel olarak taşınır.
+•
+Bu adımda verilerin bütünlüğü sağlanmalıdır.
+
