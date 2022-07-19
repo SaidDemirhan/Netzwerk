@@ -1,0 +1,187 @@
+RAID (Ucuz Disklerin Yedekli Dizileri)
+
+temel bilgiler
+•
+RAID = "Yedekli Bağımsız Diskler Dizisi" (eski adıyla "Ucuz Disklerin Yedekli Dizisi") resmi olarak 1988'de tanıtıldı ve birden çok fiziksel yığın depolama aygıtını düzenlemek için kullanıldı.
+•
+Veri havuzu tek bir mantıksal sürücü olarak görünür.
+•
+Başlangıçta maliyetleri azaltmak için geliştirildi
+•
+Günümüzün avantajı, güvenlik ve performans artışıdır.
+•
+RAID sistemleri, yedeklemelere bir alternatif değildir
+
+•
+Seviye sadece bir numaralandırmadır, performans hakkında herhangi bir açıklama yapmaz ve
+fazlalık
+•
+RAID seviye 0
+•
+RAID seviye 1
+•
+RAID seviye 2
+•
+RAID seviye 5
+•
+RAID seviye 6
+•
+RAID seviyesi 01 / 10
+• ...
+
+RAID seviye 0 şeritleme
+•
+Verilerin eşit dağılımı
+•
+Okurken ve yazarken hızlandırılmış sabit disk erişimi
+•
+Düşük maliyetler (kullanılabilir kapasite = sabit sürücü sayısı * sabit sürücü kapasitesi)
+•
+Veri güvenliği yok
+•
+Artıklık yok (bugünün tanımına göre RAID yok)
+•
+Hızın güvenlikten daha önemli olduğu her yerde kullanılır.
+
+RAID Düzey 1 Yansıtma
+•
+Yedekli depolama yöntemi, tüm yazma erişimleri iki sabit disk üzerinde paralel olarak gerçekleştirilir
+•
+Veri güvenliği ve kullanılabilirliği çok yüksek
+•
+Her iki diskten paralel okuma yapılarak veri bütünlüğü sağlanır
+•
+ayrıca kısa erişim süreleri.
+•
+Hot Plug destekleniyorsa, yansıtma anında geri yüklenebilir
+•
+yüksek maliyetler (kullanılabilir kapasite = sabit disk sayısı /2*sabit disk kapasitesi
+
+eşlikli RAID seviye 5 şerit seti
+•
+düşük maliyetleri veri güvenliği ile birleştirir
+•
+Kullanılabilir kapasite = (sabit disk sayısı 1)*sabit disk kapasitesi
+•
+tüm disklere yayılmış ek eşlik blokları
+•
+Bir sabit sürücü arızasını tolere eder
+•
+Uygulama alanları: işlem veritabanı sunucusu, ...
+
+parite örneği
+•
+onlar yazılmalı
+değerler:
+•01
+•11
+•00
+•10
+•
+Burada bir XOR işlevi olarak kırmızı ile işaretlenmiş parite
+
+•
+Bir sabit disk arızalanırsa, parite kullanılarak veriler kurtarılabilir
+•
+Parite kırmızıyla işaretlendi
+
+Eksik veriler XOR işlevi kullanılarak yeniden oluşturulur
+•
+Parite kırmızıyla işaretlendi
+
+RAID Düzey 6 - çift eşlikli şerit seti
+•
+RAID 5 + eşlik sürücüsü
+•
+yavaş yazmak
+•
+2 diskin arızalanmasına karşı güvenli
+
+RAID Seviye 10 - RAID kombinasyonu
+•
+Birden çok RAID 1 üzerinden RAID 0
+•
+İki RAIDS'nin tüm özellikleri birleştirilmiştir (güvenlik ve artan okuma/yazma hızı)
+•
+En az 4 sabit sürücü gerektirir
+•
+Toplam disk kapasitesinin yalnızca yarısı kullanılabilir
+•
+Birinin, en iyi durumda iki sabit sürücünün arızasını tolere eder.
+
+RAID Seviye 50 - RAID kombinasyonu
+•
+Birden çok RAID 5 üzerinden RAID 0
+•
+En az 6 sabit sürücü gerektirir
+•
+Yazma verimi ve artıklığın önemli olduğu veritabanlarında kullanılır
+•
+Birinin, en iyi durumda iki sabit sürücünün arızasını tolere eder
+
+RAID seviyesi karşılaştırması
+•
+Gereksinimlere bağlı olarak belirli bir RAID sistemi seçilir
+
+Yazılım ve donanım RAID
+•
+Veri erişimini kim kontrol ediyor?
+•
+Donanım RAID'i
+•
+RAID denetleyicileri
+•
+Yazılım RAID'i:
+•
+•(özel) program
+•
+veya
+•
+işletim sistemi
+
+Donanım RAID'i
+•
+Özel donanım bileşeni:
+•
+RAID denetleyicileri
+•
+sabit sürücülerin yakınında bulunur
+•
+RAID mantığını yönetir
+•
+RAID denetleyicisine bağlı veriler
+•
+ev kullanıcıları için: Anakart üzerindeki RAID denetleyicisi  RAID mantığı, CPU'yu hesaplar
+
+Yazılım RAID'i
+•
+Organizasyon bir program aracılığıyla gerçekleşir
+•
+CPU'ya yük
+•
+PC'nin mevcut arayüzleri aracılığıyla sabit disklerin kontrolü
+•
+günümüzün tüm işletim sistemleri yazılım RAID'lerini destekler
+•
+İşletim sistemine bağlı veriler
+
+JBOD (Sadece Bir Grup Disk)
+
+•
+JBOD, "sabit sürücüler topluluğu" anlamına gelir. Bu terim, RAID standardına göre yapılandırılmamış bir dizi sabit sürücü anlamına gelir.
+•
+Özellikleri:
+•
+Veri taşıyıcılar birleştirilmeden ayrı ayrı sisteme sunulmaktadır.
+•
+Sabit diskler, zincirleme veya "yayılma" yoluyla mantıksal bir sürücüde birleştirilebilir.
+•
+Amaç, birkaç sabit diskin toplam kapasitesinin mümkün olan en iyi şekilde kullanılmasıdır. Brüt depolama kapasitesinin yüzde 100'ü kullanılabilir durumdadır.
+
+•
+Sabit disk kapasiteleri JBOD kullanılarak hızlı ve kolay bir şekilde genişletilebilir.
+•
+Diskler sırayla yazılır ve aynı boyutta olmaları gerekmez.
+•
+Disklerden biri arızalanırsa veriler kaybolur.
+
