@@ -1,0 +1,235 @@
+Routing
+•
+Yönlendiriciler, ağ katmanı protokolüne dayalı olarak ağları bağlamak için kullanılan ağ katmanı sistemleridir.
+•
+Bu işleme yönlendirme denir ve birincil IP işlevidir.
+•
+Yönlendirici, ağ trafiğini bölümlere ayırarak ağ ölçeklendirmesine ve bant genişliği yönetimine olanak tanır.
+•
+Bir yönlendirici, mantıksal olarak ayrı ağları birbirine bağlar.
+
+Typen von Router
+•
+donanım yönlendiricisi
+•
+Donanım ve yazılım açısından paketlerin iletilmesi için optimize edilmiş ve yalnızca yönlendirme için kullanılan özel bir cihaz.
+•
+yazılım yönlendiricisi
+•
+Yönlendirmeyi genellikle ek bir işlem olarak çalıştıran cihazlar (ör. sunucu yazılımına sahip PC)
+•
+WLAN ve DSL yönlendiriciler gibi başka türler (tasarımlar) da vardır.
+
+Was ist Routing?
+•
+Yönlendirme, bir paketin bir ağda hangi yolu seçeceği kararıdır.
+•
+Hedefe giden yol, bir veya daha fazla kriter (örneğin metrik ve/veya maliyetler) kullanılarak belirlenir.
+•
+Rotalar, kriterler kullanılarak çok hassas bir şekilde belirlenebilir, ancak artan kriter sayısı ile yönlendirme için gecikme süresi artar.
+•
+Yönlendirme tablosu, karar vermenin temelini temsil eder.
+
+Routingverfahren yönlendirme prosedürü
+•
+Statik yönlendirme
+•
+Yönlendirme tablosu sabittir ve yönetici tarafından manuel olarak güncellenir
+•
+Statik yönlendirme, ağdaki değişikliklere bağımsız olarak tepki veremez.
+•
+Çok güvenilir çalışır.
+•
+Dinamik (uyarlanabilir) yönlendirme
+•
+Yönlendiriciler üzerindeki yönlendirme tablosu, yönlendirme protokolleri ile oluşturulur ve güncellenir.
+•
+Yönlendirme algoritmaları, ağda değişiklik olduğunda bağımsız olarak yeni rotalar bulabilir
+•
+İdari çaba daha düşüktür, ancak yönlendirme bilgileri nedeniyle ek ağ trafiği vardır.
+
+Routing Tabelle
+•
+Hangi ağ tanımlayıcısına hangi yönlendirici aracılığıyla ulaşılabileceğini açıklayan, rotalar olarak adlandırılan bir dizi girişten oluşur.
+•
+Yönlendirme tablosundaki bilgiler, bir ağdaki en uygun rotayı belirlemek için kullanılabilir.
+•
+Yalnızca yönlendiricilerde değil, diğer ağ cihazlarında da depolanır.
+
+•
+Üç tür yönlendirme girişi içerebilir:
+•
+ağ yolu
+•
+Ağ yolu, ağdaki belirli bir ağ tanımlayıcısına giden yoldur.
+•
+ana bilgisayar rotası
+•
+Ana bilgisayar yolu, bir ağ adresine giden yoldur (ağ kimliği ve düğüm kimliği.
+•
+Standart veya varsayılan rota
+•
+Varsayılan rota, yönlendirme tablosunda başka rota bulunmadığında kullanılır.
+
+•
+Yönlendiricinin çevresini açıklayan bir bağlantı listesi sunar
+•
+gibi çeşitli bilgiler içerebilir.
+•
+ağ adresleri
+•
+bağlantı maliyetleri
+•
+bağlantı türleri
+•
+Bir Linux sisteminden örnek:
+
+Yönlendirme yapılandırması için notlar
+
+•
+Yerel olarak yapılandırılmış ağlar (ağ arayüzü, ağ kartı) otomatik olarak yönlendirme tablosuna dahil edilir.
+•
+Bir yönlendirme girişinde belirtilen yönlendirici, kendi alt ağında olmalıdır. (örneğin, standart ağ geçidine yalnızca kendi ağınızdaysa erişilebilir)
+•
+Bir yönlendirme yapısı planlanırken, her iki yön her zaman dikkate alınmalı veya yapılandırılmalıdır.
+
+Dynamisches Routing
+•
+Yönlendirme protokolleri ile gerçekleştirilir.
+•
+Rota seçimi dinamiktir, rotalar ağdaki değişikliklere uyarlanır.
+•
+Yönlendirme protokollerine örnekler:
+•
+OSPF Önce En Kısa Yolu Açın
+•
+RIP Yönlendirme Bilgi Protokolü
+•
+BGP Sınır Ağ Geçidi Protokolü
+•
+EGP Dış Ağ Geçidi Protokolü
+•
+IGP İç Ağ Geçidi Protokolü
+•
+IGRP İç Ağ Geçidi Yönlendirme Protokolü
+•
+EIGRP Gelişmiş İç Ağ Geçidi Yönlendirme Protokolü
+
+•
+Yönlendirme protokolleri farklı rota ayarlama algoritmaları kullanır, en yaygın olanları şunlardır:
+•
+Uzaklık Vektör Algoritması (DVA)
+•
+Yönlendirme bilgisi, periyodik aralıklarla doğrudan komşu yönlendiriciler ile değiştirilir. Değişiklikler varsa, yönlendirme tablosu güncellenir.
+•
+Bağlantı Durumu Algoritması (LSA)
+•
+Yönlendirme tablosu oluşturmanın temeli, bir alanın eksiksiz topolojisidir. İşlemler DVA'dan daha hızlı değişir.
+
+RIP Routing Information Protocol
+
+•
+RIP, DVA kullandığı için bir mesafe vektörü yönlendirme protokolüdür.
+•
+Basit ama modası geçmiş bir yönlendirme protokolüdür.
+•
+RIP için rota seçimi, hedef ağdaki atlamaların sayısına bağlıdır.
+•
+RIP, 15'ten fazla ara istasyona sahip ağlar için uygun değildir, çünkü 16'lık bir atlama girişi, bu ağa ulaşılamayacağı anlamına gelir.
+•
+Yönlendiriciler, yönlendirme tablolarını (reklam) düzenli olarak (her 30 saniyede bir) tüm doğrudan komşularına gönderir.
+•
+RIP zayıf bir şekilde ölçeklenebilir ve rota değişiklikleri için yakınsama sürelerine sahiptir.
+
+•
+RIP üç versiyonda gelir:
+•
+RIPv1
+•
+CIDR'yi desteklemez.
+•
+rota anonsları için yayın iletişimini kullanır.
+•
+RIPv2
+•
+CIDR'yi destekler.
+•
+çok noktaya yayın iletişimini kullanır.
+•
+yönlendiriciler için kimlik doğrulama sağlar.
+•
+RIPng
+•
+IPv6'yı kullanmak için uzantıları içerir.
+
+OSPF Open Shortest Path First Önce En Kısa Yolu Açın
+•
+OSPF, hiyerarşik bir bağlantı durumu protokolüne dayalı bir yönlendirme protokolüdür.
+•
+Otonom bir sistem içinde kimlik doğrulamayı, TOS yönlendirmesini ve alt ağların, alanların oluşumunu destekler.
+•
+OSPF aynı anda bir hedef ağa giden birden çok eşit maliyetli rotayı destekler ve trafiği farklı rotalar üzerinden iletebilir.
+•
+RIP ile karşılaştırıldığında, OSPF çok daha kısa bir yakınsama süresi ve ağ üzerinde düşük bir yük ile karakterize edilir.
+
+NAT Network Address Translation Ağ Adresi Çevirisi
+•
+Özel IPv4 adresleri İnternette iletişim için kullanılamaz.
+•
+LAN'lar tipik olarak yönlendiriciye atanmış yalnızca bir genel adrese sahiptir.
+•
+Bu nedenle NAT, yerel ağları İnternet'e bağlayan yönlendiricilerde kullanılır.
+•
+NAT kullanarak, özel IPv4 adresleriyle yapılandırılan ana bilgisayarlar, genel bir adres aracılığıyla İnternet ile iletişim kurabilir.
+
+SNAT Source Network Address Translation Kaynak Ağ Adresi Çevirisi
+
+•
+Kaynak NAT, bir IP paketinin kaynak IP adresinin NAT yönlendiricisinde bir başkasıyla değiştirildiği bir prosedürdür.
+•
+NAT, yalnızca tek bir dahili IP adresini geçerli bir harici IP adresine, yani 1:1 çeviriye dönüştürebilir.
+•
+Ancak bir kural olarak, bir LAN'daki tüm ana bilgisayarlar, genel bir adres aracılığıyla İnternet'e bağlanmalıdır. Bu nedenle NAT, PAT tarafından genişletildi.
+
+•
+PAT (Liman ve Adres Çevirisi)
+•
+Saf adres dönüşümü olan NAT ile, yanıt paketleri arasında ayrım yapmak mümkün olmayacağından, aynı anda LAN'dan yalnızca bir ana bilgisayar İnternet ile iletişim kurabilir. Bu nedenle PAT da kullanılmaktadır.
+•
+PAT, dinamik bağlantı noktası dönüştürmeli bir NAT uzantısıdır.
+•
+PAT ile, dahili istemcinin kaynak bağlantı noktası, yönlendiricideki boş bir bağlantı noktası ile değiştirilir. Bu eşleme, yönlendiricinin NAT tablosunda saklanır.
+
+Prosedür:
+•
+İnternet üzerindeki bir hedef bir IP paketi ile adresleniyorsa, yönlendirici IP başlığındaki kaynak adresini kendi genel IP adresiyle değiştirir.
+•
+Aynı zamanda, kaynak bağlantı noktası numarası, aktarım protokolü başlığında (PAT) değiştirilir.
+•
+Yönlendirici, yanıt paketlerini tekrar doğru göndericiye atayabilmek için bir NAT tablosu tutar.
+•
+Yanıt paketlerinde yönlendirici, hedef adresi ve hedef bağlantı noktasını NAT tablosuna göre doğru değerlerle değiştirir.
+
+DNAT Hedef Ağ Adresi Çevirisi (port yönlendirme)
+•
+DNAT, yaygın olarak bağlantı noktası iletme veya bağlantı noktası iletme olarak adlandırılır.
+•
+Hizmetler İnternet üzerinden sunulacaksa, sunucuların genellikle genel adresleri yoktur.
+•
+Yönlendiricideki dahili IP'ye karşılık gelen hizmet bağlantı noktası atanır. Yönlendirici daha sonra bu bağlantı noktasına gönderilen tüm paketleri dahili IP adresine iletir.
+
+•
+avantajlar
+•
+NAT, dahili adresleri İnternet'ten gizleyerek güvenliği artırmaya yardımcı olur. Ve ana bilgisayarlara doğrudan ulaşılamıyor.
+•
+Aynı özel IP adresleri çok sayıda ağda çakışmalara neden olmadan kullanılabildiğinden IPv4 adreslerinin kaydedilmesi.
+•
+dezavantaj
+•
+NAT, "benzersiz bir IP adresine sahip 1 ana bilgisayar" atamasına uyulmasını engeller. Bu, IPsec gibi net atamaya bağlı şifreleme yöntemleriyle ilgili sorunlara neden olur.
+•
+VoIP protokolleri gibi ters kanalları kullanan ağ hizmetlerinde de sorunlar ortaya çıkar.
+
+
+
