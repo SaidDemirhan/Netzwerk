@@ -1,0 +1,143 @@
+Bulut bilişim
+
+Kuralların tanımı
+•
+ENISA (Avrupa Ağı ve Bilgi Güvenliği Ajansı) tarafından da kullanılan ABD standardizasyon kuruluşu NIST'in (Ulusal Standartlar ve Teknoloji Enstitüsü) tanımı:
+
+"Bulut bilişim, hızlı bir şekilde ve minimum yönetim çabası ile dağıtılabilen, yapılandırılabilir bilgi işlem kaynaklarının (örneğin ağlar, sunucular, depolama sistemleri, uygulamalar ve hizmetler) paylaşılan bir havuzuna isteğe bağlı, her zaman, her yerden uygun erişim sağlayan bir modeldir. veya hizmet sağlayıcıların etkileşimi sağlanabilir."
+
+•
+BSI, "Bulut Bilişimi" şu şekilde tanımlar:
+
+Bulut bilişim, gereksinimlere dinamik olarak uyarlanmış bir ağ aracılığıyla BT hizmetlerinin sunulması, kullanılması ve faturalandırılması anlamına gelir. Bu hizmetler, yalnızca tanımlanmış teknik arayüzler ve protokoller aracılığıyla sunulur ve kullanılır. Bulut bilişimin bir parçası olarak sunulan hizmet yelpazesi, tüm bilgi teknolojisi yelpazesini kapsar ve diğer şeylerin yanı sıra altyapıyı (örneğin bilgi işlem gücü, depolama alanı), platformları ve yazılımı içerir.
+
+özellikleri
+Cloud Security Alliance'a (CSA) göre
+•
+Hizmetler, bazı durumlarda otomatik olarak, hızlı ve esnek bir şekilde sağlanabilir.
+•
+Kaynaklar, hizmet sağlayıcıyla etkileşime girmeden otomatik olarak sağlanır
+•
+Hizmet odaklı mimari (SOA), bulut bilişim için temel gereksinimlerden biridir. Bulut hizmetleri genellikle REST API adı verilen bir API aracılığıyla sunulur.
+•
+Bir bulut ortamında, birçok kullanıcı ortak kaynakları paylaşır ve bu nedenle çok kiracılı olması gerekir.
+•
+Sabit oranlı modeller de olabilmesine rağmen, yalnızca gerçekten kullanılan kaynaklar için ödeme yapılır (kullanım başına ödeme modeli).
+
+Kullanım nedenleri
+Hızlı büyüme
+•
+Başarılı hizmetlerin gerekli hızlı ölçeklendirilmesi
+•
+hızlı büyümenin zorluğu
+•
+Karmaşık, zaman alıcı kurulum
+
+Geçici kaynak ihtiyaçları
+•
+Geçici ihtiyaçlar (ör. mevsimlik görevler)
+•
+Kendi kapasitelerinin israfı
+•
+Kendi kapasitelerinin zaman alıcı inşası ve sökülmesi
+
+Öngörülemeyen tepe yükler
+•
+Beklenmeyen / planlanmayan pik yükler
+•
+Yoğun zamanlarda performans üzerindeki etki
+•
+Zirveler için kapasite sağlanması imkansız
+
+Öngörülebilir pik yükler
+•
+Mevsimsel yük dalgalanmaları olan hizmetler
+•
+Talepteki geçici artışlar nedeniyle zirveler
+•
+BT karmaşıklığı ve boşa harcanan kapasite
+
+Bulut Hizmeti Modelleri
+
+Bulut bilişim, üç ana hizmet modeli türü içerir.
+
+•
+Sanallaştırılmış donanım kaynaklarına (bilgisayarlar, ağlar ve
+•
+Kullanıcılar kendi bilgisayar kümelerini tasarlayabilir
+•
+Yazılımın seçiminden, kurulumundan ve çalıştırılmasından kullanıcı sorumludur.
+
+•
+Programlama veya çalışma zamanı ortamlarına erişim veya sağlanması
+•
+Kullanıcılar kendi uygulamalarını sizin içinizde geliştirir veya uygulamalarınızı yazılım ortamında çalıştırır.
+•
+Yazılım ortamı servis sağlayıcı tarafından sağlanır
+•
+Çözümler: web sunucusu, uygulama sunucusu, çalışma zamanı ortamları
+
+•
+yazılım veya uygulama programlarına erişim veya sağlanması
+•
+Talep üzerine yazılım olarak da anılır
+•
+Servis sağlayıcılar yazılım seçenekleri sunar
+•
+Çözümler: web postası, web ofisi, mobil uygulama
+
+Bulut Dağıtım Modelleri
+
+Genel Bulut
+•
+Genel halka çeşitli hizmetlere erişim sunar
+•
+Esnek bir temelde altyapı kiralama
+•
+Kullandıkça öde (ödeme, kullanım veya tüketim derecesine göre yapılır)
+
+Özel bulut
+•
+Yalnızca bir kuruluş için çalıştırılan bir bulut ortamıdır. (ör. şirket veri merkezi)
+
+hibrit bulutlar
+•
+Genel ve özel bulutun birleşimidir
+•
+Müşterinin ihtiyaçlarına göre altyapıların tasarlanmasını sağlar
+
+topluluk
+bulut
+•
+Genel buluta benzer erişim
+•
+Ancak, kullanıcı grubu sınırlıdır. (Üniversiteler, yetkililer, kooperatifler vb.)
+
+avantajlar
+•
+Yatırımlardan tasarruf
+•
+tasarruf
+•
+Maliyetlerin hesaplanması kolaydır
+•
+Altyapının esnek tasarımı ve genişletilebilirliği
+•
+Hizmetlerin Özelleştirilmesi
+•
+Şirketler daha çevik hale geliyor
+
+Dezavantajları
+•
+Sağlayıcıya bağımlılık (hizmet eksikliği, yetersiz kapasite, iflas)
+•
+İş süreçlerinin bulut sağlayıcısı tarafından sağlanan yazılım çözümüne uyarlanması gerekebilir
+•
+İnternet bağlantısına bağımlılık
+•
+Veri güvenliğine yönelik ek tehditler (ör.
+•
+ABD'deki bir sunucuda veri depolama, Alman veya Avrupa veri koruma yönergelerine tabi değildir.
+•
+Yasal riskler (ör. lisans değişiklikleri)
+
