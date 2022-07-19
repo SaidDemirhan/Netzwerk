@@ -1,0 +1,167 @@
+Dynamic Host Configuration Protocol (DHCP) 
+Dinamik Ana Bilgisayar Yapılandırma Protokolü
+
+görevler
+
+•
+IP adresleri ve diğer yapılandırma ayarları, DHCP aracılığıyla bir DHCP sunucusu tarafından istemcilere dinamik olarak atanır.
+•
+DHCP, taşıma protokolü olarak 67 ve 68 numaralı bağlantı noktalarına sahip UDP'yi kullanır.
+•
+Bir DHCP sunucusunun statik bir IP adresi olmalıdır, kendisine bir IP adresi atayamaz!
+•
+DHCP sunucusu tarafından bir adres atanabilmesi için bilgisayar yapılandırmasının IP adreslerini otomatik olarak alacak şekilde ayarlanması gerekir.
+•
+IP adresi aralıkları da tahsisten hariç tutulabilir (bloklama veya ayırma aralıkları).
+
+•
+DHCP, bir istemci-sunucu mimarisi olarak uygulanır.
+•
+DHCP sunucusu ve istemcileri bir yayın etki alanı içinde olmalıdır.
+•
+İstemci, sunucudan bir IP yapılandırması (en az IP adresi ve alt ağ maskesi) ister.
+•
+Sözde kiralama almak için iletişim 4 adımda gerçekleşir (DORA):
+
+DHCP-Kommunikation
+1.DHCP Keşfi
+•
+DHCP istemcisi, hedef adresi 255.255.255.255 ve kaynak adresi 0.0.0.0 olan bir UDP paketi gönderir.
+•
+Bu yayın, mevcut tüm DHCP sunucularına bir adres talebi olarak hizmet eder. İdeal olarak, yalnızca bir DHCP sunucusu vardır. Bu, adresleri atarken çakışmaları önler.
+
+2. DHCP Teklifi
+•
+DHCP sunucusu, IP yapılandırmasını tamamlamak için yayına ücretsiz bir IP adresi ve ek parametrelerle yanıt verir.
+•
+Adreslenen her DHCP sunucusu, aşağıdaki verilerle bir UDP paketi gönderir
+•
+istemcinin MAC adresi
+•
+olası IP adresi
+•
+IP adresinin/yapılandırmanın süresi (kiralama süresi)
+•
+alt ağ maskesi
+•
+DHCP sunucusunun IP adresi / Sunucu Kimliği
+
+3. DHCP isteği
+•
+DHCP istemcisi, muhtemelen birkaç DHCP sunucusunun seçiminden bir IP adresi seçer (varsayılan olarak ilki alınır).
+•
+Ardından ilgili DHCP sunucusuna olumlu bir mesaj (istek) gönderir.
+•
+Diğer tüm sunucular da mesajı alır ve IP adresinin başka bir sunucu tarafından kabul edileceğini varsayar.
+
+4. DHCP Onayı
+•
+IP adresinin atanması daha sonra DHCP sunucusu tarafından onaylanmalıdır. Ancak yalnızca TCP/IP ağı için veriler DHCP tarafından istemciye atanamaz.
+•
+DHCP istemcisi daha fazla bilgiyi değerlendirebilirse, DHCP sunucusu başka seçenekler iletir:
+•
+zaman sunucuları
+•
+Alan Adı Sunucuları
+•
+WINS sunucuları
+•
+alan isimleri
+•
+Varsayılan IP TTL
+•
+Yayın adresi
+•
+SMTP sunucuları, POP3 sunucuları
+•
+DHCP istemcisi onayı alır almaz verileri yerel olarak kaydeder. Son olarak, TCP/IP yığını tamamen başlatılır.
+
+DHCP Erneuerung der Lease (kiralama yenileme)
+•
+Kiralama süresi, istemcinin atanan IP yapılandırmasını ne kadar süreyle kullanabileceğini belirten DHCP ACK mesajında belirtilir.
+•
+Kira süresinin %50'si sona erdikten sonra, standart uyumlu istemcinin yeni bir DHCP İSTEĞİ göndermesi gerekir.
+•
+Genellikle DHCP sunucusu, aynı verilere ve güncellenmiş bir kiralama süresine sahip bir DHCP ACK gönderir. Bu, IP adresinin kullanımının genişletildiği anlamına gelir.
+•
+DHCP sunucusu ayrıca bir onay talebine bir DHCP NACK (Olumsuz Onay), yani bir ret ile yanıt verebilir.
+
+•
+Kira uzantısı başarısız olursa, istemci, kiralama süresinin %87,5'i dolduktan sonra herhangi bir DHCP sunucusuna ulaşmaya çalışır.
+•
+Bu istek yayın adresi üzerinden yapılır.
+•
+Kiralamanın yenilenmesi başarısız olursa, müşteri, kiralama süresi dolduktan sonra yapılandırmayı artık kullanamaz.
+
+
+
+
+DHCP Geçişi (Relay)
+
+•
+DHCP mesajları yayınlara dayalıdır, yönlendirilmezler.
+•
+Bu, bir DHCP sunucusu tarafından başka alt ağlar da sağlanacaksa, alt ağlara DHCP adı verilen bir rölenin kurulması gerektiği anlamına gelir. Bu, mesajları belirtilen DHCP sunucularına iletir.
+•
+DHCP Relay hizmeti doğrudan yönlendiricide veya bir sunucuda çalıştırılabilir.
+
+sorunlar
+
+•
+İstemci bir IPv4 yapılandırması almazsa ne olur?
+•
+Nedenler şunlar olabilir:
+•
+İstemci herhangi bir ağa bağlı değil.
+•
+İstemci bağlı, ancak ağda DHCP sunucusu yok.
+•
+DHCP sunucusu kapalı, devre dışı veya ağa bağlı değil
+birbirine bağlı.
+•
+DHCP sunucusunun artık boş IP adresi yok.
+•
+DHCP sunucusu yanlış yapılandırılmış.
+
+•
+Bu durumların her birinde, istemci kendisine APIPA adres aralığından (169.254.0.0/16) bir IPv4 adresi atayacaktır.
+Bu, yerel alt ağ içinde iletişimi sağlar.
+•
+IPv6 ile, istemci her zaman otomatik olarak SLAAC (StateLess Address Auto Configuration) aracılığıyla yerel bir bağlantı IPv6 adresi oluşturur
+
+
+
+DHCP rezervasyonu
+
+•
+Rezervasyon ile, bir DHCP istemcisine belirli bir IP adresi atanır, yani . bir bilgisayara her zaman bir kiralama talebiyle aynı IP adresi atanır.
+•
+Varsayılan olarak, rezervasyon, kiralama için rezervasyonun bulunduğu adres aralığıyla aynı değere sahiptir, ancak ayarlanabilir.
+•
+İstemci, girilen MAC adresine göre tanımlanır, yani MAC adresi tarafından tanımlanan ayrılmış IP adresi kalıcı olarak geçerlidir.
+
+DHCP seçenekleri
+
+•
+IP adresiyle birlikte istemcilere atanan yapılandırma parametreleridir:
+•
+Yönlendiriciler
+•
+DNS sunucuları
+•
+DNS alan adları
+•
+•
+DHCP sunucusu, alanlar ve rezervasyonlar için seçenekler tanımlanabilir.
+
+DHCPv6
+
+•
+Bir DHCPv6 sunucusunun kullanımına Durum Bilgili Adres Otomatik Yapılandırması denir.
+•
+IPv6 kullanılırken, yayın desteklenmediğinden istekler ff01::1 çok noktaya yayın adresine gönderilir.
+•
+DHCPv6, istemciye bir IP adresi ve/veya diğer yapılandırma parametreleri (ana bilgisayar, etki alanı adı ve DNS sunucusu) atayabilir
+•
+Not: Varsayılan ağ geçidi, DHCP aracılığıyla atanamaz, ancak Yönlendirici Bildirileri ile sağlanır.
+
