@@ -1,0 +1,175 @@
+ICMP, IGMP, TPC und UDP
+Protokolle der Internetschicht ICMP und IGMP
+ICMP (Internet Control Message Protocol) (İnternet Kontrol Mesaj Protokolü)
+•
+ICMP, mesajları IP üzerinden iletmek için kullanılan bir İnternet katmanı protokolüdür.
+•
+Görevler, IP, TCP ve UDP protokollerinden durum bilgilerinin ve hata mesajlarının iletilmesidir.
+•
+ICMP mesajları, sorunları birbirlerine bildirmek için yönlendiriciler gibi ağ düğümleri tarafından kullanılır. ICMP iletişiminin amacı, veri iletiminin kalitesini artırmaktır.
+•
+Not: ICMP, güvenli olmayan İnternet Protokolünü kullanır. ICMP mesajları kaybolursa, bu bir hata mesajını tetiklemez.
+•
+Yardımcı bir protokol görevi gören ICMPv6, IPv6 ile çalışmak üzere geliştirilmiştir. ICMPv6 olmadan IPv6 iletişimi mümkün değildir.
+
+•
+ICMP'nin kendi başlık yapısı yoktur, ancak standart IP başlığını kullanır
+•
+IP başlığının Hizmet Türü ve Protokol alanları ayarlanır.
+•
+Tüm ICMP mesajları üç alan içerir:
+•
+İletinin türünü belirtmek için tür alanı.
+•
+Hata türünü veya durum bilgilerini açıklayan kod alanı.
+•
+Bir sağlama toplamı alanı.
+
+•
+ICMP Uygulaması
+•
+ICMP mesajlarına genellikle ağdaki IP paketleriyle ilgili sorunları gönderen ana bilgisayara bildirmek isteyen ana bilgisayarlar neden olur.
+•
+TCP/IP ile çalışan her işletim sistemi, ICMP kullanan araçlara sahiptir. En iyi bilinen iki araç Ping ve Trace Route'dır. Bunlar ağ sorunlarını analiz etmeye yöneliktir ve sorunların giderilmesine yardımcı olabilir.
+•
+ping atmak
+•
+Trace Route (traceroute, tracert)
+•
+Sorunu çözmek için veri trafiği ve ICMP mesajları da bir ağ monitörü ile izlenebilir.
+
+•
+Ne zaman kullanılır
+•
+ağ geçidi datagramı iletemez.
+•
+ağ geçidi trafiği daha kısa bir rota üzerinden yönlendirir.
+•
+ağ geçidi, bir veri paketini geçici olarak depolamak ve iletmek için yeterli arabellek kapasitesine sahip değil.
+•
+bir alıcıya ulaşılamıyor.
+•
+bir datagramın ömrü sona eriyor
+
+•
+Güvenlik tehditleri:
+•
+Bağlantısız bir protokol olarak ICMP, Hizmet Reddi --(DoS) veya Dağıtılmış Hizmet Reddi saldırıları (DDoS) gibi bir dizi saldırı yöntemi için kötüye kullanılabilir.
+•
+Tipik saldırılar, smurf saldırısı, sel veya ölümün pingidir.
+•
+ICMP protokolü, paket filtreli güvenlik duvarlarının korumasını zayıflatmak için yetkisiz veri iletimi için kullanılabilir.
+
+
+
+
+
+IGMP (
+Internet Group Management Protocol) (İnternet Grup Yönetim Protokolü)
+
+•
+İnternet Grup Yönetim Protokolü (IGMP), İnternet Protokolünün (IPv4) bir uzantısıdır.
+•
+IGMP ile LAN'da ve İnternette IP çok noktaya yayın (grup iletişimi) mümkündür.
+•
+MLD (Multicast Listener Discovery), IGMP'nin işlevlerini üstlenen IPv6 için geliştirilmiştir. MLD bağımsız bir protokol değildir, ancak ICMPv6'ya gömülüdür.
+
+•
+IGMP, dinamik grup yönetimi için kullanılır.
+•
+Yönetim, bir çok noktaya yayın grubunun alıcılarının doğrudan bağlı olduğu yönlendiriciler aracılığıyla yapılır. Bir istasyon, yönlendiriciye belirli bir çok noktaya yayın grubundan çok noktaya yayın IP paketleri almak istediğini bildirir.
+•
+Gönderici, üst düzey yönlendiricisine tek bir veri paketi gönderir. Bu, alıcılarla birden fazla bağlı ağ varsa, gerekirse IP paketini çoğaltır.
+
+IGMP
+gözetleme
+•
+IGMP gözetleme, çok noktaya yayın trafiğini gizlice dinleme yöntemidir ve bunu istekte bulunan ana bilgisayarlarla sınırlamayı amaçlar.
+•
+İlgili yönlendiriciler veya anahtarlar bu yöntemi kullanabilmelidir.
+•
+Cihazlar çok noktaya yayın trafiğini izler ve bir alıcının çok noktaya yayın grubuna katıldığını veya ayrıldığını algılar. Bunu yapmak için ilgili bir adres tablosu çalıştırın.
+•
+IPv6 kullanırken, Çok Noktaya Yayın Dinleyici Keşfi (MLD) için MLD gözetlemeyi etkinleştirme seçeneği vardır.
+
+•
+ICMP'nin kendi başlık yapısı yoktur, ancak standart IP başlığını kullanır.
+•
+IP başlığının Servis Tipi ve Protokol alanları ayarlandı ve TTL alanı 1 olarak ayarlandı. IGMP mesajları yalnızca doğrudan
+•
+Tüm IGMP mesajları aşağıdaki alanları içerir:
+•
+IGMP tipi mesaj tipi)
+•
+Maks. Yanıt Süresi (maksimum yanıt süresi)
+•
+IGMP kontrol toplamı çok noktaya yayın IP adresi (grup adresi)
+
+Protokolle der Transportschicht Taşıma katmanı protokolleri
+TCP (Transmission Control Protocol) (İletim Kontrol Protokolü)
+
+•
+TCP, bağlantı yönelimli bir protokoldür.
+•
+TCP, verilerini bir veri akışı olarak gördüğü için akış odaklı bir şekilde çalışır. Sıra numaralarını kullanarak, alıcı taraf, segmentleri doğru sırayla yeniden bir araya getirebilir ve bunları bir veri akışına geri dönüştürebilir.
+•
+TCP, alıcı bir alındı bildirimi gönderene kadar alıcıya veri paketleri gönderen bir mekanizma aracılığıyla güvenilir veri aktarımı sağlar.
+•
+Nispeten büyük ek yük bir dezavantajdır.
+
+
+
+
+
+
+
+
+
+UDP
+
+•
+Minimum protokol bilgisi ile verilerin iletilmesine izin veren basit bir protokoldür.
+•
+UDP bağlantısızdır, alımı sağlamak uygulama protokollerine bağlıdır.
+•
+UDP, sabit boyutlu datagramlarla çalışır, bir veri akışını bölme ve yeniden birleştirme yeteneğine sahip değildir.
+•
+Ne zaman kullanılır:
+•
+hız, iletimin güvenliğinden daha önemlidir.
+•
+veri miktarı çok küçük olduğunda, büyük bir başlık buna değmez.
+
+Port
+
+•
+TCP/IP modelinde, bir bağlantı noktası, verilerini aşağıdaki katmana ve katmandan aktaran bir üst katman işlemidir (uygulama).
+•
+Taşıma katmanında tanımlanır.
+•
+Bağlantı noktaları, TCP ve UDP için ayrı 16 bitlik bir değerle numaralandırılmıştır ve her işlemin kendi bağlantı noktası numarası vardır.
+•
+Bağlantı noktası durumları şunlar olabilir: açık, kapalı ve filtrelenmiş.
+
+Socket
+•
+Soket, iletişimin son noktasını temsil eden bir adres yapısıdır.
+•
+Böyle bir soket, bir bağlantının mantıksal bitiş noktasını belirler ve veri yapısı, bağlantı noktası, IP adresi ve aktarım protokolü tarafından tanımlanır.
+•
+Belirli bir bilgisayardaki belirli bir uygulamanın adreslenebileceği IP adresi ve bağlantı noktası numarasının adres kombinasyonuna soket denir. IP adresi ile ağ ve bilgisayar belirlenir ve port numarası ile uygulama seçilir.
+•
+Gönderici ve alıcı tarafında birer soket bulunmaktadır.
+•
+İletişim ortaklarındaki uygulamalar soketleri kullanarak iletişim kurar.
+
+Soocket -Kommunikation
+•
+Soketler, ağ protokolü ve uygulama arasında standartlaştırılmış bir arabirim (API) oluşturur.
+•
+Socket API, socket(), bind(), listen(), connect(), accept(), end(), alıcı() ve close() gibi işlevler sağlar.
+•
+İstemci/istemci uygulaması genellikle işletim sisteminden bağlantı noktası numarasına sahip bir soket ister. Sunucu uygulamaları bağlantı noktasını kendileri seçer.
+•
+TCP ve UDP iletişimi arasında bir ayrım yapılmalıdır.
+
