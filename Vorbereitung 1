@@ -1,0 +1,433 @@
+NEINT1
+
+1.	Welche beiden Aussagen zur asymmetrischen Datenverschlüsselung sind zutreffend?
+Bitte wählen Sie 2 von 4 Antworten!
+Der öffentliche Schlüssel wird zur Verschlüsselung und der private zur Entschlüsselung von Nachrichten verwendet #
+Verschlüsselung mit öffentlichen Schlüsseln ist weniger sicher als die mit privaten Schlüsseln
+Ein öffentlicher Schlüssel wird aus einem privaten Schlüssel abgeleitet #
+Verschlüsselte Daten sind gefährdet, wenn der öffentliche Schlüssel bekannt wird
+Asimetrik veri şifreleme ile ilgili hangi iki ifade doğrudur?
+
+Genel anahtar, mesajları şifrelemek için, özel anahtar ise mesajların şifresini çözmek için kullanılır.
+Genel anahtar şifrelemesi, özel anahtar şifrelemesinden daha az güvenlidir
+Bir ortak anahtar, bir özel anahtardan türetilir
+Genel anahtarın güvenliği ihlal edilirse, şifrelenmiş veriler risk altındadır
+
+2.	In einem RFC-Dokument lesen Sie für die Gültigkeit Standard Required. Was genau bedeutet diese Angabe?
+Der Status Standard ist optional anzuwenden
+RFCs sind veraltet, es gilt die ISO-Norm
+Der Status Standard ist empfohlen
+Der Status Standard ist zwingend anzuwenden #
+Der Status Standard ist nicht empfohlen
+Bir RFC belgesinde, geçerlilik için Standart Gerekli'yi okuyun. Bu bilgi tam olarak ne anlama geliyor?
+
+Standart durum isteğe bağlıdır
+RFC'ler eskidir, ISO standardı geçerlidir
+Standart durum önerilir
+Standart durum zorunludur
+Standart durum önerilmez
+
+
+3.	Welche der folgenden Aussagen beschreiben einen Hub?
+
+Wählen Sie alle richtigen Antworten. ( 3 Antworten)
+ 
+Ein aktiver Hub verstärkt das Signal. #
+Ein Hub ist ein Verteiler. Datenpakete werden an alle Anschlüsse des Hub's gesendet. #
+Ein passiver Hub verstärkt das Signal.
+Bei einem Hub teilen sich alle Verbindungen die vorhandene Bandbreite.
+Ein Hub stellt eine direkte Verbindung zwischen sendenden und empfangenden Computer her.
+
+Aşağıdaki ifadelerden hangisi bir hub'ı tanımlar?
+
+Aktif bir hub, sinyali güçlendirir.
+Bir hub bir hub'dır. Veri paketleri, hub'ın tüm bağlantı noktalarına gönderilir.
+Pasif bir hub, sinyali güçlendirir.
+Bir hub ile tüm bağlantılar mevcut bant genişliğini paylaşır.
+Hub, gönderen ve alan bilgisayarlar arasında doğrudan bir bağlantı oluşturur.
+
+4.	Sie dokumentieren eine Inventur auch mithilfe einer digitalen Kamera. Dabei erstellen Sie für die Dokumentation 80 
+Bilder mit je einem Speichervolumen von 3,0 MB. Diese Bilder übertragen Sie über die USB-Schnittstelle zu Ihrem 
+Arbeits-PC.
+Die effektive Datenübertragungsrate beträgt hierbei 480 Mbit/s.
+Welche Übertragungszeit wird für die Nettodatenmenge der 80 Bilder benötigt?
+Hinweis:
+1 MB = 1.048.576 Byte; 1 Mbit/s = 1.000.000 Bit/s
+Das Ergebnis ist auf eine Stelle nach dem Komma gerundet.
+0,5 s 		4,0 s 		2,0 s 		4,2 s 		2,1 s 
+
+Ayrıca dijital kamera kullanarak bir envanteri belgeliyorlar. Belgeler için her biri 3,0 MB depolama hacmine sahip 
+80 resim oluşturursunuz. Bu görüntüleri USB arabirimi aracılığıyla iş bilgisayarınıza aktarın.
+Etkili veri aktarım hızı 480 Mbit/s'dir.
+80 görüntünün net veri hacmi için ne kadar aktarım süresi gereklidir?
+
+5.	Welche beiden Aussagen zur symmetrischen Datenverschlüsselung sind zutreffend?
+Bitte wählen Sie 2 von 4 Antworten!
+Die symmetrische Verschlüsselung erfordert für eine sichere Übertragung einen hohen Rechenaufwand.
+Es muss sichergestellt werden, dass der Schlüssel der beiden Teilnehmer über einen sicheren Kanal ausgetauscht wird. #
+Die symmetrische Verschlüsselung ist weniger sicher als die asymmetrische Verschlüsselung.
+Sehr schnell bei der Ver- und Entschlüsselung der Nachricht. #
+Simetrik veri şifrelemeyle ilgili hangi iki ifade doğrudur?
+ Simetrik şifreleme, güvenli bir aktarım için yüksek bir hesaplama çabası gerektirir.
+ İki katılımcının anahtarının güvenli bir kanal üzerinden değiş tokuş edilmesi sağlanmalıdır.
+ Simetrik şifreleme, asimetrik şifrelemeden daha az güvenlidir.
+ Mesajın şifrelenmesinde ve şifresinin çözülmesinde çok hızlı.
+6.	
+Sie sind als Administrator für das Unternehmen WBS Training tätig. Das Unternehmen hat eine Hauptgeschäftsstelle und 
+eine Zweigstelle. Das Netzwerk der Zweigstelle umfasst 1600 Clientcomputer in einem einzelnen Subnetz. 
+
+Sie müssen eine neue Subnetzmaske für das Netzwerk der Zweigstelle wählen. Sie müssen sicherstellen, dass alle Computer 
+eine IP-Adresse erhalten können. Sie wollen die Anzahl der ungenutzten IP-Adressen jedoch möglichst gering halten. 
+
+Welche Subnetzmaske werden Sie verwenden?
+255.255.252.0 
+255.255.240.0
+255.255.248.0 #
+255.255.254.0 
+WBS Training şirketinde yönetici olarak çalışıyorsunuz. Şirketin bir ana ofisi ve bir şubesi bulunmaktadır. Şube ağı, 
+tek bir alt ağda 1600 istemci bilgisayar içerir.
+Şube ağı için yeni bir alt ağ maskesi seçmelisiniz. Tüm bilgisayarların bir IP adresi alabileceğinden emin olmalısınız. 
+Ancak, kullanılmayan IP adreslerinin sayısını mümkün olduğunca düşük tutmak istiyorsunuz.Hangi alt ağ maskesini 
+kullanacaksınız?
+
+7.	Bei einem Netzwerkzugriffsverfahren verfügt jede Station für einen definierten Zeitraum exclusiv über ein Datenpaket.
+
+Bei welchem Zugriffsverfahren?
+Ethernet
+CSMA/CA
+Tokenpassing #
+CSMA/CD
+
+Bir ağ erişim yöntemiyle, her istasyonun belirli bir süre boyunca bir veri paketine özel erişimi vardır.
+Hangi erişim yöntemi?
+
+8.	Welche der folgenden Aussagen sind korrekt? 
+Das Domain Name System …
+Bitte wählen Sie 2 von 4 Antworten!
+... verwendet Negative Lookups zur Auflösung von IP-Adressen zu Domainnamen 
+... verwendet einen hierarchischen Namensraum #
+... ist eine verteilte Datenbank #
+... verwendet Update Messages, um veraltete Resource Records aus Caches zu löschen 
+Aşağıdaki ifadelerden hangileri doğrudur?
+Alan adı sistemi...
+
+... IP adreslerini alan adlarına dönüştürmek için negatif aramalar kullanır
+... hiyerarşik bir ad alanı kullanır
+... dağıtılmış bir veritabanıdır
+... güncel olmayan kaynak kayıtlarını önbelleklerden silmek için güncelleme mesajlarını kullanır
+
+9.	Twisted Pair Kabel haben sich als Ethernet Kabel durchgesetzt. 
+
+Warum werden die Adernpaare verdrillt?
+Bei verdrillte Adern ist der elektrische Widerstand geringer als bei parallelen Adern.
+Verdrillte Adern lassen sich bei der Verlegung besser biegen.
+Die Produktion von Kabeln mit parallelen Adern ist aufwendiger als bei Kabeln mit verdrillten Adern.
+Verdrillte Aderpaare sind besser gegen elektrische und elektromagnetische Störungen geschützt als parallele Adern. #
+Bükümlü çift kablolar kendilerini Ethernet kabloları olarak belirlemiştir.
+
+Tel çiftleri neden bükülür?
+Bükülmüş tellerde elektrik direnci paralel tellere göre daha düşüktür.
+Bükülmüş çekirdeklerin döşenmesi sırasında bükülmesi daha kolaydır.
+Paralel damarlı kabloların üretimi, bükümlü damarlı kablolardan daha karmaşıktır.
+Bükülmüş tel çiftleri, paralel tellere göre elektriksel ve elektromanyetik parazitlere karşı daha iyi korunur.
+10.	Ordnen Sie die Netzwerkgeräte den höchsten Schichten des OSI-Schichtenmodell in denen sie arbeiten zu.
+Ağ cihazlarını, çalıştıkları OSI katman modelinin en üst katmanlarına atayın
+Bitte wählen Sie 2 von 5 Antworten!
+Bridge - Schicht 4
+Gateway - Schicht 1
+Switch - Schicht 2 #
+Hub - Schicht 2 
+Router - Schicht 3 #
+11.	Zwei unterschiedliche Rechner können nur dann kommunizieren, wenn
+sie Macintosh- und UNIX-Workstations sind. 
+sie dem OSI-Modell entsprechen. 
+sie kompatible Protokollsätze verwenden. #
+sie beide TCP/IP verwenden. 	
+İki farklı bilgisayar yalnızca şu durumlarda iletişim kurabilir:
+bunlar Macintosh ve UNIX iş istasyonlarıdır.
+OSI modeline uygundurlar.
+uyumlu protokol setleri kullanırlar.
+ikisi de TCP/IP kullanır.
+
+
+12.	Welche Schicht des OSI-Modells gewährleistet eine Verbindung und die Auswahl einer Route zwischen zwei Endsystemen,
+auf denen Routing erfolgt?
+
+OSI modelinin hangi katmanı, iki yönlendirme uç sistemi arasında bir bağlantı ve bir yol seçimini sağlar?
+
+Network Layer #
+Presentation Layer 
+Transport Layer 
+Physical Layer 
+
+13.	Netzwerkteilnehmer benötigen stets eindeutige IPs, um in einem Netzwerk miteinander kommunizieren zu können.
+In welchem Fall erhalten Netzwerkclients (nicht die Server) IPs aus dem reservierten Adressbereich 169.254.0.0/16, 
+obwohl im IP-Plan konkrete IPs vorgesehen sind?
+Bitte wählen Sie 2 von 5 Antworten!
+
+Es handelt sich allgemein um Zeroconf. Der angegebene Adressbereich ist korrekt 
+Ein vorhandener DHCP-Relay-Agent wird von den Clients nicht erreicht #
+Bei den Clients wurde manuell jeweils eine IP aus dem Bereich 169.254.0.0/16 vergeben 
+Clients erhalten keine IP vom DHCP-Server #
+Der APIPA-Dienst (Windows) wurde versehentlich aktiviert 
+
+Ağ katılımcıları, bir ağda birbirleriyle iletişim kurabilmek için her zaman benzersiz IP'lere ihtiyaç duyar.
+IP planında somut IP'ler sağlanmış olmasına rağmen, hangi durumda ağ istemcileri (sunucular değil) ayrılmış adres 
+aralığı 169.254.0.0/16'dan IP alır?
+
+Genelde zeroconf'tur. Belirtilen adres aralığı doğru
+İstemciler mevcut bir DHCP geçiş aracısına erişemez
+Her istemci için manuel olarak 169.254.0.0/16 aralığından bir IP atanmıştır
+İstemciler DHCP sunucusundan IP almıyor
+APIPA hizmeti (Windows) yanlışlıkla etkinleştirildi
+
+
+
+
+
+
+
+14.	Die Protokolle UDP und TCP arbeiten in der Transportschicht des OSI-Schichtenmodell.
+
+Welche Aussagen treffen zu?
+Bitte wählen Sie 2 von 4 Antworten!
+
+UDP ist ein verbindungsloses Protokoll. #
+TCP ist ein verbindungsloses Protokoll.
+UDP ist ein verbindungsorientiertes Protokoll. 
+TCP ist ein verbindungsorientiertes Protokoll. #
+
+UDP ve TCP protokolleri, OSI katman modelinin taşıma katmanında çalışır.
+Hangi ifadeler doğrudur?
+
+UDP bağlantısız bir protokoldür.
+TCP bağlantısız bir protokoldür.
+UDP, bağlantı yönelimli bir protokoldür.
+TCP, bağlantı yönelimli bir protokoldür.
+
+15.	Was versteht man bei einem Netzwerkkabel unter Durchgangsdämpfung?
+
+Die Durchgangsdämpfung gibt an, in wie weit das Medium durch Beschädigungen beeinträchtigt wird. 
+Die Durchgangsdämpfung gibt an, wie das Nutzsignal auf einer bestimmten Länge des Kabels in seinem Signalpegel 
+abgeschwächt wird. #
+Die Durchgangsdämpfung gibt an, in welchem Maße sich die Signale unterschiedlicher Adern eines Kabels gegenseitig 
+beeinflussen. 
+Die Durchgangsdämpfung gibt an, in wie weit das Medium durch Störeinflüsse von außen beeinträchtigt wird. 
+
+Bir ağ kablosundaki iletim kaybı nedir?
+
+İletim kaybı, ortamın hasardan ne ölçüde etkilendiğini gösterir.
+Ekleme kaybı, yararlı sinyalin belirli bir kablo uzunluğu boyunca sinyal seviyesinde nasıl zayıfladığını gösterir.
+Ekleme kaybı, bir kablodaki farklı tellerden gelen sinyallerin birbirini ne ölçüde etkilediğini gösterir.
+İletim kaybı, ortamın dış parazitten ne ölçüde etkilendiğini gösterir.
+	
+
+
+16.	Was ist das wichtigste Merkmal der Stern-Topologie?
+ein zentraler Hub/Switch #
+die Möglichkeit, Baum- oder hierarchische Netze zu gestalten 
+begrenzte Kabellängen 
+leichte Konfigurierbarkeit 
+
+Yıldız topolojisinin en önemli özelliği nedir?
+
+merkezi bir hub/anahtar
+ağaç veya hiyerarşik ağlar tasarlama imkanı
+sınırlı kablo uzunlukları
+kolay yapılandırılabilirlik
+
+
+17.	Bei einem Zahlvorgang an einer elektronischen Kasse entstehen 5 KB Daten, die in einer halben Sekunde an die 
+zentrale Datenbank übermittelt werden sollen.
+Wählen Sie die Übertragungsgeschwindigkeit in kBit/s, die mindestens zur Übertragung eines Zahlungsvorgangs 
+erforderlich ist. Das Ergebnis ist auf volle kBit/s gerundet.
+Elektronik yazar kasadaki bir ödeme işlemi, yarım saniyede merkezi veri tabanına iletilmesi gereken 5 KB'lık 
+veri oluşturur.
+Bir ödeme işlemini iletmek için gereken minimum aktarım hızını kBit/s olarak seçin. Sonuç tam kBit/s'ye yuvarlanır.
+Hinweis:
+1 KB = 1.024 Byte; 1 kBit/s = 1.000 Bit/s
+82 kBit/s #	5 kBit/s 	10 kBit/s 	41 kBit/s 
+
+
+18.	Netzwerke können einer physikalischen und einer logischen Struktur entsprechen. 
+
+Bei welcher Netzwerktopologie können physikalische und logische Struktur am stärksten voneinander abweichen?
+Ağlar, fiziksel ve mantıksal bir yapıya karşılık gelebilir.
+
+Fiziksel ve mantıksal yapı en çok hangi ağ topolojisinde farklılık gösterebilir?
+Maschentopologie
+Bustopologie
+Ringtopologie #
+Sterntopologie
+
+19.	Welche Aussagen sind bezüglich Loopback-Device zutreffend?
+Bitte wählen Sie 3 von 5 Antworten!
+Loopback hat den Rechnernamen localhost  #
+Loopback dient zur Interprozesskommunikation innerhalb eines Rechners #
+Loopback kann nur die IP 127.0.0.1 haben 
+Loopback kann eine oder mehrere IP(s) aus dem reservierten Adressbereich 127.0.0.0/8 haben #
+Loopback hat die IP 169.254.0.0 
+Geri döngü cihazlarıyla ilgili hangi ifadeler doğrudur?
+Lütfen 5 cevaptan 3'ünü seçin!
+Loopback, localhost ana bilgisayar adına sahip
+Geri döngü, bir bilgisayar içinde süreçler arası iletişim için kullanılır
+Geri döngü yalnızca IP 127.0.0.1'e sahip olabilir
+Geri döngü, 127.0.0.0/8 ayrılmış adres aralığından bir veya daha fazla IP'ye sahip olabilir.
+Geri döngü IP 169.254.0.0'a sahiptir
+
+20.	Das Konzept der strukturierten Verkabelung sieht bei der Gebäudeverkablung drei Bereiche vor.
+Yapısal kablolama kavramı, kablolama için üç alan sağlar.
+Welcher gehört nicht dazu?
+Sekundärbereich
+Tertiärbereich
+Primärbereich
+Backbonebereich #
+
+21.	Welche der folgenden Aussagen beschreiben einen Switch?
+Wählen Sie alle richtigen Antworten. ( 3 Antworten)
+Bitte wählen Sie 3 von 5 Antworten!
+Ein Switch verstärkt das Signal nicht.
+Ein Switch führt eine Tabelle mit den MAC Adressen der Computer mit denen er verbunden ist. #
+Ein Switch ist ein Verteiler. Datenpakete werden an alle Anschlüsse des Switches gesendet.
+Bei einem Switch verfügen alle Verbindungen über die volle Bandbreite. #
+Ein Switch stellt eine direkte Verbindung zwischen sendenden und empfangenden Computer her. #
+Aşağıdaki ifadelerden hangisi bir anahtarı tanımlar?
+Bir anahtar, sinyali yükseltmez.
+Bir anahtar, bağlı olduğu bilgisayarların MAC adreslerinin bir tablosunu tutar.
+Anahtar bir dağıtıcıdır. Veri paketleri, anahtarın tüm bağlantı noktalarına gönderilir.
+Bir anahtarla, tüm bağlantılar tam bant genişliğine sahiptir.
+Bir anahtar, gönderen ve alan bilgisayar arasında doğrudan bir bağlantı kurar.
+
+22.	Die folgende IPv6-Adresse soll in verkürzter Form dargestellt werden
+Aşağıdaki IPv6 adresi kısaltılmış biçimde sunulmalıdır
+2001:0DB8:0045:0000:0000:0C00:0000:0000 #
+Wählen Sie die kürzeste Schreibweise aus.
+2001:DB8:45::C00:: 
+2001:DB8:45::C00:0:0 #
+2001:0DB8:0045::0C00:: 
+2001:0DB8:0045:0000:0000:0C00:: 
+
+23.	Das OSI-Schichtenmodell und das TCP/IP-Schichtenmodell (DOD) beschreiben die Netzwerkkommunikation mit 
+einer unterschiedlichen Anzahl von Schichten.
+Um wieviele Schichten unterscheiden sich die Modelle? 
+4 Schichten
+7 Schichten
+1 Schicht
+3 Schichten #
+OSI katman modeli ve TCP/IP katman modeli (DOD), farklı sayıda katmanla ağ iletişimini tanımlar.
+Modeller kaç katmana göre farklılık gösteriyor?
+
+
+24.	Eines der Netzwerkzugriffsverfahren arbeitet auf Basis der Erkennung von Kollisionen.
+Ağ erişim yöntemlerinden biri, çakışma tespiti temelinde çalışır.
+Welches Zugriffsverfahren ist das?
+CSMA/CD #
+Ethernet
+Tokenpassing
+CSMA/CA
+
+
+
+
+25.	Sie verwalten ein Netzwerk. Sie wollen in dem Netzwerk IPv6 einführen. Sie wollen IPv6 Adressen verwenden 
+die innerhalb des internen Netzwerkes, aber nicht ins öffentliche Netzwerk geroutet werden.
+
+Welchen Präfix werden Sie für die IP Adressen verwenden?
+Bir ağı yönetiyorsunuz. Ağda IPv6'yı tanıtmak istiyorsunuz. Dahili ağ içinde yönlendirilen ancak genel ağa 
+yönlendirilmeyen IPv6 adreslerini kullanmak istiyorsunuz.
+
+IP adresleri için hangi önek kullanacaksınız?
+
+FF00:: 
+2003:: 
+FD00:: #
+FE80:: 
+
+26.	Bei einer Datenübertragung soll folgende Bit-Folge übertragen werden:
+Veri iletimi sırasında aşağıdaki bit dizisi iletilecektir:
+
+0110110 1
+0011000 1
+1000000 0
+1100001 0
+
+Für die Erkennung von Übertragungsfehlern wird eine Paritätsprüfung durchführt. Das letzte Bit ist das Paritätsbit. 
+
+Der Empfänger erhält diese Bit-Folge:
+İletim hatalarını tespit etmek için bir eşlik kontrolü yapılır. Son bit ise parite bitidir.
+
+Alıcı bu bit dizisini alır:
+0110110 1
+0010000 1
+1000000 0
+1100001 0
+
+Worauf wird die Paritätsprüfung durchgeführt? Ist die Datenübertragung korrekt? Wenn sie Fehler enthält, in welcher Zeile?
+Parite kontrolü ne üzerinde yapılır? Veri aktarımı doğru mu? Hata içeriyorsa hangi satırda?
+Wählen Sie alle richtigen Antworten!
+Bitte wählen Sie 2 von 7 Antworten!
+
+keine Fehler
+Prüfung auf gerade Bits
+Fehler in der ersten Zeile 
+Prüfung auf ungerade Bits #
+Fehler in der zweiten Zeile #
+Fehler in der vierten Zeile
+Fehler in der dritten Zeile
+
+
+
+27.	Sortieren Sie die Netzwerke nach ihrer Ausdehnung.
+Beginnen Sie mit dem kleinsten Netzwerk.
+Ağları kapsamlarına göre sıralayın.
+En küçük ağla başlayın.
+
+1 - WAN
+2 - LAN
+3 - MAN
+4 - GAN 
+
+1, 2, 3, 4
+2, 1, 3, 4
+2, 3, 1, 4 #
+3, 2, 4, 1
+
+28.	Welche Aussagen sind bezüglich ping zutreffend?
+Wählen Sie zwei Antworten.
+ping sendet ein ICMP Echo-Request-Paket #
+ping kann von der Firewall nicht kontroliert werden 
+ping benötigt UDP 
+ping erhält als Antwort ein ICMP Echo-Reply-Paket #
+
+Ping ile ilgili hangi ifadeler doğrudur?
+ping bir ICMP yankı istek paketi gönderir
+ping güvenlik duvarı tarafından kontrol edilemez
+ping UDP gerektirir
+ping, yanıt olarak bir ICMP yankı yanıt paketi alır
+
+29.	Das Protokoll _____ dient zum Versenden von Mails im Netzwerk.
+_____ protokolü, ağda posta göndermek için kullanılır.
+SNMP 
+SPX 
+SCTP 
+SMTP #
+
+30.	Welchen Pakettyp benutzt ping?
+IGMP 
+ICMP #
+TCP 
+UDP 
+
+31.	Welche Aussagen kennzeichnen ein Socket (Netzwerk)?
+Bitte wählen Sie 2 von 4 Antworten!
+Ist die Bezeichnung für den Übergang in ein anderes Netz 
+Ist die Zuordnung eines Dienstes zu einer Portnummer 
+Ist eine Kombination aus IP-Adresse und Port #
+Ist ein Kommunikationsendpunkt #
+
+Hangi ifadeler bir soketi (ağ) karakterize eder?
+Başka bir ağa geçiş için atama
+Bir servisin bir port numarasına atanması
+IP adresi ve bağlantı noktasının birleşimidir
+Bir iletişim uç noktasıdır
+
