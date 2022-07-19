@@ -1,0 +1,78 @@
+VLAN (Sanal Yerel Alan Ağı)
+
+Sebepler, avantajlar, dezavantajlar
+
+• Sanal Yerel Alan Ağı (VLAN) terimi, bunun bir LAN veya WAN (VPN) içinde görünüşte ayrı bir ağ olduğu gerçeğini ifade eder.
+• VLAN'ların yardımıyla, örneğin muhasebe, üretim ve geliştirme departmanları gibi departmanlara göre uzamsal olarak dağıtılmış bilgisayarlar çalışma grupları halinde birleştirilir.
+• Switch'lerde VLAN'lar kurulur.
+• Bu, ağın mantıksal yapısını fiziksel yapıdan ayırır.
+
+• VLAN'ların oluşumu, yayın etki alanlarının boyutunu azaltarak yayın trafiğini azaltır.
+• Ağları ayırarak ve Erişim Kontrol Listelerini (ACL'ler) kullanarak artırılmış güvenlik. ACL'ler, belirli kaynaklara erişime özellikle izin verir veya erişimi reddeder.
+• VLAN'lar basitleştirilmiş merkezi yönetim sağlar.
+• Yönetim, anahtarlar aracılığıyla yapılır ve kural kümeleri, katman 3 anahtarlarında da yapılandırılabilir.
+• Dezavantajları, daha karmaşık konfigürasyon ve daha pahalı bileşenlerdir.
+
+türleri
+• İki tür VLAN arasında bir ayrım yapılır:
+1. Bağlantı noktası tabanlı VLAN'lar
+• Yönetilebilir bir anahtarda, bağlantı noktalarının her biri kalıcı olarak bir VLAN'a atanır.
+2. Etiketli VLAN'lar
+• Ethernet çerçevelerine, çerçevenin amaçlandığı VLAN'ı tanımlayan bir işaretleyici (etiket) eklenir.
+• Bu, VLAN'ların birden çok anahtar arasında genişletilmesine olanak tanır.
+
+yapılandırma
+• VLAN'lar, VLAN özellikli bir anahtarda yapılandırılır.
+• Anahtar, hangi portun hangi segmente ait olduğunu tanımlar.
+• Anahtar, yalnızca aynı VLAN içindeki çerçeveleri iletir. Bilgisayarlar yalnızca aynı segmentte (VLAN) bulunan bilgisayarlarla iletişim kurabilir.
+• Bu takımyıldızda segmentler arası trafik mümkün değildir.
+
+etiketleme
+• Çerçevelerin birkaç anahtar aracılığıyla iletilmesi gerekiyorsa, çerçevenin hangi VLAN'a ait olduğu açık olmalıdır.
+• Bu amaçla, Ethernet çerçevesine adres bloğu ile tip/uzunluk alanı arasına etiket adı verilen bir tanımlayıcı eklenir.
+• Etiket, dört bayt uzunluğunda IEEE 802.1Q'da (etiketli VLAN'lar) standartlaştırılmıştır ve böylece bir Ethernet çerçevesini 1.518 bayttan 1.522 bayta çıkarır.
+• !Daha eski anahtarlar ve hub'lar bunu tanımaz ve standart Ethernet için çok büyük oldukları için bu paketleri atar!
+
+VLAN gövdeleri
+• VLAN'ları, yani etiketli paketleri taşıyan anahtarlar arasındaki bağlantıya devre denir.
+• Bu VLAN etiketleri, yalnızca anahtardan anahtara bağlantı için pakete dahildir.
+• Belirli bir VLAN'da bulunan bir bilgisayar gönderiyorsa, anahtar, paketi bir sonraki anahtara göndermeden önce etiketi ekler.
+• Hedef bağlantı noktasına ulaştıklarında anahtar, çerçeveleri son bilgisayarlara göndermeden önce etiketleri kaldırır.
+
+VLAN kimliğinin atanması
+Bağlantı noktaları bir VLAN'a statik veya dinamik olarak atanabilir.
+1. Statik atama
+• Her bağlantı noktası, yönetici tarafından kalıcı olarak bir VLAN'a atanır. Gerekirse, bu atama manuel olarak değiştirilmelidir.
+• Avantaj, bağlantı noktalarının açık bir şekilde atanmasıdır.
+• Dezavantajları, yüksek idari çaba ve cihazların hareket kabiliyetinin olmamasıdır.
+
+2. Dinamik haritalama
+• Bir VLAN'a üyelik, MAC veya IP adresi veya kimlik doğrulama gibi kriterlere dayalıdır.
+• Avantajları, daha düşük yönetim çabası ve cihazların mobilitesidir.
+• Güvenlik açıkları dezavantajlıdır. (Örneğin, MAC adreslerinin sahte olması kolaydır.)
+
+VLAN'ların bağlantısı
+• Anahtar bir katman II cihazıdır, yönlendirme yapamaz.
+• Farklı segmentlere ayırma, bir kat daha yükseğe ayarlanmalıdır. Bu nedenle bu görev yalnızca bir yönlendirici tarafından gerçekleştirilebilir.
+• VLAN A ve B bu nedenle Katman III'te, yani farklı ağlarda ayrılır. İletişim isteniyorsa yönlendirici kullanılmalıdır. Bu, Katman III'te çalışır ve her VLAN'da bir arabirime sahiptir.
+
+• Modern yönlendiriciler, Katman II bilgilerini okuyabilir.
+• Bir ana hat üzerinden de bağlanabilirler.
+• Anahtar, etiketli paketleri yönlendiriciye aktarır.
+• Hedef alt ağı arar ve etiketi buna göre değiştirir.
+• Ardından paketi anahtara geri gönderir.
+
+avantajlar
+• VLAN'larla tam anahtarlamalı bir ortamda, bir binanın ofislerinde çok çeşitli alt ağlar tanımlanabilir.
+• Böylece, örneğin departman ofisleri, binanın tamamen farklı bölümlerinde yer alsalar bile aynı alt ağda yapılandırılabilir.
+• Yönlendirici, VLAN'lar arasındaki trafiği yönlendirir ve dışarıya bağlantı sağlar.
+
+sınırlar
+• Kural olarak, etiketler yönlendiriciler arasında taşınamaz. Örneğin, iki bina yönlendiricilerle bağlıysa, aynı VLAN'lar genellikle her ikisinde de kullanılamaz.
+• Yönlendiriciden yönlendiriciye bağlantı tamamen Katman III bağlantısıdır.
+• Yönlendiriciler, kendilerine doğrudan bağlı olan VLAN'ları yönlendirebilir. Modern ağ çekirdek cihazları, anahtar ve yönlendiricinin bir karışımı olan Katman 3 anahtarıdır.
+• VLAN'ların Katman III aracılığıyla kapsüllenmiş olarak iletilebileceği prosedürler vardır.
+Ancak, her yayın etki alanında yalnızca bir varsayılan ağ geçidi olduğundan bu dezavantajlıdır. Bu nedenle tüm veriler yönlendirme için tekrar iletilmelidir.
+
+• Bir şirketin tüm binaları veya bölümleri birbirine bağlıysa, bu genellikle MAN veya WAN bağlantıları meselesidir. Bunlar Katman III'e yönlendirilir.
+• VLAN'lar genellikle yalnızca saf Katman II ortamlarında taşınır. Bu, bir yönlendirici bağlantısının yalnızca saf Katman III verilerini taşıdığı anlamına gelir.
