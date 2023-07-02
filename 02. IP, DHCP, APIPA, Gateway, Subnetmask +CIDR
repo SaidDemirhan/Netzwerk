@@ -38,8 +38,9 @@ Iki farkli IP adresimiz vardir:
   2 Kendi agimizdaki IP adresimiz.
   #Kendi agimizdaki cihazlar internete cikarken NAT(Network Adress Translation) ile tek IP e cevrilir.
   
-DHCP: bir ic agdaki cihazlara IP dagitan modemdeki sistemdir.
-    Bu yüzden cihaz acilir acilmaz internete baglanir.
+DHCP: (Dynamic Host Configuration Protocol)
+      bir ic agdaki cihazlara IP dagitan modemdeki sistemdir. 
+      Bu yüzden cihaz acilir acilmaz internete baglanir.
     
     Eger bilgisayarin IP adresi 169. ile basliyorsa ortamda herhangi bir DHCP servisi bulamamis ve 
     cihaz kendi kendine IP atamis demektir. buna APIPA denir.
@@ -63,7 +64,7 @@ Bu durumda SIHIRLI SAYI yi bulmaliyiz.
 örn.
 Host adresi: 156.23.19.145/27
    host adresiniin sonundaki sayiya CIDR degeri diyoruuz
-   CIDR degeri subnet mask tasi 1 lerin soldan saga dogru saayisidir.
+   CIDR degeri subnet mask taki 1 lerin soldan saga dogru saayisidir.
 
 128 64 32 16 8 4 2 1
 
