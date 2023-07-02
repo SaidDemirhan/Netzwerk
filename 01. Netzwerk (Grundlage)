@@ -40,9 +40,10 @@ HAN (Home Area Netwok)
 LAN (Local Area Network)
           Kisa mesafelerde kurulan agdir
           VLAN: sanal olarak yerel aglara bölünme varsa.
-                    koaly yapilandirma, hata tespiti, güncelleme vs
-                    Iki VLAN in v´birbiriyle haberlesmesi Router sartiyla gerceklesir 
-                    Vlanlarin haberlesmesini saglayan hatta TRUNK denir ve switchler arasinda veya switch reuter arasindaki 
+                    kolay yapilandirma, hata tespiti, güncelleme vs
+                    Iki VLAN in birbiriyle haberlesmesi Router sartiyla gerceklesir 
+                    Vlanlarin haberlesmesini saglayan hatta TRUNK denir ve switchler arasinda 
+                    veya switch reuter arasindaki 
                     güven iliskisini kuruar.
           WLAN: Koblolar yerine Wireless üzerinden olusturulur.
 SAN (Storage Area Network)
@@ -123,7 +124,7 @@ NETWORK TE KULLANILAN CIHAZLAR
                               Switch; Kavsaktaki araclarin hangisisnin gececcegini belirliyor
                               Router  ise hangi aracin hangi yöne gidecegini belirtiyor
          FIREWALL
-                    Özel aglar il einternet arasinda her iki yönde istenmeyen trafigi engeller.
+                    Özel aglar ile internet arasinda her iki yönde istenmeyen trafigi engeller.
                     Ag güvenligini saglar
                     OSI3 ve 7 de calisabilir.
          ACCESS POINT
@@ -145,14 +146,15 @@ NETWORK'TE KULLANILAN KABLOLAR
 UTP(Unschielded Twisted Pair)
           Birlikte bükülmüs tel ciftlerinden olusan kablodur.
           Bukmenin amaci veri kaybini engellemektir.
-          Kablo disinda extar bir koruma yok
+          Kablo disinda extra bir koruma yok
 
 STP (Schilded Twisted Pair)
           UTP kablosunun disinda koruyucu bir folyo veya örgüden olusan katmani vardir.
           Bu katman elektomanyetik olarak zayiflamayi azaltir.
           
 KOAKSIYEL
-          en icte Bakir tel, sonra yalitim maddesi, sonra örgülü (topraklanmis) dis iletken ve en dista koruyucu plastik kiliftan olusur.
+          en icte Bakir tel, sonra yalitim maddesi, sonra örgülü (topraklanmis) dis iletken ve
+          en dista koruyucu plastik kiliftan olusur.
           
 FIBER OPTIK          
           verileri bir noktadan digerine elektirik yerine isik sinyalleri kullanarak iletir
@@ -174,8 +176,8 @@ olmasi gerekir.
 Gateway
 internet cikarken ilk ugrayacagimiz kapidir.
 default gateway modemin IP sidir ve adres cubuguna yazarsak bizi modeme götürür.
-büyük isletmelerde birden cok modem olabilir ve istedigimiz kisiye/cihaza gateway ayarlamasi yaparak istedigimiz modemden
-gecerek internete cikmasini saglayabiliriz.
+büyük isletmelerde birden cok modem olabilir ve istedigimiz kisiye/cihaza gateway ayarlamasi yaparak 
+istedigimiz modemden gecerek internete cikmasini saglayabiliriz.
 
 DNS (domain naming systems)
 
@@ -184,8 +186,8 @@ biz o sitenin ip adresini adres cubuguna yazarsak direkt o adrese girmis oluruz.
 Ayni cep telefonumuzdaki telefon rehberimiz gibi numara var ve biz ona bir isim atamisiz.
 iste dns her sitenin karsisinda hangi numara var onu akilda tutuyor. 
 
-bilgisayara el ile 2 adet dns adresi kaydedebiliriz, eger birinde bulamazsa digerine gider ona sorar ve internet erisimi
-saglanmis olur. (site yasaklanma vs) 8.8.8.8 ve 8.8.4.4
+bilgisayara el ile 2 adet dns adresi kaydedebiliriz, eger birinde bulamazsa digerine gider ona sorar 
+ve internet erisimi saglanmis olur. (site yasaklanma vs) 8.8.8.8 ve 8.8.4.4
 
 SUBNETTING
 
@@ -197,7 +199,7 @@ bilgisayar dili binär sistemdir ve 1 ve 0 lardan olusur.
 akim var akim yok manasina gelir (fiberoptik te ise isik var isik yok)
 
 101= (1*2^0)+(0*2^1)+(1*2^2)= 5(onluk sistemde karsiligi)
-17 8 4 2 1
+16 8 4 2 1
 1  0 0 0 1 (17 sayisinin ikilik sistemdeki karsiligi)
 
 SUBNET MASK (alt ag maskesi)
@@ -209,7 +211,7 @@ bu 8 bitlik bölümlere OKTET denir.
 4 birimlik oktet IP ve subnet yapisini olusturur.
  
 icinde bulunulan agi bulma:
-bilgisayarin privat ip i ile  subnetmask i ikilik sistemde endleyerek (cakistirarak) ag adrsini buluruz.
+bilgisayarin privat ip si ile  subnetmask i ikilik sistemde endleyerek (cakistirarak) ag adrsini buluruz.
 
 ip        : 192.168.1.5
 subnetmask: 255.255.255.0
