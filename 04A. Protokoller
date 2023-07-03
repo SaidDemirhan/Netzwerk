@@ -44,7 +44,8 @@
   -TCP (Transmission Control Protocol)
 
     Birkaç paragraf yukarıda IP adresinin sürekli bilgiler taşıdığını söylemiştik. 
-    İnternet dünyasının kurallarla düzenlenen yapısında bu taşıma ve ulaştırma işlemi de elbette belirli protokollere bağlı şekilde gerçekleşir. 
+    İnternet dünyasının kurallarla düzenlenen yapısında bu taşıma ve ulaştırma işlemi de elbette belirli 
+    protokollere bağlı şekilde gerçekleşir. 
     Bu protokollerden ilki de TCP protokolüdür.
 
     Temel olarak bağlantının kurulması için yolun sağlanmasını içeren bir göreve sahiptir. 
@@ -188,7 +189,7 @@ TCP(Transmission Control Protocol)[CONNECTION-ORIENTED],
   bir ağ üzerindeki iletişimin nasıl kurulduğu ve sürdürüldüğüyle alakalı olan standarttır ve veri aktarımını sağlamaktadır. 
   TCP kendi içerisinde iletim kontrol mekanizması vardır. 
   TCP de data bütünlüğü(data integrity) önemlidir. 
-  iki Bilgisayar arasındaki iletişim paketler halinde yapılır bu işlem saniseler içinde gerçekleşir. 
+  iki Bilgisayar arasındaki iletişim paketler halinde yapılır bu işlem saliseler içinde gerçekleşir. 
   
   Bir dosya gönderdiğinizde 5MBlık bir dosyayı örnek alalım. 
   TCP protokolü ile gönderiliyorsa ve bu 5MBlık dosya içerisinden aktarım esnasında 1 paketin bozuk olduğunun ya da
