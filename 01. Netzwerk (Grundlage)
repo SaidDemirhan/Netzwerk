@@ -187,7 +187,7 @@ Ayni cep telefonumuzdaki telefon rehberimiz gibi numara var ve biz ona bir isim 
 iste dns her sitenin karsisinda hangi numara var onu akilda tutuyor. 
 
 bilgisayara el ile 2 adet dns adresi kaydedebiliriz, eger birinde bulamazsa digerine gider ona sorar 
-ve internet erisimi saglanmis olur. (site yasaklanma vs) 8.8.8.8 ve 8.8.4.4
+ve internet erisimi saglanmis olur. (site yasaklanma vs) 8.8.8.8 ve 8.8.4.4 (google in DNS adrresleridir.)
 
 SUBNETTING
 
@@ -198,7 +198,8 @@ SUBNETTING
 bilgisayar dili binär sistemdir ve 1 ve 0 lardan olusur.
 akim var akim yok manasina gelir (fiberoptik te ise isik var isik yok)
 
-101= (1*2^0)+(0*2^1)+(1*2^2)= 5(onluk sistemde karsiligi)
+101= (1*2^0)+(0*2^1)+(1*2^2)= 5 sayisinin ikilik sistemde karsiligi
+
 16 8 4 2 1
 1  0 0 0 1 (17 sayisinin ikilik sistemdeki karsiligi)
 
