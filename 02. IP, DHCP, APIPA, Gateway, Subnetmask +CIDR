@@ -1,7 +1,8 @@
 IP Adresleri
 
-NOT: Hicbir IP adresinin sonu 0 veya 255 ile bitemez.
-0 olan Network u ifade edr, 255 olan broadcast kanalini ifade eder.
+NOT: Hicbir IP adresinin sonu 0 veya 255 ile bitemez. Cünkü:
+0 olan Network u ifade eder, 
+255 olan broadcast kanalini ifade eder.
 
 Public IP siniflari (WAN icin) - dis ayak
 A class : 1.0.0.0- 126.255.255.255
@@ -28,7 +29,7 @@ Class A: ilk oktet ayni olmali
 Class B: ilk iki oktet ayni olmali
 Class C: ilk üc oktet ayni olmali   192.168.1.76 ve 192.168.1.72
 
-NOT: sabit olan ID ler Network ID olur degisken olanlar ise Host ID (bilgisayarlari temsil eden kismi) olur.
+NOT: sabit olan ID ler Network ID olur. Degisken olanlar ise Host ID (bilgisayarlari temsil eden kismi) olur.
 
 Bilgi: Bir A class bir agin network Id si 10.0.0.0 olurken host ID si 10.255.255.255 tir.
 
@@ -103,7 +104,7 @@ Eger host adresi 143.32.16.122/22(CIDR) olsaydi:
    143.32.4.0 
    143.32.8.0
    143.32.12.0
-   143.32.16.0 : Bahsi gecen host adrsinin network id si
+   143.32.16.0 : Bahsi gecen host adresinin network id si
          Bahsi gecen host adrsi bu network e ait.(143.32.16.122)
          ilk host adresi: 143.32.16.1
          son host adresi: 143.32.19.254
@@ -137,7 +138,8 @@ Eger host adresi 143.32.16.122/22(CIDR) olsaydi:
          11111.11111.11111.   11000000
          2 4 =4 adet cikar.
          
-   Kac adet AG cikar denseydi (subnet) sinifina bakip karar verirdik, yani CIDR numarasinin sadece degisebilen kisimlarinin tamami alinip sayilmali idi.
+   Kac adet AG cikar denseydi (subnet) sinifina bakip karar verirdik, yani CIDR numarasinin sadece degisebilen 
+   kisimlarinin tamami alinip sayilmali idi.
       (156.23.19.145) b sinifi bir adrestir. son iki oktetindek birlerin 2^ adedince ag cikabilir.
          11111.11111.   11111.11000000
             2 4 8 16 32 64 128 256 512 1024 adet subnet cikar.
